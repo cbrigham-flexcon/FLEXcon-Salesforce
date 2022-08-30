@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market__c</fullName>
+    <description>List of Business Teams.</description>
+    <externalId>false</externalId>
+    <label>Market</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PB</fullName>
+                <default>false</default>
+                <label>Product Branding</label>
+            </value>
+            <value>
+                <fullName>PI</fullName>
+                <default>false</default>
+                <label>Product Identification</label>
+            </value>
+            <value>
+                <fullName>PP</fullName>
+                <default>false</default>
+                <label>Performance Products</label>
+            </value>
+            <value>
+                <fullName>XX</fullName>
+                <default>false</default>
+                <label>Not Assigned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

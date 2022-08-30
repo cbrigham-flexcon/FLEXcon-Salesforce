@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canada_Shipping_Zip_Code_Validation</fullName>
+    <active>false</active>
+    <description>Validates that the account Shipping Zip/Postal Code is in the correct format if Shipping Country is Canada.</description>
+    <errorConditionFormula>AND(
+OR(  ShippingCountry   = &quot;CAN&quot;,   ShippingCountry   = &quot;CA&quot;,   ShippingCountry   = &quot;Canada&quot;),
+NOT(REGEX(  ShippingPostalCode  , &quot;((?i)[ABCEGHJKLMNPRSTVXY]\\d[A-Z]?\\s?\\d[A-Z]\\d)?&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>ShippingPostalCode</errorDisplayField>
+    <errorMessage>Canadian postal code must be in A9A 9A9 format.</errorMessage>
+</ValidationRule>

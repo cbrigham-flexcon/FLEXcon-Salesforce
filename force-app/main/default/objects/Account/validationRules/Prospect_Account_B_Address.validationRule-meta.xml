@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_Account_B_Address</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+
+
+AND(
+RecordType.Name = &quot;Prospect&quot;,
+BillingCountry &lt;&gt; &quot;Ireland&quot;,
+
+OR(
+ISBLANK( BillingCity ),
+ISBLANK( BillingStreet ),
+ISBLANK( BillingPostalCode),
+ISBLANK( BillingCountry ))),
+
+AND(
+RecordType.Name = &quot;Prospect&quot;,
+BillingCountry = &quot;Ireland&quot;,
+OR(
+ISBLANK( BillingCity ),
+ISBLANK( BillingStreet )))
+)</errorConditionFormula>
+    <errorDisplayField>BillingCountry</errorDisplayField>
+    <errorMessage>Please fill out the &apos;Billing Address&apos;</errorMessage>
+</ValidationRule>

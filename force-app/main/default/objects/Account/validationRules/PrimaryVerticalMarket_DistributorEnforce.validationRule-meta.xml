@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimaryVerticalMarket_DistributorEnforce</fullName>
+    <active>true</active>
+    <description>If Distributor selected, Primary Vertical Market is required.</description>
+    <errorConditionFormula>AND(
+RecordTypeId = &quot;0125w000000n2Z0&quot;, ISBLANK(TEXT( Primary_Vertical_Market__c)))</errorConditionFormula>
+    <errorDisplayField>Primary_Vertical_Market__c</errorDisplayField>
+    <errorMessage>Please fill out the &apos;Primary Vertical Market&apos; field.</errorMessage>
+</ValidationRule>

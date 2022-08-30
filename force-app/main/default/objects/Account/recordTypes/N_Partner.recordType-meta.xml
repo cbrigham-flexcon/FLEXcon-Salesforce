@@ -1,0 +1,3520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>N_Partner</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>New_Customer</compactLayoutAssignment>
+    <label>Partner</label>
+    <picklistValues>
+        <picklist>Ability__c</picklist>
+        <values>
+            <fullName>Distribute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Influence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print%2FConvert</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homepage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telephone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AccountStatus__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CUSTOMERTYPE__c</picklist>
+        <values>
+            <fullName>ABC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AdAgency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AdSpecifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrandOwner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CoSupplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FormerAlliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FormerDirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POP Producer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ConvertingMethods__c</picklist>
+        <values>
+            <fullName>Blank Label Converting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANON IMAGE PROGRAF IPF5000 17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANON IMAGE PROGRAF IPF8000 44</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANON IMAGE PROGRAF IPF9000 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUPONT ARTISTRI 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUPONT CROMALIN LARGO 4406</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUPONT DCC22UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DURST LAMBDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DURST RHO 160</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DURST RHO 205</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DURST RHO 350R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DURST RHO 351</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DURST RHO 800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Flat Bed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Kiss Cut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Perfing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Plotter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Punching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Rotary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Steel Rule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Thermal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecutting Water Jet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Indigo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Offset Roll Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Offset Sheet Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Offset Xeikon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Thermal Color</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Thermal Mono</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Print</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Durst RH0600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dye Sublimination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E PRINT PRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Stat Dry Method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Stat Wet Method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVACUT 54</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET 1000I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET 1200I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET 600E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET 700</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET 736</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET 750</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET 850</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET PRO 42E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET PRO 50E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET PRO 600E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET PRO 60E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET PRO36</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD NOVAJET3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENCAD VINYL JET 36</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS COLOR 3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PHOTO 1280</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PHOTO 2200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 10000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 10600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 4000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 4800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 7000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 7500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 7600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 7800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 9000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 9600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPSON STYLUS PRO 9800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embossing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Epson GS 6000 EcoSol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expanded Contents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FUJI ACUITY HD 2504</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FUJI PICTOGRAPHY %28DYE SUB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fan Folding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flexographic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flexographic Solvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flexographic UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flexographic Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GANDINNOVATIONS JETI 3318</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GERBER EDGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GERBER EDGE2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRAPHTEC JX1130</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gandi UV Flatbed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravure General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravure Solvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravure Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP 10000S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP 2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP 3500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP 5000PS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP 5500 EAGLEJET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP 8000S  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP 9000S  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP DESIGNJET 10000S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP DESIGNJET 130</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP DESIGNJET 5500PS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP DESIGNJET 8000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP DESIGNJET 9000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP DESIGNJET Z3100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP DESIGNJET Z6100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO 1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO 3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO 3050</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO 4010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO 7000 DIGITAL PRESS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO 7500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO OMNIUS PRESS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO PRESS 3500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO PRESS 5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO PRESS 5500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO PRESS S2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO PRESS W3250</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO PRESS WS4500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO W7200 DIGITAL PRESS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO WS2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO WS4000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO WS4050</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO WS4600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP INDIGO WS6000 DIGITAL PRESS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP LATEX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Latex 3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX 2750</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX FB 6300 VEEJET%2B UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX FB 6700%28COREJET%29UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX FB6300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX FB6700</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX FB7500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX GRAND SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX IDANIT  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX PRESSJET SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX TJ 8300 SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX TJ 8500  UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX TJ8550</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX XL 1200 SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX XL 1500 SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX XL JET 2200 UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX XLJET  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP SCITEX XLJET%2B  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Stamp Cold Foil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Stamp General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Stamp Hot Foil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IGEN4 %28digital%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCA COLUMBIA TURBO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCA EAGLE H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCA SPYDER 150</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDIGO ROLL FORM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDIGO SHEET PRESS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRISGPRINT 3407</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Mold Decorating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inca Onset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inca Turbo Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inkjet Environmental Solvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inkjet Solvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inkjet UV Cured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inkjet Water Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ion Deposition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JETI 1224</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JETI 3150</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JETI 3312-18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JETI 5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jetrion 4830</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KBA RAPIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KODAKPRO 4742</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEGGET %26 PRATT VIRTU PLUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEGGET %26 PRATT VIRTUE LMP 9600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIGHTJET 430</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIGHTJET 500 XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIGHTJET 5030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIGHTJET 5900</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laminating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Color</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Continuous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Etching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Flash Fusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Monochrome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letterpress General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letterpress Solvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letterpress UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letterpress Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN 5445</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN 5460</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN 5465</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN 72 UVX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN 98 UVX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN 9840</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN DM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN DM 6000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN DM 6200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN DM 72</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN DM 72UVR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN DM 72UVX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN DM 98SX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN DM ESPRIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACDERMID COLORSPAN DM X12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV3 130 SP2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV3-160S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV3-250SP BABY GRAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV3-75SPII</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV4-130</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV4-160</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV4-180</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV5 130</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI JV5 160</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI TX-1600 %28DYE SUB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI UJF-605C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIMAKI UJV-110</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUTOH FALCON OUTDOOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUTOH FALCON OUTDOOR II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUTOH PRISMJET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUTOH TOUCAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUTOH VALUEJET 1204</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUTOH VALUEJET 1604</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUTOH VALUEJET 2606</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR EXPEDIO 3200  UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR EXPEDIO 5000  UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR EXPEDIO 5000 REVOLUTION UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR EXPEDIO INSPIRATION  UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR FRESCO  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR FRESCO HIQ 3200  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR FRESCO II  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR FRESCO III  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR SALSA  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR SALSA ULTIMA 1500 SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR SALSA ULTIMA 2400 SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR SALSA ULTIMA 3200 SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR SALSA ULTIMA 5000 SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR TANGO  SOLVENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR TEMPO II UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR TEMPO Q UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR TEMPO UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUR ULTIMA HIQ 5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE ARIZONA 180</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE ARIZONA 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE ARIZONA 550 GT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE ARIZONA 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE ARIZONA 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE ARIZONA CS6060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE ARIZONA GT250</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE ARIZONA INNOV JETI 3300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE ARIZONA T220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCE GANDI JETI 3150</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMNIUS TURBO STREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offset Conventional %28Oil%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offset General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offset UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RASTEK H700</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RASTER RP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND AJ1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND CJ60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND COLORCAMM PC 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND FJ-400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND FJ-500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND FJ-540</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND FJ-600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND HIFI JET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND SJ 640 EX PRO II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND SOLJET 1000 EX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND SOLJET 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND SOLJET 540</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND SOLJET 545 EX II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND SOLJET 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND SOLJET 740</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND SP540</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND VERSACAMM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND VERSACAMM SP300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROLAND VersaUV LEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roland SJ-645</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roland Soljet FJ52</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCITEX GRANDJET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCITEX IDANIT 162</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCITEX SUPERJET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCITEX TURBOJET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCITEX VEEJET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCITEX XL JET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEIKO COLORPAINTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUMMA DC3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUMMA DC4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen Printing Cylinder Solve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen Printing Cylinder UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen Printing Flat Bed Solve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen Printing Flat Bed UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen Printing General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen Printing Rotary Solvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen Printing Rotary UV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheeting%2FRoll to Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheeting%2FSheet to Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TELEIOS 1377TX%2FV8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEXPRESS DSS 1800-II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTR Color Resin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTR Color Wax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTR Color Wax%2FResin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTR Mono Resin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTR Mono Wax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTR Mono Wax%2FResin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tapes - Double Face</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tapes - Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Transfer General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIRTU 7200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK 3200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK FABRIVU 3360 DYE SUB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK PRESSVU 180%2F360EC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK PRESSVU 200%2F600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK PRESSVU 320</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK QS2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK QS3200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK ULTRAVU 150</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK ULTRAVU 2360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK ULTRAVU 2600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK ULTRAVU II 3300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK ULTRAVU II 3360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VUTEK ULTRAVU II 5330</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZUND UVJET 215C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZUND UVJET PLUS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country_Entity_File__c</picklist>
+        <values>
+            <fullName>Blueshift Accounting Files</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada Accounting Files</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Converting China Branch Accounting Files</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Converting HeadQuarters Accounting Files  %28India Customers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Converting Singapore Branch Accounting Files</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HongKong Accounting Files</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>India Accounting Files</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mexico Accounting Files</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2ES%2E Accounting Files</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Classification__c</picklist>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transactional Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delivery_Terms__c</picklist>
+        <values>
+            <fullName>Carriage %26 Freight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carriage %26 Insurance Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carriage Paid To</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost Insurance %26 Freight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Pays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivered at Place</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivered at Terminal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Duty Pais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free Alongside Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free carrier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EU_Payment_Terms__c</picklist>
+        <values>
+            <fullName>0 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120 Days EOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 Days 1%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>150 Days EOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days 8 Days 2%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days EOM %2B 15 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days from end of month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days%2F14 Days 2%25 disc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days%2F14 Days 3%25 disc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days%2F7 Days 2%25 Disc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days%2F8 Days 3%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 days 2%25 disc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 days 3%25 disc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 days EOM %2B 7 working days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 days%2F2%25 10 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 Days end of month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 Days%2F14 Days 2%25 discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 Days%2F14 days 1%25 disc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50 Days from Invoice date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days from end of month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days%2F10 Days 2%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days%2F10 Days 3%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days%2F14 Days 2%25 disc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days%2F14 Days 3%25 disc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days%2F30 Days 2%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days%2F30 Days 3%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75 Days EOM%2F10 days 1%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75 Days ME%2F14 days 2%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75 Days ME%2F14 days 3%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75 Days from end of month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 Days from end of month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 days net %2F 30 days -2%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 days net 60 days 3%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROFORMA - 0 Days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Construction %26 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Durables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market__c</picklist>
+        <values>
+            <fullName>PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NA_Payment_Terms__c</picklist>
+        <values>
+            <fullName>1%25 NET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25%2F15 NET 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2510 NET 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2510 Net90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2520 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5%2F10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5%2F10 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F10 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F10 NET 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F10 NET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F15 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F15 N45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F15 Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F20 NET60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F20N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F30 NET 31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F30 Net 120 RBP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F35 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 YR INACTIVE CUST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 10 NET 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 30 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 30 NET 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F10 N 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F10 N30 CN ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F10 N45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F10 N60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F14 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F15 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F15 NET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F15 NET 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F15 Net 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F20 NET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F20 NET 40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F20 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F20 Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F24 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F30 Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F40 - Net 105</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F40 - Net 75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F5 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F14 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2F10 Net 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EB%2EE%2E%2FCERT%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EB%2EE%2E%2FCOMPANY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBE%2FCOMP-NEW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBE%2FLTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBE%2FNET 120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CC%2FNET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAP11 CBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIA%2FVISA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONNX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HK Cash Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERNAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MC%2FVISA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NASA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 100 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 120 EOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 120 EOM MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 120 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 30 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 60 EOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 60 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 75 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 90 EOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%2EO%2EB%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P%2EF%2EC%2E%2FCBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAID COLLECTION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PICK UP WITH CHECK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POST 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POST 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POST 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2F1%25 10 NET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2F2%25 10 NET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNet 75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WAREHOUSE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Type__c</picklist>
+        <values>
+            <fullName>Ad Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Specifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PrimaryType__c</picklist>
+        <values>
+            <fullName>Ad Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Specifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POP Producer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Vertical_Market__c</picklist>
+        <values>
+            <fullName>Construction %26 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Durables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intercompany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %26 Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Print_Press__c</picklist>
+        <values>
+            <fullName>Continuous Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conventional Offset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cut Sheet Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flash Fusion Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Indigo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Latex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Stamping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ion Deposition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solvent Inkjet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solvent Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV Flexo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV Inkjet %28Narrow%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV Inkjet %28Wide%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV Letterpress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Flexo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Print_Technology__c</picklist>
+        <values>
+            <fullName>Conventional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Narrow-Format Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Transfer %28TTR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Inkjet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wide-Format Digital</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ratingcode__c</picklist>
+        <values>
+            <fullName>ACCOUNT CLOSED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COLLECTOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMMEDIATE SALE %2425M %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMMEDIATE SALES POTENTIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INFLUENCES PURCHASES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LITTLE LIKELIHOOD OF SALE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NON REACHABLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROBABLE SALE POTENTIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PURCHASE AUTHORITY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMTE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indian Sub Continent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States%2FCanada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondary_Vertical_Market__c</picklist>
+        <values>
+            <fullName>Construction %26 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Durables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intercompany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %26 Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondarytype1__c</picklist>
+        <values>
+            <fullName>Ad Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Specifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POP Producer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondarytype2__c</picklist>
+        <values>
+            <fullName>Ad Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Specifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POP Producer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondarytype3__c</picklist>
+        <values>
+            <fullName>AdSpecifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrandOwner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CoSupplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FormerAlliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FormerDirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POP Producer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondarytype4__c</picklist>
+        <values>
+            <fullName>AdSpecifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrandOwner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CoSupplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FormerAlliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FormerDirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POP Producer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Termscode__c</picklist>
+        <values>
+            <fullName>1%25 NET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25%2F10 Net 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25%2F15 NET 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2520 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5%2F10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5%2F10 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F10 N30       NO DSC SHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F10 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F10 NET 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F10 NET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F15 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F15 N45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F15 Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F20 NET60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F20N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F30 NET 31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F30 Net 120 RBP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F35 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 YR INACTIVE CUST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 30 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 30 NET 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F10 N30     CN ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F10 N45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F10 N60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F14 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F15 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F15 NET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F15 NET 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F15 Net 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F20 NET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F20 NET 40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F20 NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F20 Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F24 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F30 Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F40 - Net 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F40 Net 105</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F40 Net 75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2F5 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F10 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F14 N30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35%25 Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2F10 Net 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EB%2EE%2E%2FCERT%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EB%2EE%2E%2FCOMPANY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EI%2EA%2E%2FCERT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EI%2EA%2E%2FCOMPNY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBE%2FCOMP-NEW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBE%2FLTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBE%2FNET 120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAP11 CBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIA%2FCASH IN ADVANCE INT%27L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIA%2FVISA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COD%2FCOMPNY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONNX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HK Cash Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERNAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MC%2FVISA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NASA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEEDS UPDATING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 100 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 120 CCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 120 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 30 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 60 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 75 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 90 MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 60 EOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 90 EOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%2EO%2EB%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P%2EF%2EC%2E%2FCBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAID COLLECTION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POST 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POST 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POST 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick Up with Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2F1%25 10 NET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2F2%25 10 NET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBP%2FNET 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WAREHOUSE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Territory__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENELUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eastern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eastern Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indian Sub Continent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SA - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scandinavia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK%26IRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Western</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>marketingtypes__c</picklist>
+        <values>
+            <fullName>AD Specialty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATM Machine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>After Market Prod Decoration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aircraft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arena%2FStadium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Exterior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Interior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Underhood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bumper Stickers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBS Outdoor Wrap Vendor 2012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBS Outdoor Wrap Vendor 2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBS WRAP VENDORS 2008</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cling Vinyl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Battery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drum Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exercise Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fleet%2FVehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G7 Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf Carts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health %26 Beauty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heavy Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holiday%2CSeasonal%2CNovelty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household %26 Chemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Caution %26 Warning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Controls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lottery Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Membrane Switch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM - Membrane Switch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Road Vehicles - 2%2C3%2C4 Whee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor%2FSignage Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outfront Media %2717 Apvd Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PDAA Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POS Debit%2FCredit Card Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photovoltaic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power of 9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail%2FPOP%2FTradeshow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGP %28SUSTAIN%2E GREEN PRINTING%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School %26 Association Decals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slot Machines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snowmobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sporting Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sticker %26 Decal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarket Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trailers%2FMotor Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit - Bus%2FTaxi%2FRail%2FAir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tube Manufacture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viacom Wrap Vendors 2004</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wraps %2F Indoor %26 Outdoor signage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

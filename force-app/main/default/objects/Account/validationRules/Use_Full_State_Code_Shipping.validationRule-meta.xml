@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Full_State_Code_Shipping</fullName>
+    <active>false</active>
+    <errorConditionFormula>LEN( ShippingState) &lt;&gt;  2</errorConditionFormula>
+    <errorMessage>Use State Code for Shipping State</errorMessage>
+</ValidationRule>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_State_Province_cannot_be_blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+OR(
+
+Contains(  ShippingCountry  , &quot;Australia&quot;),
+
+Contains(ShippingCountry , &quot;Brazil&quot;),
+
+Contains(ShippingCountry , &quot;Canada&quot;),
+
+Contains(ShippingCountry , &quot;China&quot;),
+
+Contains(ShippingCountry , &quot;Ireland&quot;),
+
+Contains(ShippingCountry , &quot;India&quot;),
+
+Contains(ShippingCountry , &quot;Italy&quot;),
+
+Contains(ShippingCountry , &quot;Mexico&quot;),
+
+Contains(ShippingCountry , &quot;United States&quot;)),
+
+ISBLANK(  ShippingState  ))</errorConditionFormula>
+    <errorDisplayField>ShippingState</errorDisplayField>
+    <errorMessage>Please fill in the Shipping State/Province.</errorMessage>
+</ValidationRule>

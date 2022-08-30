@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Accounts_Sales_Reps</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>AccountStatus__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>EU_Customer_Code__c</columns>
+    <columns>CUSNO__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+    <columns>Region__c</columns>
+    <columns>Territory__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>AccountStatus__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <label>My-Open Accounts (Sales Reps)</label>
+</ListView>

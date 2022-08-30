@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Type_on_Account</fullName>
+    <active>false</active>
+    <errorConditionFormula>TEXT(PrimaryType__c) = &apos;&apos;</errorConditionFormula>
+    <errorMessage>Please Enter value on &quot;Primary Type&quot; field.</errorMessage>
+</ValidationRule>

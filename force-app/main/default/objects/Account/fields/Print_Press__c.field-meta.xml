@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Print_Press__c</fullName>
+    <externalId>false</externalId>
+    <label>Print Press</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Continuous Laser</fullName>
+                <default>false</default>
+                <label>Continuous Laser</label>
+            </value>
+            <value>
+                <fullName>Conventional Offset</fullName>
+                <default>false</default>
+                <label>Conventional Offset</label>
+            </value>
+            <value>
+                <fullName>Cut Sheet Laser</fullName>
+                <default>false</default>
+                <label>Cut Sheet Laser</label>
+            </value>
+            <value>
+                <fullName>Flash Fusion Laser</fullName>
+                <default>false</default>
+                <label>Flash Fusion Laser</label>
+            </value>
+            <value>
+                <fullName>Hot Stamping</fullName>
+                <default>false</default>
+                <label>Hot Stamping</label>
+            </value>
+            <value>
+                <fullName>HP Indigo</fullName>
+                <default>false</default>
+                <label>HP Indigo</label>
+            </value>
+            <value>
+                <fullName>HP Latex</fullName>
+                <default>false</default>
+                <label>HP Latex</label>
+            </value>
+            <value>
+                <fullName>Ion Deposition</fullName>
+                <default>false</default>
+                <label>Ion Deposition</label>
+            </value>
+            <value>
+                <fullName>Solvent Inkjet</fullName>
+                <default>false</default>
+                <label>Solvent Inkjet</label>
+            </value>
+            <value>
+                <fullName>Solvent Screen</fullName>
+                <default>false</default>
+                <label>Solvent Screen</label>
+            </value>
+            <value>
+                <fullName>Thermal Transfer</fullName>
+                <default>false</default>
+                <label>Thermal Transfer</label>
+            </value>
+            <value>
+                <fullName>UV Flexo</fullName>
+                <default>false</default>
+                <label>UV Flexo</label>
+            </value>
+            <value>
+                <fullName>UV Inkjet (Narrow)</fullName>
+                <default>false</default>
+                <label>UV Inkjet (Narrow)</label>
+            </value>
+            <value>
+                <fullName>UV Inkjet (Wide)</fullName>
+                <default>false</default>
+                <label>UV Inkjet (Wide)</label>
+            </value>
+            <value>
+                <fullName>UV Letterpress</fullName>
+                <default>false</default>
+                <label>UV Letterpress</label>
+            </value>
+            <value>
+                <fullName>UV Screen</fullName>
+                <default>false</default>
+                <label>UV Screen</label>
+            </value>
+            <value>
+                <fullName>Water Flexo</fullName>
+                <default>false</default>
+                <label>Water Flexo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

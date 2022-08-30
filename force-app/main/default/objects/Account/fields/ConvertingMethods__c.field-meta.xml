@@ -1,0 +1,1625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConvertingMethods__c</fullName>
+    <externalId>false</externalId>
+    <label>Converting Methods</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Do Not Print</fullName>
+                <default>false</default>
+                <label>Do Not Print</label>
+            </value>
+            <value>
+                <fullName>Durst RH0600</fullName>
+                <default>false</default>
+                <label>Durst RH0600</label>
+            </value>
+            <value>
+                <fullName>Epson GS 6000 EcoSol</fullName>
+                <default>false</default>
+                <label>Epson GS 6000 EcoSol</label>
+            </value>
+            <value>
+                <fullName>Blank Label Converting</fullName>
+                <default>false</default>
+                <label>Blank Label Converting</label>
+            </value>
+            <value>
+                <fullName>Diecutting Flat Bed</fullName>
+                <default>false</default>
+                <label>Diecutting Flat Bed</label>
+            </value>
+            <value>
+                <fullName>Diecutting General</fullName>
+                <default>false</default>
+                <label>Diecutting General</label>
+            </value>
+            <value>
+                <fullName>Diecutting Kiss Cut</fullName>
+                <default>false</default>
+                <label>Diecutting Kiss Cut</label>
+            </value>
+            <value>
+                <fullName>Diecutting Laser</fullName>
+                <default>false</default>
+                <label>Diecutting Laser</label>
+            </value>
+            <value>
+                <fullName>Diecutting Perfing</fullName>
+                <default>false</default>
+                <label>Diecutting Perfing</label>
+            </value>
+            <value>
+                <fullName>Diecutting Plotter</fullName>
+                <default>false</default>
+                <label>Diecutting Plotter</label>
+            </value>
+            <value>
+                <fullName>Diecutting Punching</fullName>
+                <default>false</default>
+                <label>Diecutting Punching</label>
+            </value>
+            <value>
+                <fullName>Diecutting Rotary</fullName>
+                <default>false</default>
+                <label>Diecutting Rotary</label>
+            </value>
+            <value>
+                <fullName>Diecutting Steel Rule</fullName>
+                <default>false</default>
+                <label>Diecutting Steel Rule</label>
+            </value>
+            <value>
+                <fullName>Diecutting Thermal</fullName>
+                <default>false</default>
+                <label>Diecutting Thermal</label>
+            </value>
+            <value>
+                <fullName>Digital Indigo</fullName>
+                <default>false</default>
+                <label>Digital Indigo</label>
+            </value>
+            <value>
+                <fullName>Digital Offset Roll Form</fullName>
+                <default>false</default>
+                <label>Digital Offset Roll Form</label>
+            </value>
+            <value>
+                <fullName>Digital Offset Sheet Form</fullName>
+                <default>false</default>
+                <label>Digital Offset Sheet Form</label>
+            </value>
+            <value>
+                <fullName>Digital Offset Xeikon</fullName>
+                <default>false</default>
+                <label>Digital Offset Xeikon</label>
+            </value>
+            <value>
+                <fullName>Digital Thermal Color</fullName>
+                <default>false</default>
+                <label>Digital Thermal Color</label>
+            </value>
+            <value>
+                <fullName>Digital Thermal Mono</fullName>
+                <default>false</default>
+                <label>Digital Thermal Mono</label>
+            </value>
+            <value>
+                <fullName>Doming</fullName>
+                <default>false</default>
+                <label>Doming</label>
+            </value>
+            <value>
+                <fullName>Dye Sublimination</fullName>
+                <default>false</default>
+                <label>Dye Sublimination</label>
+            </value>
+            <value>
+                <fullName>Diecutting Water Jet</fullName>
+                <default>false</default>
+                <label>Diecutting Water Jet</label>
+            </value>
+            <value>
+                <fullName>Embossing</fullName>
+                <default>false</default>
+                <label>Embossing</label>
+            </value>
+            <value>
+                <fullName>E-Stat Wet Method</fullName>
+                <default>false</default>
+                <label>E-Stat Wet Method</label>
+            </value>
+            <value>
+                <fullName>E-Stat Dry Method</fullName>
+                <default>false</default>
+                <label>E-Stat Dry Method</label>
+            </value>
+            <value>
+                <fullName>Expanded Contents</fullName>
+                <default>false</default>
+                <label>Expanded Contents</label>
+            </value>
+            <value>
+                <fullName>Fan Folding</fullName>
+                <default>false</default>
+                <label>Fan Folding</label>
+            </value>
+            <value>
+                <fullName>Flexographic</fullName>
+                <default>false</default>
+                <label>Flexographic</label>
+            </value>
+            <value>
+                <fullName>Flexographic Solvent</fullName>
+                <default>false</default>
+                <label>Flexographic Solvent</label>
+            </value>
+            <value>
+                <fullName>Flexographic UV</fullName>
+                <default>false</default>
+                <label>Flexographic UV</label>
+            </value>
+            <value>
+                <fullName>Flexographic Water</fullName>
+                <default>false</default>
+                <label>Flexographic Water</label>
+            </value>
+            <value>
+                <fullName>Gravure General</fullName>
+                <default>false</default>
+                <label>Gravure General</label>
+            </value>
+            <value>
+                <fullName>Gravure Solvent</fullName>
+                <default>false</default>
+                <label>Gravure Solvent</label>
+            </value>
+            <value>
+                <fullName>Gravure Water</fullName>
+                <default>false</default>
+                <label>Gravure Water</label>
+            </value>
+            <value>
+                <fullName>Hot Stamp Cold Foil</fullName>
+                <default>false</default>
+                <label>Hot Stamp Cold Foil</label>
+            </value>
+            <value>
+                <fullName>Hot Stamp General</fullName>
+                <default>false</default>
+                <label>Hot Stamp General</label>
+            </value>
+            <value>
+                <fullName>Hot Stamp Hot Foil</fullName>
+                <default>false</default>
+                <label>Hot Stamp Hot Foil</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO PRESS S2000</fullName>
+                <default>false</default>
+                <label>HP INDIGO PRESS S2000</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO WS6000 DIGITAL PRESS</fullName>
+                <default>false</default>
+                <label>HP INDIGO WS6000 DIGITAL PRESS</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO PRESS WS4500</fullName>
+                <default>false</default>
+                <label>HP INDIGO PRESS WS4500</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO PRESS 3500</fullName>
+                <default>false</default>
+                <label>HP INDIGO PRESS 3500</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO PRESS 5500</fullName>
+                <default>false</default>
+                <label>HP INDIGO PRESS 5500</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO 7000 DIGITAL PRESS</fullName>
+                <default>false</default>
+                <label>HP INDIGO 7000 DIGITAL PRESS</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO PRESS W3250</fullName>
+                <default>false</default>
+                <label>HP INDIGO PRESS W3250</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO W7200 DIGITAL PRESS</fullName>
+                <default>false</default>
+                <label>HP INDIGO W7200 DIGITAL PRESS</label>
+            </value>
+            <value>
+                <fullName>INDIGO ROLL FORM</fullName>
+                <default>false</default>
+                <label>INDIGO ROLL FORM</label>
+            </value>
+            <value>
+                <fullName>INDIGO SHEET PRESS</fullName>
+                <default>false</default>
+                <label>INDIGO SHEET PRESS</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO 3050</fullName>
+                <default>false</default>
+                <label>HP INDIGO 3050</label>
+            </value>
+            <value>
+                <fullName>OMNIUS TURBO STREAM</fullName>
+                <default>false</default>
+                <label>OMNIUS TURBO STREAM</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO WS4050</fullName>
+                <default>false</default>
+                <label>HP INDIGO WS4050</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO WS4000</fullName>
+                <default>false</default>
+                <label>HP INDIGO WS4000</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO 1000</fullName>
+                <default>false</default>
+                <label>HP INDIGO 1000</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO 3000</fullName>
+                <default>false</default>
+                <label>HP INDIGO 3000</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO 4010</fullName>
+                <default>false</default>
+                <label>HP INDIGO 4010</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO OMNIUS PRESS</fullName>
+                <default>false</default>
+                <label>HP INDIGO OMNIUS PRESS</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO PRESS 5000</fullName>
+                <default>false</default>
+                <label>HP INDIGO PRESS 5000</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO WS2000</fullName>
+                <default>false</default>
+                <label>HP INDIGO WS2000</label>
+            </value>
+            <value>
+                <fullName>E PRINT PRO</fullName>
+                <default>false</default>
+                <label>E PRINT PRO</label>
+            </value>
+            <value>
+                <fullName>IGEN4 (digital)</fullName>
+                <default>false</default>
+                <label>IGEN4 (digital)</label>
+            </value>
+            <value>
+                <fullName>Inca Onset</fullName>
+                <default>false</default>
+                <label>Inca Onset</label>
+            </value>
+            <value>
+                <fullName>Inca Turbo Plus</fullName>
+                <default>false</default>
+                <label>Inca Turbo Plus</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO WS4600</fullName>
+                <default>false</default>
+                <label>HP INDIGO WS4600</label>
+            </value>
+            <value>
+                <fullName>Roland Soljet FJ52</fullName>
+                <default>false</default>
+                <label>Roland Soljet FJ52</label>
+            </value>
+            <value>
+                <fullName>In Mold Decorating</fullName>
+                <default>false</default>
+                <label>In Mold Decorating</label>
+            </value>
+            <value>
+                <fullName>Inkjet Environmental Solvent</fullName>
+                <default>false</default>
+                <label>Inkjet Environmental Solvent</label>
+            </value>
+            <value>
+                <fullName>Inkjet Solvent</fullName>
+                <default>false</default>
+                <label>Inkjet Solvent</label>
+            </value>
+            <value>
+                <fullName>Inkjet UV Cured</fullName>
+                <default>false</default>
+                <label>Inkjet UV Cured</label>
+            </value>
+            <value>
+                <fullName>Inkjet Water Based</fullName>
+                <default>false</default>
+                <label>Inkjet Water Based</label>
+            </value>
+            <value>
+                <fullName>Ion Deposition</fullName>
+                <default>false</default>
+                <label>Ion Deposition</label>
+            </value>
+            <value>
+                <fullName>HP 8000S  SOLVENT</fullName>
+                <default>false</default>
+                <label>HP 8000S  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP 9000S  SOLVENT</fullName>
+                <default>false</default>
+                <label>HP 9000S  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP 10000S</fullName>
+                <default>false</default>
+                <label>HP 10000S</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX XLJET  SOLVENT</fullName>
+                <default>false</default>
+                <label>HP SCITEX XLJET  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX XLJET+  SOLVENT</fullName>
+                <default>false</default>
+                <label>HP SCITEX XLJET+  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX XL 1200 SOLVENT</fullName>
+                <default>false</default>
+                <label>HP SCITEX XL 1200 SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX XL 1500 SOLVENT</fullName>
+                <default>false</default>
+                <label>HP SCITEX XL 1500 SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX TJ 8300 SOLVENT</fullName>
+                <default>false</default>
+                <label>HP SCITEX TJ 8300 SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX IDANIT  SOLVENT</fullName>
+                <default>false</default>
+                <label>HP SCITEX IDANIT  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX PRESSJET SOLVENT</fullName>
+                <default>false</default>
+                <label>HP SCITEX PRESSJET SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX GRAND SOLVENT</fullName>
+                <default>false</default>
+                <label>HP SCITEX GRAND SOLVENT</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX XL JET 2200 UV</fullName>
+                <default>false</default>
+                <label>HP SCITEX XL JET 2200 UV</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX FB 6300 VEEJET+ UV</fullName>
+                <default>false</default>
+                <label>HP SCITEX FB 6300 VEEJET+ UV</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX FB 6700(COREJET)UV</fullName>
+                <default>false</default>
+                <label>HP SCITEX FB 6700(COREJET)UV</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX TJ 8500  UV</fullName>
+                <default>false</default>
+                <label>HP SCITEX TJ 8500  UV</label>
+            </value>
+            <value>
+                <fullName>NUR SALSA  SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR SALSA  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>NUR SALSA ULTIMA 1500 SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR SALSA ULTIMA 1500 SOLVENT</label>
+            </value>
+            <value>
+                <fullName>NUR SALSA ULTIMA 2400 SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR SALSA ULTIMA 2400 SOLVENT</label>
+            </value>
+            <value>
+                <fullName>NUR SALSA ULTIMA 3200 SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR SALSA ULTIMA 3200 SOLVENT</label>
+            </value>
+            <value>
+                <fullName>NUR SALSA ULTIMA 5000 SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR SALSA ULTIMA 5000 SOLVENT</label>
+            </value>
+            <value>
+                <fullName>NUR TEMPO UV</fullName>
+                <default>false</default>
+                <label>NUR TEMPO UV</label>
+            </value>
+            <value>
+                <fullName>NUR TEMPO II UV</fullName>
+                <default>false</default>
+                <label>NUR TEMPO II UV</label>
+            </value>
+            <value>
+                <fullName>NUR TEMPO Q UV</fullName>
+                <default>false</default>
+                <label>NUR TEMPO Q UV</label>
+            </value>
+            <value>
+                <fullName>NUR EXPEDIO 3200  UV</fullName>
+                <default>false</default>
+                <label>NUR EXPEDIO 3200  UV</label>
+            </value>
+            <value>
+                <fullName>NUR EXPEDIO 5000  UV</fullName>
+                <default>false</default>
+                <label>NUR EXPEDIO 5000  UV</label>
+            </value>
+            <value>
+                <fullName>NUR EXPEDIO 5000 REVOLUTION UV</fullName>
+                <default>false</default>
+                <label>NUR EXPEDIO 5000 REVOLUTION UV</label>
+            </value>
+            <value>
+                <fullName>NUR EXPEDIO INSPIRATION  UV</fullName>
+                <default>false</default>
+                <label>NUR EXPEDIO INSPIRATION  UV</label>
+            </value>
+            <value>
+                <fullName>NUR TANGO  SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR TANGO  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>NUR FRESCO  SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR FRESCO  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>NUR FRESCO II  SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR FRESCO II  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>NUR FRESCO III  SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR FRESCO III  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>NUR FRESCO HIQ 3200  SOLVENT</fullName>
+                <default>false</default>
+                <label>NUR FRESCO HIQ 3200  SOLVENT</label>
+            </value>
+            <value>
+                <fullName>CANON IMAGE PROGRAF IPF5000 17</fullName>
+                <default>false</default>
+                <label>CANON IMAGE PROGRAF IPF5000 17</label>
+            </value>
+            <value>
+                <fullName>CANON IMAGE PROGRAF IPF8000 44</fullName>
+                <default>false</default>
+                <label>CANON IMAGE PROGRAF IPF8000 44</label>
+            </value>
+            <value>
+                <fullName>CANON IMAGE PROGRAF IPF9000 60</fullName>
+                <default>false</default>
+                <label>CANON IMAGE PROGRAF IPF9000 60</label>
+            </value>
+            <value>
+                <fullName>DUPONT ARTISTRI 2020</fullName>
+                <default>false</default>
+                <label>DUPONT ARTISTRI 2020</label>
+            </value>
+            <value>
+                <fullName>DUPONT CROMALIN LARGO 4406</fullName>
+                <default>false</default>
+                <label>DUPONT CROMALIN LARGO 4406</label>
+            </value>
+            <value>
+                <fullName>DUPONT DCC22UV</fullName>
+                <default>false</default>
+                <label>DUPONT DCC22UV</label>
+            </value>
+            <value>
+                <fullName>DURST LAMBDA</fullName>
+                <default>false</default>
+                <label>DURST LAMBDA</label>
+            </value>
+            <value>
+                <fullName>DURST RHO 160</fullName>
+                <default>false</default>
+                <label>DURST RHO 160</label>
+            </value>
+            <value>
+                <fullName>DURST RHO 205</fullName>
+                <default>false</default>
+                <label>DURST RHO 205</label>
+            </value>
+            <value>
+                <fullName>DURST RHO 350R</fullName>
+                <default>false</default>
+                <label>DURST RHO 350R</label>
+            </value>
+            <value>
+                <fullName>DURST RHO 351</fullName>
+                <default>false</default>
+                <label>DURST RHO 351</label>
+            </value>
+            <value>
+                <fullName>DURST RHO 800</fullName>
+                <default>false</default>
+                <label>DURST RHO 800</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVACUT 54</fullName>
+                <default>false</default>
+                <label>ENCAD NOVACUT 54</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET 1000I</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET 1000I</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET 1200I</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET 1200I</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET 500</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET 500</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET 600</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET 600</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET 600E</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET 600E</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET 700</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET 700</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET 736</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET 736</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET 750</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET 750</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET 850</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET 850</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET PRO 42E</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET PRO 42E</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET PRO 50E</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET PRO 50E</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET PRO 600E</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET PRO 600E</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET PRO 60E</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET PRO 60E</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET PRO36</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET PRO36</label>
+            </value>
+            <value>
+                <fullName>ENCAD NOVAJET3</fullName>
+                <default>false</default>
+                <label>ENCAD NOVAJET3</label>
+            </value>
+            <value>
+                <fullName>ENCAD VINYL JET 36</fullName>
+                <default>false</default>
+                <label>ENCAD VINYL JET 36</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS COLOR 3000</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS COLOR 3000</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PHOTO 1280</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PHOTO 1280</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PHOTO 2200</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PHOTO 2200</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 10000</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 10000</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 10600</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 10600</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 4000</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 4000</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 4800</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 4800</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 5000</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 5000</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 7000</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 7000</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 7500</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 7500</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 7600</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 7600</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 7800</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 7800</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 9000</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 9000</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 9600</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 9600</label>
+            </value>
+            <value>
+                <fullName>EPSON STYLUS PRO 9800</fullName>
+                <default>false</default>
+                <label>EPSON STYLUS PRO 9800</label>
+            </value>
+            <value>
+                <fullName>FUJI ACUITY HD 2504</fullName>
+                <default>false</default>
+                <label>FUJI ACUITY HD 2504</label>
+            </value>
+            <value>
+                <fullName>FUJI PICTOGRAPHY (DYE SUB)</fullName>
+                <default>false</default>
+                <label>FUJI PICTOGRAPHY (DYE SUB)</label>
+            </value>
+            <value>
+                <fullName>GANDINNOVATIONS JETI 3318</fullName>
+                <default>false</default>
+                <label>GANDINNOVATIONS JETI 3318</label>
+            </value>
+            <value>
+                <fullName>HP LATEX</fullName>
+                <default>false</default>
+                <label>HP LATEX</label>
+            </value>
+            <value>
+                <fullName>HP 2000</fullName>
+                <default>false</default>
+                <label>HP 2000</label>
+            </value>
+            <value>
+                <fullName>GRAPHTEC JX1130</fullName>
+                <default>false</default>
+                <label>GRAPHTEC JX1130</label>
+            </value>
+            <value>
+                <fullName>HP Latex 3000</fullName>
+                <default>false</default>
+                <label>HP Latex 3000</label>
+            </value>
+            <value>
+                <fullName>HP 3500</fullName>
+                <default>false</default>
+                <label>HP 3500</label>
+            </value>
+            <value>
+                <fullName>HP 500</fullName>
+                <default>false</default>
+                <label>HP 500</label>
+            </value>
+            <value>
+                <fullName>Gandi UV Flatbed</fullName>
+                <default>false</default>
+                <label>Gandi UV Flatbed</label>
+            </value>
+            <value>
+                <fullName>HP 5000PS</fullName>
+                <default>false</default>
+                <label>HP 5000PS</label>
+            </value>
+            <value>
+                <fullName>HP 5500 EAGLEJET</fullName>
+                <default>false</default>
+                <label>HP 5500 EAGLEJET</label>
+            </value>
+            <value>
+                <fullName>HP DESIGNJET 5500PS</fullName>
+                <default>false</default>
+                <label>HP DESIGNJET 5500PS</label>
+            </value>
+            <value>
+                <fullName>HP DESIGNJET 10000S</fullName>
+                <default>false</default>
+                <label>HP DESIGNJET 10000S</label>
+            </value>
+            <value>
+                <fullName>HP DESIGNJET 130</fullName>
+                <default>false</default>
+                <label>HP DESIGNJET 130</label>
+            </value>
+            <value>
+                <fullName>HP DESIGNJET 8000</fullName>
+                <default>false</default>
+                <label>HP DESIGNJET 8000</label>
+            </value>
+            <value>
+                <fullName>HP DESIGNJET 9000</fullName>
+                <default>false</default>
+                <label>HP DESIGNJET 9000</label>
+            </value>
+            <value>
+                <fullName>HP DESIGNJET Z3100</fullName>
+                <default>false</default>
+                <label>HP DESIGNJET Z3100</label>
+            </value>
+            <value>
+                <fullName>HP DESIGNJET Z6100</fullName>
+                <default>false</default>
+                <label>HP DESIGNJET Z6100</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX FB6300</fullName>
+                <default>false</default>
+                <label>HP SCITEX FB6300</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX FB6700</fullName>
+                <default>false</default>
+                <label>HP SCITEX FB6700</label>
+            </value>
+            <value>
+                <fullName>INCA COLUMBIA TURBO</fullName>
+                <default>false</default>
+                <label>INCA COLUMBIA TURBO</label>
+            </value>
+            <value>
+                <fullName>INCA EAGLE H</fullName>
+                <default>false</default>
+                <label>INCA EAGLE H</label>
+            </value>
+            <value>
+                <fullName>INCA SPYDER 150</fullName>
+                <default>false</default>
+                <label>INCA SPYDER 150</label>
+            </value>
+            <value>
+                <fullName>IRISGPRINT 3407</fullName>
+                <default>false</default>
+                <label>IRISGPRINT 3407</label>
+            </value>
+            <value>
+                <fullName>JETI 1224</fullName>
+                <default>false</default>
+                <label>JETI 1224</label>
+            </value>
+            <value>
+                <fullName>JETI 3150</fullName>
+                <default>false</default>
+                <label>JETI 3150</label>
+            </value>
+            <value>
+                <fullName>JETI 3312-18</fullName>
+                <default>false</default>
+                <label>JETI 3312-18</label>
+            </value>
+            <value>
+                <fullName>JETI 5000</fullName>
+                <default>false</default>
+                <label>JETI 5000</label>
+            </value>
+            <value>
+                <fullName>KODAKPRO 4742</fullName>
+                <default>false</default>
+                <label>KODAKPRO 4742</label>
+            </value>
+            <value>
+                <fullName>LEGGET &amp; PRATT VIRTUE LMP 9600</fullName>
+                <default>false</default>
+                <label>LEGGET &amp; PRATT VIRTUE LMP 9600</label>
+            </value>
+            <value>
+                <fullName>LEGGET &amp; PRATT VIRTU PLUS</fullName>
+                <default>false</default>
+                <label>LEGGET &amp; PRATT VIRTU PLUS</label>
+            </value>
+            <value>
+                <fullName>LIGHTJET 430</fullName>
+                <default>false</default>
+                <label>LIGHTJET 430</label>
+            </value>
+            <value>
+                <fullName>LIGHTJET 500 XL</fullName>
+                <default>false</default>
+                <label>LIGHTJET 500 XL</label>
+            </value>
+            <value>
+                <fullName>LIGHTJET 5030</fullName>
+                <default>false</default>
+                <label>LIGHTJET 5030</label>
+            </value>
+            <value>
+                <fullName>LIGHTJET 5900</fullName>
+                <default>false</default>
+                <label>LIGHTJET 5900</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN 5445</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN 5445</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN 5460</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN 5460</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN 5465</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN 5465</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN 72 UVX</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN 72 UVX</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN 98 UVX</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN 98 UVX</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN 9840</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN 9840</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN DM</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN DM</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN DM 6000</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN DM 6000</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN DM 6200</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN DM 6200</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN DM 72</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN DM 72</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN DM 72UVR</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN DM 72UVR</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN DM 72UVX</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN DM 72UVX</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN DM 98SX</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN DM 98SX</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN DM ESPRIT</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN DM ESPRIT</label>
+            </value>
+            <value>
+                <fullName>MACDERMID COLORSPAN DM X12</fullName>
+                <default>false</default>
+                <label>MACDERMID COLORSPAN DM X12</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV1</fullName>
+                <default>false</default>
+                <label>MIMAKI JV1</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV2</fullName>
+                <default>false</default>
+                <label>MIMAKI JV2</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV3</fullName>
+                <default>false</default>
+                <label>MIMAKI JV3</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV3 130 SP2</fullName>
+                <default>false</default>
+                <label>MIMAKI JV3 130 SP2</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV3-160S</fullName>
+                <default>false</default>
+                <label>MIMAKI JV3-160S</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV3-75SPII</fullName>
+                <default>false</default>
+                <label>MIMAKI JV3-75SPII</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV4-130</fullName>
+                <default>false</default>
+                <label>MIMAKI JV4-130</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV4-160</fullName>
+                <default>false</default>
+                <label>MIMAKI JV4-160</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV4-180</fullName>
+                <default>false</default>
+                <label>MIMAKI JV4-180</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV5 130</fullName>
+                <default>false</default>
+                <label>MIMAKI JV5 130</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV5 160</fullName>
+                <default>false</default>
+                <label>MIMAKI JV5 160</label>
+            </value>
+            <value>
+                <fullName>MIMAKI TX-1600 (DYE SUB)</fullName>
+                <default>false</default>
+                <label>MIMAKI TX-1600 (DYE SUB)</label>
+            </value>
+            <value>
+                <fullName>MIMAKI UJF-605C</fullName>
+                <default>false</default>
+                <label>MIMAKI UJF-605C</label>
+            </value>
+            <value>
+                <fullName>MIMAKI UJV-110</fullName>
+                <default>false</default>
+                <label>MIMAKI UJV-110</label>
+            </value>
+            <value>
+                <fullName>MIMAKI JV3-250SP BABY GRAND</fullName>
+                <default>false</default>
+                <label>MIMAKI JV3-250SP BABY GRAND</label>
+            </value>
+            <value>
+                <fullName>MUTOH FALCON OUTDOOR</fullName>
+                <default>false</default>
+                <label>MUTOH FALCON OUTDOOR</label>
+            </value>
+            <value>
+                <fullName>MUTOH FALCON OUTDOOR II</fullName>
+                <default>false</default>
+                <label>MUTOH FALCON OUTDOOR II</label>
+            </value>
+            <value>
+                <fullName>MUTOH PRISMJET</fullName>
+                <default>false</default>
+                <label>MUTOH PRISMJET</label>
+            </value>
+            <value>
+                <fullName>MUTOH TOUCAN</fullName>
+                <default>false</default>
+                <label>MUTOH TOUCAN</label>
+            </value>
+            <value>
+                <fullName>MUTOH VALUEJET 1204</fullName>
+                <default>false</default>
+                <label>MUTOH VALUEJET 1204</label>
+            </value>
+            <value>
+                <fullName>MUTOH VALUEJET 1604</fullName>
+                <default>false</default>
+                <label>MUTOH VALUEJET 1604</label>
+            </value>
+            <value>
+                <fullName>MUTOH VALUEJET 2606</fullName>
+                <default>false</default>
+                <label>MUTOH VALUEJET 2606</label>
+            </value>
+            <value>
+                <fullName>NUR ULTIMA HIQ 5000</fullName>
+                <default>false</default>
+                <label>NUR ULTIMA HIQ 5000</label>
+            </value>
+            <value>
+                <fullName>OCE ARIZONA 180</fullName>
+                <default>false</default>
+                <label>OCE ARIZONA 180</label>
+            </value>
+            <value>
+                <fullName>OCE ARIZONA 500</fullName>
+                <default>false</default>
+                <label>OCE ARIZONA 500</label>
+            </value>
+            <value>
+                <fullName>OCE ARIZONA 600</fullName>
+                <default>false</default>
+                <label>OCE ARIZONA 600</label>
+            </value>
+            <value>
+                <fullName>OCE ARIZONA 90</fullName>
+                <default>false</default>
+                <label>OCE ARIZONA 90</label>
+            </value>
+            <value>
+                <fullName>OCE ARIZONA CS6060</fullName>
+                <default>false</default>
+                <label>OCE ARIZONA CS6060</label>
+            </value>
+            <value>
+                <fullName>OCE ARIZONA GT250</fullName>
+                <default>false</default>
+                <label>OCE ARIZONA GT250</label>
+            </value>
+            <value>
+                <fullName>OCE ARIZONA T220</fullName>
+                <default>false</default>
+                <label>OCE ARIZONA T220</label>
+            </value>
+            <value>
+                <fullName>OCE ARIZONA INNOV JETI 3300</fullName>
+                <default>false</default>
+                <label>OCE ARIZONA INNOV JETI 3300</label>
+            </value>
+            <value>
+                <fullName>OCE GANDI JETI 3150</fullName>
+                <default>false</default>
+                <label>OCE GANDI JETI 3150</label>
+            </value>
+            <value>
+                <fullName>RASTER RP</fullName>
+                <default>false</default>
+                <label>RASTER RP</label>
+            </value>
+            <value>
+                <fullName>ROLAND AJ1000</fullName>
+                <default>false</default>
+                <label>ROLAND AJ1000</label>
+            </value>
+            <value>
+                <fullName>ROLAND CJ60</fullName>
+                <default>false</default>
+                <label>ROLAND CJ60</label>
+            </value>
+            <value>
+                <fullName>ROLAND FJ-400</fullName>
+                <default>false</default>
+                <label>ROLAND FJ-400</label>
+            </value>
+            <value>
+                <fullName>ROLAND FJ-500</fullName>
+                <default>false</default>
+                <label>ROLAND FJ-500</label>
+            </value>
+            <value>
+                <fullName>ROLAND FJ-540</fullName>
+                <default>false</default>
+                <label>ROLAND FJ-540</label>
+            </value>
+            <value>
+                <fullName>ROLAND FJ-600</fullName>
+                <default>false</default>
+                <label>ROLAND FJ-600</label>
+            </value>
+            <value>
+                <fullName>ROLAND HIFI JET</fullName>
+                <default>false</default>
+                <label>ROLAND HIFI JET</label>
+            </value>
+            <value>
+                <fullName>ROLAND SJ 640 EX PRO II</fullName>
+                <default>false</default>
+                <label>ROLAND SJ 640 EX PRO II</label>
+            </value>
+            <value>
+                <fullName>ROLAND SOLJET 1000 EX</fullName>
+                <default>false</default>
+                <label>ROLAND SOLJET 1000 EX</label>
+            </value>
+            <value>
+                <fullName>ROLAND SOLJET 500</fullName>
+                <default>false</default>
+                <label>ROLAND SOLJET 500</label>
+            </value>
+            <value>
+                <fullName>ROLAND SOLJET 540</fullName>
+                <default>false</default>
+                <label>ROLAND SOLJET 540</label>
+            </value>
+            <value>
+                <fullName>ROLAND SOLJET 545 EX II</fullName>
+                <default>false</default>
+                <label>ROLAND SOLJET 545 EX II</label>
+            </value>
+            <value>
+                <fullName>ROLAND SOLJET 600</fullName>
+                <default>false</default>
+                <label>ROLAND SOLJET 600</label>
+            </value>
+            <value>
+                <fullName>ROLAND SOLJET 740</fullName>
+                <default>false</default>
+                <label>ROLAND SOLJET 740</label>
+            </value>
+            <value>
+                <fullName>ROLAND SP540</fullName>
+                <default>false</default>
+                <label>ROLAND SP540</label>
+            </value>
+            <value>
+                <fullName>ROLAND VERSACAMM</fullName>
+                <default>false</default>
+                <label>ROLAND VERSACAMM</label>
+            </value>
+            <value>
+                <fullName>ROLAND VERSACAMM SP300</fullName>
+                <default>false</default>
+                <label>ROLAND VERSACAMM SP300</label>
+            </value>
+            <value>
+                <fullName>ROLAND COLORCAMM PC 60</fullName>
+                <default>false</default>
+                <label>ROLAND COLORCAMM PC 60</label>
+            </value>
+            <value>
+                <fullName>SCITEX GRANDJET</fullName>
+                <default>false</default>
+                <label>SCITEX GRANDJET</label>
+            </value>
+            <value>
+                <fullName>SCITEX IDANIT 162</fullName>
+                <default>false</default>
+                <label>SCITEX IDANIT 162</label>
+            </value>
+            <value>
+                <fullName>SCITEX SUPERJET</fullName>
+                <default>false</default>
+                <label>SCITEX SUPERJET</label>
+            </value>
+            <value>
+                <fullName>SCITEX TURBOJET</fullName>
+                <default>false</default>
+                <label>SCITEX TURBOJET</label>
+            </value>
+            <value>
+                <fullName>SCITEX VEEJET</fullName>
+                <default>false</default>
+                <label>SCITEX VEEJET</label>
+            </value>
+            <value>
+                <fullName>SCITEX XL JET</fullName>
+                <default>false</default>
+                <label>SCITEX XL JET</label>
+            </value>
+            <value>
+                <fullName>SEIKO COLORPAINTER</fullName>
+                <default>false</default>
+                <label>SEIKO COLORPAINTER</label>
+            </value>
+            <value>
+                <fullName>SUMMA DC3</fullName>
+                <default>false</default>
+                <label>SUMMA DC3</label>
+            </value>
+            <value>
+                <fullName>SUMMA DC4</fullName>
+                <default>false</default>
+                <label>SUMMA DC4</label>
+            </value>
+            <value>
+                <fullName>TELEIOS 1377TX/V8</fullName>
+                <default>false</default>
+                <label>TELEIOS 1377TX/V8</label>
+            </value>
+            <value>
+                <fullName>TEXPRESS DSS 1800-II</fullName>
+                <default>false</default>
+                <label>TEXPRESS DSS 1800-II</label>
+            </value>
+            <value>
+                <fullName>VIRTU 7200</fullName>
+                <default>false</default>
+                <label>VIRTU 7200</label>
+            </value>
+            <value>
+                <fullName>VUTEK ULTRAVU 2360</fullName>
+                <default>false</default>
+                <label>VUTEK ULTRAVU 2360</label>
+            </value>
+            <value>
+                <fullName>VUTEK ULTRAVU 2600</fullName>
+                <default>false</default>
+                <label>VUTEK ULTRAVU 2600</label>
+            </value>
+            <value>
+                <fullName>VUTEK ULTRAVU II 3300</fullName>
+                <default>false</default>
+                <label>VUTEK ULTRAVU II 3300</label>
+            </value>
+            <value>
+                <fullName>VUTEK ULTRAVU II 3360</fullName>
+                <default>false</default>
+                <label>VUTEK ULTRAVU II 3360</label>
+            </value>
+            <value>
+                <fullName>VUTEK ULTRAVU II 5330</fullName>
+                <default>false</default>
+                <label>VUTEK ULTRAVU II 5330</label>
+            </value>
+            <value>
+                <fullName>ZUND UVJET 215C</fullName>
+                <default>false</default>
+                <label>ZUND UVJET 215C</label>
+            </value>
+            <value>
+                <fullName>ZUND UVJET PLUS</fullName>
+                <default>false</default>
+                <label>ZUND UVJET PLUS</label>
+            </value>
+            <value>
+                <fullName>Jetrion 4830</fullName>
+                <default>false</default>
+                <label>Jetrion 4830</label>
+            </value>
+            <value>
+                <fullName>RASTEK H700</fullName>
+                <default>false</default>
+                <label>RASTEK H700</label>
+            </value>
+            <value>
+                <fullName>Roland SJ-645</fullName>
+                <default>false</default>
+                <label>Roland SJ-645</label>
+            </value>
+            <value>
+                <fullName>VUTEK 3200</fullName>
+                <default>false</default>
+                <label>VUTEK 3200</label>
+            </value>
+            <value>
+                <fullName>VUTEK FABRIVU 3360 DYE SUB</fullName>
+                <default>false</default>
+                <label>VUTEK FABRIVU 3360 DYE SUB</label>
+            </value>
+            <value>
+                <fullName>VUTEK PRESSVU 180/360EC</fullName>
+                <default>false</default>
+                <label>VUTEK PRESSVU 180/360EC</label>
+            </value>
+            <value>
+                <fullName>VUTEK PRESSVU 200/600</fullName>
+                <default>false</default>
+                <label>VUTEK PRESSVU 200/600</label>
+            </value>
+            <value>
+                <fullName>VUTEK PRESSVU 320</fullName>
+                <default>false</default>
+                <label>VUTEK PRESSVU 320</label>
+            </value>
+            <value>
+                <fullName>VUTEK QS2000</fullName>
+                <default>false</default>
+                <label>VUTEK QS2000</label>
+            </value>
+            <value>
+                <fullName>VUTEK QS3200</fullName>
+                <default>false</default>
+                <label>VUTEK QS3200</label>
+            </value>
+            <value>
+                <fullName>VUTEK ULTRAVU 150</fullName>
+                <default>false</default>
+                <label>VUTEK ULTRAVU 150</label>
+            </value>
+            <value>
+                <fullName>Laminating</fullName>
+                <default>false</default>
+                <label>Laminating</label>
+            </value>
+            <value>
+                <fullName>Laser General</fullName>
+                <default>false</default>
+                <label>Laser General</label>
+            </value>
+            <value>
+                <fullName>Laser Color</fullName>
+                <default>false</default>
+                <label>Laser Color</label>
+            </value>
+            <value>
+                <fullName>Laser Continuous</fullName>
+                <default>false</default>
+                <label>Laser Continuous</label>
+            </value>
+            <value>
+                <fullName>Laser Etching</fullName>
+                <default>false</default>
+                <label>Laser Etching</label>
+            </value>
+            <value>
+                <fullName>Laser Flash Fusion</fullName>
+                <default>false</default>
+                <label>Laser Flash Fusion</label>
+            </value>
+            <value>
+                <fullName>Laser Monochrome</fullName>
+                <default>false</default>
+                <label>Laser Monochrome</label>
+            </value>
+            <value>
+                <fullName>Laser Sheet</fullName>
+                <default>false</default>
+                <label>Laser Sheet</label>
+            </value>
+            <value>
+                <fullName>Letterpress General</fullName>
+                <default>false</default>
+                <label>Letterpress General</label>
+            </value>
+            <value>
+                <fullName>Letterpress Solvent</fullName>
+                <default>false</default>
+                <label>Letterpress Solvent</label>
+            </value>
+            <value>
+                <fullName>Letterpress UV</fullName>
+                <default>false</default>
+                <label>Letterpress UV</label>
+            </value>
+            <value>
+                <fullName>Letterpress Water</fullName>
+                <default>false</default>
+                <label>Letterpress Water</label>
+            </value>
+            <value>
+                <fullName>Offset General</fullName>
+                <default>false</default>
+                <label>Offset General</label>
+            </value>
+            <value>
+                <fullName>Offset Conventional (Oil)</fullName>
+                <default>false</default>
+                <label>Offset Conventional (Oil)</label>
+            </value>
+            <value>
+                <fullName>Offset UV</fullName>
+                <default>false</default>
+                <label>Offset UV</label>
+            </value>
+            <value>
+                <fullName>KBA RAPIDA</fullName>
+                <default>false</default>
+                <label>KBA RAPIDA</label>
+            </value>
+            <value>
+                <fullName>HP INDIGO 7500</fullName>
+                <default>false</default>
+                <label>HP INDIGO 7500</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX TJ8550</fullName>
+                <default>false</default>
+                <label>HP SCITEX TJ8550</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX FB7500</fullName>
+                <default>false</default>
+                <label>HP SCITEX FB7500</label>
+            </value>
+            <value>
+                <fullName>HP SCITEX 2750</fullName>
+                <default>false</default>
+                <label>HP SCITEX 2750</label>
+            </value>
+            <value>
+                <fullName>RFID</fullName>
+                <default>false</default>
+                <label>RFID</label>
+            </value>
+            <value>
+                <fullName>Screen Printing Cylinder Solve</fullName>
+                <default>false</default>
+                <label>Screen Printing Cylinder Solve</label>
+            </value>
+            <value>
+                <fullName>Screen Printing Cylinder UV</fullName>
+                <default>false</default>
+                <label>Screen Printing Cylinder UV</label>
+            </value>
+            <value>
+                <fullName>Screen Printing Flat Bed Solve</fullName>
+                <default>false</default>
+                <label>Screen Printing Flat Bed Solve</label>
+            </value>
+            <value>
+                <fullName>Screen Printing Flat Bed UV</fullName>
+                <default>false</default>
+                <label>Screen Printing Flat Bed UV</label>
+            </value>
+            <value>
+                <fullName>Screen Printing General</fullName>
+                <default>false</default>
+                <label>Screen Printing General</label>
+            </value>
+            <value>
+                <fullName>Screen Printing Rotary Solvent</fullName>
+                <default>false</default>
+                <label>Screen Printing Rotary Solvent</label>
+            </value>
+            <value>
+                <fullName>Screen Printing Rotary UV</fullName>
+                <default>false</default>
+                <label>Screen Printing Rotary UV</label>
+            </value>
+            <value>
+                <fullName>Sheeting/Roll to Sheet</fullName>
+                <default>false</default>
+                <label>Sheeting/Roll to Sheet</label>
+            </value>
+            <value>
+                <fullName>Sheeting/Sheet to Sheet</fullName>
+                <default>false</default>
+                <label>Sheeting/Sheet to Sheet</label>
+            </value>
+            <value>
+                <fullName>TTR Color Resin</fullName>
+                <default>false</default>
+                <label>TTR Color Resin</label>
+            </value>
+            <value>
+                <fullName>TTR Color Wax</fullName>
+                <default>false</default>
+                <label>TTR Color Wax</label>
+            </value>
+            <value>
+                <fullName>TTR Color Wax/Resin</fullName>
+                <default>false</default>
+                <label>TTR Color Wax/Resin</label>
+            </value>
+            <value>
+                <fullName>TTR Mono Resin</fullName>
+                <default>false</default>
+                <label>TTR Mono Resin</label>
+            </value>
+            <value>
+                <fullName>TTR Mono Wax</fullName>
+                <default>false</default>
+                <label>TTR Mono Wax</label>
+            </value>
+            <value>
+                <fullName>TTR Mono Wax/Resin</fullName>
+                <default>false</default>
+                <label>TTR Mono Wax/Resin</label>
+            </value>
+            <value>
+                <fullName>Thermal Transfer General</fullName>
+                <default>false</default>
+                <label>Thermal Transfer General</label>
+            </value>
+            <value>
+                <fullName>Tapes - Transfer</fullName>
+                <default>false</default>
+                <label>Tapes - Transfer</label>
+            </value>
+            <value>
+                <fullName>Tapes - Double Face</fullName>
+                <default>false</default>
+                <label>Tapes - Double Face</label>
+            </value>
+            <value>
+                <fullName>GERBER EDGE</fullName>
+                <default>false</default>
+                <label>GERBER EDGE</label>
+            </value>
+            <value>
+                <fullName>GERBER EDGE2</fullName>
+                <default>false</default>
+                <label>GERBER EDGE2</label>
+            </value>
+            <value>
+                <fullName>ROLAND VersaUV LEC</fullName>
+                <default>false</default>
+                <label>ROLAND VersaUV LEC</label>
+            </value>
+            <value>
+                <fullName>OCE ARIZONA 550 GT</fullName>
+                <default>false</default>
+                <label>OCE ARIZONA 550 GT</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

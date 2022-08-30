@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Account_to_Secondary_Type</fullName>
+    <active>false</active>
+    <description>When the Account Record Type field reads &quot;Partner&quot; make the Secondary Type 1 field required.</description>
+    <errorConditionFormula>AND($RecordType.Name =&quot;Partner Account&quot;,
+ISBLANK (TEXT(Secondarytype1__c)))</errorConditionFormula>
+    <errorMessage>Secondary Type 1 is required when Account Record Type = Partner</errorMessage>
+</ValidationRule>

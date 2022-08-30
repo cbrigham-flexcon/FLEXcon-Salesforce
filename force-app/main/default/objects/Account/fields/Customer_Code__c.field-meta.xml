@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+   CUSNO__c  != &quot;&quot;
+  ,&quot;NA: &quot;&amp;CUSNO__c&amp;&apos;&apos;,&quot;&quot;)+
+IF(
+   AND(
+       EU_Customer_Code__c  != &quot;&quot;,
+       CUSNO__c = &quot;&quot;
+       ),
+   &quot;EU: &quot;&amp;EU_Customer_Code__c,&quot;&quot;)+
+IF(
+   AND(
+       EU_Customer_Code__c != &quot;&quot;,
+       CUSNO__c != &quot;&quot;
+       )
+   ,BR()&amp;&quot;EU: &quot;&amp;EU_Customer_Code__c,&quot;&quot;)</formula>
+    <label>Customer Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

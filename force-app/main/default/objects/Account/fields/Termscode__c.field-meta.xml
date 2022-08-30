@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Termscode__c</fullName>
+    <description>Terms Of Payment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Terms Of Payment</inlineHelpText>
+    <label>Terms code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1/10 N30</fullName>
+                <default>false</default>
+                <label>1/10 N30</label>
+            </value>
+            <value>
+                <fullName>1/10 N30       NO DSC SHN</fullName>
+                <default>false</default>
+                <label>1/10 N30       NO DSC SHN</label>
+            </value>
+            <value>
+                <fullName>1/10 NET 45</fullName>
+                <default>false</default>
+                <label>1/10 NET 45</label>
+            </value>
+            <value>
+                <fullName>1/10 NET 50</fullName>
+                <default>false</default>
+                <label>1/10 NET 50</label>
+            </value>
+            <value>
+                <fullName>1/10 NET 60</fullName>
+                <default>false</default>
+                <label>1/10 NET 60</label>
+            </value>
+            <value>
+                <fullName>1/15 N30</fullName>
+                <default>false</default>
+                <label>1/15 N30</label>
+            </value>
+            <value>
+                <fullName>1/15 N45</fullName>
+                <default>false</default>
+                <label>1/15 N45</label>
+            </value>
+            <value>
+                <fullName>1/15 Net 60</fullName>
+                <default>false</default>
+                <label>1/15 Net 60</label>
+            </value>
+            <value>
+                <fullName>1/20N30</fullName>
+                <default>false</default>
+                <label>1/20N30</label>
+            </value>
+            <value>
+                <fullName>1/20 NET60</fullName>
+                <default>false</default>
+                <label>1/20 NET60</label>
+            </value>
+            <value>
+                <fullName>1/30 Net 120 RBP</fullName>
+                <default>false</default>
+                <label>1/30 Net 120 RBP</label>
+            </value>
+            <value>
+                <fullName>1/30 NET 31</fullName>
+                <default>false</default>
+                <label>1/30 NET 31</label>
+            </value>
+            <value>
+                <fullName>1/35 NET 45</fullName>
+                <default>false</default>
+                <label>1/35 NET 45</label>
+            </value>
+            <value>
+                <fullName>1.5/10 N30</fullName>
+                <default>false</default>
+                <label>1.5/10 N30</label>
+            </value>
+            <value>
+                <fullName>1.5/10 NET 45</fullName>
+                <default>false</default>
+                <label>1.5/10 NET 45</label>
+            </value>
+            <value>
+                <fullName>1%/10 Net 90</fullName>
+                <default>false</default>
+                <label>1%/10 Net 90</label>
+            </value>
+            <value>
+                <fullName>1%/15 NET 50</fullName>
+                <default>false</default>
+                <label>1%/15 NET 50</label>
+            </value>
+            <value>
+                <fullName>1%20 NET 45</fullName>
+                <default>false</default>
+                <label>1%20 NET 45</label>
+            </value>
+            <value>
+                <fullName>1% NET 60</fullName>
+                <default>false</default>
+                <label>1% NET 60</label>
+            </value>
+            <value>
+                <fullName>2/10 N30</fullName>
+                <default>false</default>
+                <label>2/10 N30</label>
+            </value>
+            <value>
+                <fullName>2/10 N30     CN ONLY</fullName>
+                <default>false</default>
+                <label>2/10 N30     CN ONLY</label>
+            </value>
+            <value>
+                <fullName>2/10 N45</fullName>
+                <default>false</default>
+                <label>2/10 N45</label>
+            </value>
+            <value>
+                <fullName>2/10 N60</fullName>
+                <default>false</default>
+                <label>2/10 N60</label>
+            </value>
+            <value>
+                <fullName>2/14 N30</fullName>
+                <default>false</default>
+                <label>2/14 N30</label>
+            </value>
+            <value>
+                <fullName>2/15 N30</fullName>
+                <default>false</default>
+                <label>2/15 N30</label>
+            </value>
+            <value>
+                <fullName>2/15 Net 45</fullName>
+                <default>false</default>
+                <label>2/15 Net 45</label>
+            </value>
+            <value>
+                <fullName>2/15 NET 60</fullName>
+                <default>false</default>
+                <label>2/15 NET 60</label>
+            </value>
+            <value>
+                <fullName>2/15 NET 90</fullName>
+                <default>false</default>
+                <label>2/15 NET 90</label>
+            </value>
+            <value>
+                <fullName>2/20 NET 30</fullName>
+                <default>false</default>
+                <label>2/20 NET 30</label>
+            </value>
+            <value>
+                <fullName>2/20 NET 40</fullName>
+                <default>false</default>
+                <label>2/20 NET 40</label>
+            </value>
+            <value>
+                <fullName>2/20 NET 45</fullName>
+                <default>false</default>
+                <label>2/20 NET 45</label>
+            </value>
+            <value>
+                <fullName>2/20 Net 60</fullName>
+                <default>false</default>
+                <label>2/20 Net 60</label>
+            </value>
+            <value>
+                <fullName>2/24 N30</fullName>
+                <default>false</default>
+                <label>2/24 N30</label>
+            </value>
+            <value>
+                <fullName>2/30 Net 60</fullName>
+                <default>false</default>
+                <label>2/30 Net 60</label>
+            </value>
+            <value>
+                <fullName>2/40 Net 105</fullName>
+                <default>false</default>
+                <label>2/40 Net 105</label>
+            </value>
+            <value>
+                <fullName>2/40 - Net 45</fullName>
+                <default>false</default>
+                <label>2/40 - Net 45</label>
+            </value>
+            <value>
+                <fullName>2/40 Net 75</fullName>
+                <default>false</default>
+                <label>2/40 Net 75</label>
+            </value>
+            <value>
+                <fullName>2/5 N30</fullName>
+                <default>false</default>
+                <label>2/5 N30</label>
+            </value>
+            <value>
+                <fullName>2% 30 NET 45</fullName>
+                <default>false</default>
+                <label>2% 30 NET 45</label>
+            </value>
+            <value>
+                <fullName>2% 30 NET 90</fullName>
+                <default>false</default>
+                <label>2% 30 NET 90</label>
+            </value>
+            <value>
+                <fullName>2 YR INACTIVE CUST</fullName>
+                <default>false</default>
+                <label>2 YR INACTIVE CUST</label>
+            </value>
+            <value>
+                <fullName>3/10 N30</fullName>
+                <default>false</default>
+                <label>3/10 N30</label>
+            </value>
+            <value>
+                <fullName>3/14 N30</fullName>
+                <default>false</default>
+                <label>3/14 N30</label>
+            </value>
+            <value>
+                <fullName>35% Discount</fullName>
+                <default>false</default>
+                <label>35% Discount</label>
+            </value>
+            <value>
+                <fullName>5/10 Net 30</fullName>
+                <default>false</default>
+                <label>5/10 Net 30</label>
+            </value>
+            <value>
+                <fullName>C.B.E./CERT.</fullName>
+                <default>false</default>
+                <label>C.B.E./CERT.</label>
+            </value>
+            <value>
+                <fullName>C.B.E./COMPANY</fullName>
+                <default>false</default>
+                <label>C.B.E./COMPANY</label>
+            </value>
+            <value>
+                <fullName>C.I.A./CERT</fullName>
+                <default>false</default>
+                <label>C.I.A./CERT</label>
+            </value>
+            <value>
+                <fullName>C.I.A./COMPNY</fullName>
+                <default>false</default>
+                <label>C.I.A./COMPNY</label>
+            </value>
+            <value>
+                <fullName>CBE/COMP-NEW</fullName>
+                <default>false</default>
+                <label>CBE/COMP-NEW</label>
+            </value>
+            <value>
+                <fullName>CBE/LTR</fullName>
+                <default>false</default>
+                <label>CBE/LTR</label>
+            </value>
+            <value>
+                <fullName>CBE/NET 120</fullName>
+                <default>false</default>
+                <label>CBE/NET 120</label>
+            </value>
+            <value>
+                <fullName>CHAP11 CBE</fullName>
+                <default>false</default>
+                <label>CHAP11 CBE</label>
+            </value>
+            <value>
+                <fullName>CIA/CASH IN ADVANCE INT&apos;L</fullName>
+                <default>false</default>
+                <label>CIA/CASH IN ADVANCE INT&apos;L</label>
+            </value>
+            <value>
+                <fullName>CIA/VISA</fullName>
+                <default>false</default>
+                <label>CIA/VISA</label>
+            </value>
+            <value>
+                <fullName>COD/COMPNY</fullName>
+                <default>false</default>
+                <label>COD/COMPNY</label>
+            </value>
+            <value>
+                <fullName>CONNX</fullName>
+                <default>false</default>
+                <label>CONNX</label>
+            </value>
+            <value>
+                <fullName>HK Cash Customer</fullName>
+                <default>false</default>
+                <label>HK Cash Customer</label>
+            </value>
+            <value>
+                <fullName>INTERNAL</fullName>
+                <default>false</default>
+                <label>INTERNAL</label>
+            </value>
+            <value>
+                <fullName>MC/VISA</fullName>
+                <default>false</default>
+                <label>MC/VISA</label>
+            </value>
+            <value>
+                <fullName>NASA</fullName>
+                <default>false</default>
+                <label>NASA</label>
+            </value>
+            <value>
+                <fullName>NEEDS UPDATING</fullName>
+                <default>false</default>
+                <label>NEEDS UPDATING</label>
+            </value>
+            <value>
+                <fullName>Net 100</fullName>
+                <default>false</default>
+                <label>Net 100</label>
+            </value>
+            <value>
+                <fullName>NET 100 MX</fullName>
+                <default>false</default>
+                <label>NET 100 MX</label>
+            </value>
+            <value>
+                <fullName>NET 120 CCL</fullName>
+                <default>false</default>
+                <label>NET 120 CCL</label>
+            </value>
+            <value>
+                <fullName>NET 120 MX</fullName>
+                <default>false</default>
+                <label>NET 120 MX</label>
+            </value>
+            <value>
+                <fullName>NET 30</fullName>
+                <default>false</default>
+                <label>NET 30</label>
+            </value>
+            <value>
+                <fullName>NET 30 MX</fullName>
+                <default>false</default>
+                <label>NET 30 MX</label>
+            </value>
+            <value>
+                <fullName>NET 45</fullName>
+                <default>false</default>
+                <label>NET 45</label>
+            </value>
+            <value>
+                <fullName>NET 60</fullName>
+                <default>false</default>
+                <label>NET 60</label>
+            </value>
+            <value>
+                <fullName>Net 60 EOM</fullName>
+                <default>false</default>
+                <label>NET 60 EOM</label>
+            </value>
+            <value>
+                <fullName>NET 60 MX</fullName>
+                <default>false</default>
+                <label>NET 60 MX</label>
+            </value>
+            <value>
+                <fullName>NET 75</fullName>
+                <default>false</default>
+                <label>NET 75</label>
+            </value>
+            <value>
+                <fullName>NET 75 MX</fullName>
+                <default>false</default>
+                <label>NET 75 MX</label>
+            </value>
+            <value>
+                <fullName>NET 90</fullName>
+                <default>false</default>
+                <label>NET 90</label>
+            </value>
+            <value>
+                <fullName>Net 90 EOM</fullName>
+                <default>false</default>
+                <label>Net 90 EOM</label>
+            </value>
+            <value>
+                <fullName>NET 90 MX</fullName>
+                <default>false</default>
+                <label>NET 90 MX</label>
+            </value>
+            <value>
+                <fullName>O.O.B.</fullName>
+                <default>false</default>
+                <label>O.O.B.</label>
+            </value>
+            <value>
+                <fullName>P.F.C./CBE</fullName>
+                <default>false</default>
+                <label>P.F.C./CBE</label>
+            </value>
+            <value>
+                <fullName>PAID COLLECTION</fullName>
+                <default>false</default>
+                <label>PAID COLLECTION</label>
+            </value>
+            <value>
+                <fullName>Pick Up with Check</fullName>
+                <default>false</default>
+                <label>PICK UP WITH CHECK</label>
+            </value>
+            <value>
+                <fullName>POST 30</fullName>
+                <default>false</default>
+                <label>POST 30</label>
+            </value>
+            <value>
+                <fullName>POST 45</fullName>
+                <default>false</default>
+                <label>POST 45</label>
+            </value>
+            <value>
+                <fullName>POST 60</fullName>
+                <default>false</default>
+                <label>POST 60</label>
+            </value>
+            <value>
+                <fullName>RBP/1% 10 NET 30</fullName>
+                <default>false</default>
+                <label>RBP/1% 10 NET 30</label>
+            </value>
+            <value>
+                <fullName>RBP/2% 10 NET 30</fullName>
+                <default>false</default>
+                <label>RBP/2% 10 NET 30</label>
+            </value>
+            <value>
+                <fullName>RBP/CC</fullName>
+                <default>false</default>
+                <label>RBP/CC</label>
+            </value>
+            <value>
+                <fullName>RBP/NET 10</fullName>
+                <default>false</default>
+                <label>RBP/NET 10</label>
+            </value>
+            <value>
+                <fullName>RBP/NET 100</fullName>
+                <default>false</default>
+                <label>RBP/NET 100</label>
+            </value>
+            <value>
+                <fullName>RBP/NET 120</fullName>
+                <default>false</default>
+                <label>RBP/NET 120</label>
+            </value>
+            <value>
+                <fullName>RBP/NET 30</fullName>
+                <default>false</default>
+                <label>RBP/NET 30</label>
+            </value>
+            <value>
+                <fullName>RBP/NET 45</fullName>
+                <default>false</default>
+                <label>RBP/NET 45</label>
+            </value>
+            <value>
+                <fullName>RBP/NET 60</fullName>
+                <default>false</default>
+                <label>RBP/NET 60</label>
+            </value>
+            <value>
+                <fullName>RBP/NET 75</fullName>
+                <default>false</default>
+                <label>RBP/NET 75</label>
+            </value>
+            <value>
+                <fullName>RBP/NET 90</fullName>
+                <default>false</default>
+                <label>RBP/NET 90</label>
+            </value>
+            <value>
+                <fullName>WAREHOUSE</fullName>
+                <default>false</default>
+                <label>WAREHOUSE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

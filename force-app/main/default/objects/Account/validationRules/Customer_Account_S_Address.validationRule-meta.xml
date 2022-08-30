@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Account_S_Address</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+
+
+AND(
+RecordType.Name = &quot;Customer&quot;,
+ShippingCountry &lt;&gt; &quot;Ireland&quot;,
+
+OR(
+ISBLANK(ShippingCity ),
+ISBLANK(ShippingStreet ),
+ISBLANK(ShippingPostalCode),
+ISBLANK (ShippingCountry ))),
+
+AND(
+RecordType.Name = &quot;Customer&quot;,
+ShippingCountry = &quot;Ireland&quot;,
+OR(
+ISBLANK(ShippingCity ),
+ISBLANK(ShippingStreet )))
+)</errorConditionFormula>
+    <errorDisplayField>ShippingCountry</errorDisplayField>
+    <errorMessage>Please fill out the &apos;Shipping Address&apos;</errorMessage>
+</ValidationRule>

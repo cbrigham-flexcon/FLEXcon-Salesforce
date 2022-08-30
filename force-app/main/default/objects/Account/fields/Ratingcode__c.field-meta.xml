@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ratingcode__c</fullName>
+    <externalId>false</externalId>
+    <label>Rating code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACCOUNT CLOSED</fullName>
+                <default>false</default>
+                <label>ACCOUNT CLOSED</label>
+            </value>
+            <value>
+                <fullName>PROBABLE SALE POTENTIAL</fullName>
+                <default>false</default>
+                <label>PROBABLE SALE POTENTIAL</label>
+            </value>
+            <value>
+                <fullName>IMMEDIATE SALES POTENTIAL</fullName>
+                <default>false</default>
+                <label>IMMEDIATE SALES POTENTIAL</label>
+            </value>
+            <value>
+                <fullName>PURCHASE AUTHORITY</fullName>
+                <default>false</default>
+                <label>PURCHASE AUTHORITY</label>
+            </value>
+            <value>
+                <fullName>LITTLE LIKELIHOOD OF SALE</fullName>
+                <default>false</default>
+                <label>LITTLE LIKELIHOOD OF SALE</label>
+            </value>
+            <value>
+                <fullName>COLLECTOR</fullName>
+                <default>false</default>
+                <label>COLLECTOR</label>
+            </value>
+            <value>
+                <fullName>INFLUENCES PURCHASES</fullName>
+                <default>false</default>
+                <label>INFLUENCES PURCHASES</label>
+            </value>
+            <value>
+                <fullName>RMTE</fullName>
+                <default>false</default>
+                <label>RMTE</label>
+            </value>
+            <value>
+                <fullName>IMMEDIATE SALE $25M +</fullName>
+                <default>false</default>
+                <label>IMMEDIATE SALE $25M +</label>
+            </value>
+            <value>
+                <fullName>NON REACHABLE</fullName>
+                <default>false</default>
+                <label>NON REACHABLE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

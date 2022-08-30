@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>marketingtypes__c</fullName>
+    <externalId>false</externalId>
+    <label>Marketing Types</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AD Specialty</fullName>
+                <default>false</default>
+                <label>AD Specialty</label>
+            </value>
+            <value>
+                <fullName>After Market Prod Decoration</fullName>
+                <default>false</default>
+                <label>After Market Prod Decoration</label>
+            </value>
+            <value>
+                <fullName>Aircraft</fullName>
+                <default>false</default>
+                <label>Aircraft</label>
+            </value>
+            <value>
+                <fullName>Appliance</fullName>
+                <default>false</default>
+                <label>Appliance</label>
+            </value>
+            <value>
+                <fullName>Arena/Stadium</fullName>
+                <default>false</default>
+                <label>Arena/Stadium</label>
+            </value>
+            <value>
+                <fullName>ATM Machine</fullName>
+                <default>false</default>
+                <label>ATM Machine</label>
+            </value>
+            <value>
+                <fullName>Automotive Exterior</fullName>
+                <default>false</default>
+                <label>Automotive Exterior</label>
+            </value>
+            <value>
+                <fullName>Automotive Interior</fullName>
+                <default>false</default>
+                <label>Automotive Interior</label>
+            </value>
+            <value>
+                <fullName>Automotive Underhood</fullName>
+                <default>false</default>
+                <label>Automotive Underhood</label>
+            </value>
+            <value>
+                <fullName>Beverage</fullName>
+                <default>false</default>
+                <label>Beverage</label>
+            </value>
+            <value>
+                <fullName>Bumper Stickers</fullName>
+                <default>false</default>
+                <label>Bumper Stickers</label>
+            </value>
+            <value>
+                <fullName>CBS Outdoor Wrap Vendor 2012</fullName>
+                <default>false</default>
+                <label>CBS Outdoor Wrap Vendor 2012</label>
+            </value>
+            <value>
+                <fullName>CBS Outdoor Wrap Vendor 2014</fullName>
+                <default>false</default>
+                <label>CBS Outdoor Wrap Vendor 2014</label>
+            </value>
+            <value>
+                <fullName>CBS WRAP VENDORS 2008</fullName>
+                <default>false</default>
+                <label>CBS WRAP VENDORS 2008</label>
+            </value>
+            <value>
+                <fullName>Cling Vinyl</fullName>
+                <default>false</default>
+                <label>Cling Vinyl</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Consumer Battery</fullName>
+                <default>false</default>
+                <label>Consumer Battery</label>
+            </value>
+            <value>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+                <label>Consumer Electronics</label>
+            </value>
+            <value>
+                <fullName>Drum Label</fullName>
+                <default>false</default>
+                <label>Drum Label</label>
+            </value>
+            <value>
+                <fullName>Exercise Equipment</fullName>
+                <default>false</default>
+                <label>Exercise Equipment</label>
+            </value>
+            <value>
+                <fullName>Fleet/Vehicle</fullName>
+                <default>false</default>
+                <label>Fleet/Vehicle</label>
+            </value>
+            <value>
+                <fullName>Food</fullName>
+                <default>false</default>
+                <label>Food</label>
+            </value>
+            <value>
+                <fullName>G7 Certified</fullName>
+                <default>false</default>
+                <label>G7 Certified</label>
+            </value>
+            <value>
+                <fullName>Golf Carts</fullName>
+                <default>false</default>
+                <label>Golf Carts</label>
+            </value>
+            <value>
+                <fullName>GPI</fullName>
+                <default>false</default>
+                <label>GPI</label>
+            </value>
+            <value>
+                <fullName>Hand Tools</fullName>
+                <default>false</default>
+                <label>Hand Tools</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Beauty</fullName>
+                <default>false</default>
+                <label>Health &amp; Beauty</label>
+            </value>
+            <value>
+                <fullName>Heavy Equipment</fullName>
+                <default>false</default>
+                <label>Heavy Equipment</label>
+            </value>
+            <value>
+                <fullName>Holiday,Seasonal,Novelty</fullName>
+                <default>false</default>
+                <label>Holiday,Seasonal,Novelty</label>
+            </value>
+            <value>
+                <fullName>Household &amp; Chemical</fullName>
+                <default>false</default>
+                <label>Household &amp; Chemical</label>
+            </value>
+            <value>
+                <fullName>Industrial Caution &amp; Warning</fullName>
+                <default>false</default>
+                <label>Industrial Caution &amp; Warning</label>
+            </value>
+            <value>
+                <fullName>Industrial Controls</fullName>
+                <default>false</default>
+                <label>Industrial Controls</label>
+            </value>
+            <value>
+                <fullName>Lottery Equipment</fullName>
+                <default>false</default>
+                <label>Lottery Equipment</label>
+            </value>
+            <value>
+                <fullName>Marine</fullName>
+                <default>false</default>
+                <label>Marine</label>
+            </value>
+            <value>
+                <fullName>Medical Equipment</fullName>
+                <default>false</default>
+                <label>Medical Equipment</label>
+            </value>
+            <value>
+                <fullName>Membrane Switch</fullName>
+                <default>false</default>
+                <label>Membrane Switch</label>
+            </value>
+            <value>
+                <fullName>OEM - Membrane Switch</fullName>
+                <default>false</default>
+                <label>OEM - Membrane Switch</label>
+            </value>
+            <value>
+                <fullName>Off Road Vehicles - 2,3,4 Whee</fullName>
+                <default>false</default>
+                <label>Off Road Vehicles - 2,3,4 Whee</label>
+            </value>
+            <value>
+                <fullName>Oil Change</fullName>
+                <default>false</default>
+                <label>Oil Change</label>
+            </value>
+            <value>
+                <fullName>Outdoor/Signage Advertising</fullName>
+                <default>false</default>
+                <label>Outdoor/Signage Advertising</label>
+            </value>
+            <value>
+                <fullName>Outdoor Power</fullName>
+                <default>false</default>
+                <label>Outdoor Power</label>
+            </value>
+            <value>
+                <fullName>Outfront Media &apos;17 Apvd Vendor</fullName>
+                <default>false</default>
+                <label>Outfront Media &apos;17 Apvd Vendor</label>
+            </value>
+            <value>
+                <fullName>PDAA Member</fullName>
+                <default>false</default>
+                <label>PDAA Member</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical</fullName>
+                <default>false</default>
+                <label>Pharmaceutical</label>
+            </value>
+            <value>
+                <fullName>Photovoltaic</fullName>
+                <default>false</default>
+                <label>Photovoltaic</label>
+            </value>
+            <value>
+                <fullName>POS Debit/Credit Card Device</fullName>
+                <default>false</default>
+                <label>POS Debit/Credit Card Device</label>
+            </value>
+            <value>
+                <fullName>Power of 9</fullName>
+                <default>false</default>
+                <label>Power of 9</label>
+            </value>
+            <value>
+                <fullName>Power Tools</fullName>
+                <default>false</default>
+                <label>Power Tools</label>
+            </value>
+            <value>
+                <fullName>Public Transportation</fullName>
+                <default>false</default>
+                <label>Public Transportation</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Retail/POP/Tradeshow</fullName>
+                <default>false</default>
+                <label>Retail/POP/Tradeshow</label>
+            </value>
+            <value>
+                <fullName>School &amp; Association Decals</fullName>
+                <default>false</default>
+                <label>School &amp; Association Decals</label>
+            </value>
+            <value>
+                <fullName>SGP (SUSTAIN. GREEN PRINTING)</fullName>
+                <default>false</default>
+                <label>SGP (SUSTAIN. GREEN PRINTING)</label>
+            </value>
+            <value>
+                <fullName>Slot Machines</fullName>
+                <default>false</default>
+                <label>Slot Machines</label>
+            </value>
+            <value>
+                <fullName>Snowmobile</fullName>
+                <default>false</default>
+                <label>Snowmobile</label>
+            </value>
+            <value>
+                <fullName>Sporting Goods</fullName>
+                <default>false</default>
+                <label>Sporting Goods</label>
+            </value>
+            <value>
+                <fullName>Sticker &amp; Decal</fullName>
+                <default>false</default>
+                <label>Sticker &amp; Decal</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <label>Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Telemarket Contact</fullName>
+                <default>false</default>
+                <label>Telemarket Contact</label>
+            </value>
+            <value>
+                <fullName>Toys</fullName>
+                <default>false</default>
+                <label>Toys</label>
+            </value>
+            <value>
+                <fullName>Trailers/Motor Homes</fullName>
+                <default>false</default>
+                <label>Trailers/Motor Homes</label>
+            </value>
+            <value>
+                <fullName>Transit - Bus/Taxi/Rail/Air</fullName>
+                <default>false</default>
+                <label>Transit - Bus/Taxi/Rail/Air</label>
+            </value>
+            <value>
+                <fullName>Tube Manufacture</fullName>
+                <default>false</default>
+                <label>Tube Manufacture</label>
+            </value>
+            <value>
+                <fullName>Viacom Wrap Vendors 2004</fullName>
+                <default>false</default>
+                <label>Viacom Wrap Vendors 2004</label>
+            </value>
+            <value>
+                <fullName>Wraps / Indoor &amp; Outdoor signage</fullName>
+                <default>false</default>
+                <label>Wraps / Indoor &amp; Outdoor signage</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

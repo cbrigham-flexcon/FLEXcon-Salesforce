@@ -1,0 +1,5 @@
+Use Custom Domian, then following URL: 
+
+flexcon--codydev.sandbox.lightning.force.com/
+
+Then use production password 

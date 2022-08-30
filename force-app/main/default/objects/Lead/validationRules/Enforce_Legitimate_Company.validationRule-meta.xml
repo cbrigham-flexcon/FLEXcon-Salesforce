@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Legitimate_Company</fullName>
+    <active>true</active>
+    <description>Legitimate Company is a required  field for Qualifying Lead</description>
+    <errorConditionFormula>AND
+(TEXT( Status )=&quot;Closed Qualified&quot;,
+ISPICKVAL(Legitimate_Company__c,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Legitimate_Company__c</errorDisplayField>
+    <errorMessage>Legitimate Company is a mandatory field</errorMessage>
+</ValidationRule>

@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flexcon_Opportunity</fullName>
+    <active>false</active>
+    <businessProcess>Custom Sales Process</businessProcess>
+    <label>FLEXcon Opportunity</label>
+    <picklistValues>
+        <picklist>Amount_of_Material__c</picklist>
+        <values>
+            <fullName>1000 - 4999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10000 - 24999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25000 - above</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5000 - 9999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOQ - 999</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Annual_amnt_expected_release_order_size__c</picklist>
+        <values>
+            <fullName>%3C1%2E000 m%C2%B2 pa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3C10%2E000 m%C2%B2 pa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3C25%2E000 m%C2%B2 pa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3C5%2E000 m%C2%B2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E25%2E000 m%C2%B2pa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Appearance__c</picklist>
+        <values>
+            <fullName>Gloss appearance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matte appearance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Application_Surface__c</picklist>
+        <values>
+            <fullName>Rough</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smooth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textured</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Submitted</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Custom Coating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Recommendation%2FQuote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Colour__c</picklist>
+        <values>
+            <fullName>Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brushed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satin Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver Matte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White Matte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White Opaque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Component_Type__c</picklist>
+        <values>
+            <fullName>adhesive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>film</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>topcoat</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expected_Lifetime_for_label__c</picklist>
+        <values>
+            <fullName>0-6 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1-3 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3-5 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 months - 1 year</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_will_it_be_applied__c</picklist>
+        <values>
+            <fullName>Automatic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Automatic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_will_it_be_diecut__c</picklist>
+        <values>
+            <fullName>Backslit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No die cutting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_an_NDA_required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Known_Competitors__c</picklist>
+        <values>
+            <fullName>3M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3Mactac%2FLintec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party Distribution %28Grimco%2C Fellers%2C Glantz%2C etc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avery Dennison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Formulations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Bay Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nekoosa Coated Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raflatac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ritrama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wausau Coated Products</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Label_Expected_Temperature_Range__c</picklist>
+        <values>
+            <fullName>- 40C to 260C for 5 min%2C 398%C2%B0C few second pulse %28PI%29 -40F to 500F%2C 748F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>-40C to %2B100C %28PC%29 -40F to %2B212F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>-40C to %2B150C PET  -40F to %2B302F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>-40C to %2B80C %28PVC%2CPP%2CPE%29  -40F to %2B176F</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Cold Calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homepage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telephone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_time_customer_is_requesting__c</picklist>
+        <values>
+            <fullName>1-2 Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3-4 Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5-6 Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7-8 Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9-10 Weeks</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Level__c</picklist>
+        <values>
+            <fullName>Level 1%3A Standard Product %28Inventoried Product%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 2%3A Standard Product %28BOM Exists%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 3%3A Simple BOM Modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 4%3A Complex BOM Modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 5%3A New Product Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 6%3A Contract Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Source__c</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitive Intelligence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-blast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spec%2E Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_release_size_Volume_per_order__c</picklist>
+        <values>
+            <fullName>1%2E000 lm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E500 lm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2E000 lm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E000 lm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20%2E000 lm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>250 lm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E000 lm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E000 lm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500 lm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flexconn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PA_per_delivery__c</picklist>
+        <values>
+            <fullName>Per Annum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Delivery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Permanent_Removable_or_Repositionable__c</picklist>
+        <values>
+            <fullName>Permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repositionable Permanent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Segmentation__c</picklist>
+        <values>
+            <fullName>Finished Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Functional%2FTechnical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Branding%2F Graphics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Track %26 Trace%2F Identification</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_used_Indoor_or_Outdoor__c</picklist>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indoor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shape_of_application_texture__c</picklist>
+        <values>
+            <fullName>Curved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flat</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sheet_roll_to_sheet_or_roll_form__c</picklist>
+        <values>
+            <fullName>Roll Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roll to Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Should_the_material_be_printable_or_not__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Standard_films__c</picklist>
+        <values>
+            <fullName>PC %28polycarbonate%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE %28polyethylene%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PET %28polyester%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI %28polyimid%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PP %28polypropylene%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVC %28vinyl%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Thickness__c</picklist>
+        <values>
+            <fullName>1 mil - 25µ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 mil - 50µ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 mil - 75µ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 mil - 100µ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 mil - 125 µ</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Timeforbusiness__c</picklist>
+        <values>
+            <fullName>12 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 Days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UOM__c</picklist>
+        <values>
+            <fullName>FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vertical_Market__c</picklist>
+        <values>
+            <fullName>Construction %26 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vertical_Sub_Market__c</picklist>
+        <values>
+            <fullName>Aerospace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architectural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Home Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petrochemical Drum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable Devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelf Marking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_annual_amount_is_expected__c</picklist>
+        <values>
+            <fullName>%3C 1%2E000 m%C2%B2 pa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3C 10%2E000 m%C2%B2 pa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3C 25%2E000 m%C2%B2 pa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3C 5%2E000 m%C2%B2 pa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E 25%2E000 m%C2%B2 pa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_is_the_price_target__c</picklist>
+        <values>
+            <fullName>EUR %3C1%2E00 %2F M2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR 1%2E00 %E2%80%93 2%2E00 %2FM2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR 2%2E00 %E2%80%93 4%2E00 %2FM2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR 4%2E00 %E2%80%93 5%2E00 %2FM2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR 5%2E00 %2B %2F M2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD 0%2E30 %E2%80%93 0%2E75 %2FMSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD 0%2E75 %E2%80%93 1%2E50 %2FMSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD 1%2E50 %E2%80%93 2%2E50 %2FMSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD 2%2E50 %2B %2FMSI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Why_quote_or_start_project__c</picklist>
+        <values>
+            <fullName>competitive issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>delivery issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>performance issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>project out to bid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Winning_Competitor__c</picklist>
+        <values>
+            <fullName>3M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party Distribution %28Grimco%2C Fellers%2C Glantz%2C etc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avery Dennison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Formulations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Bay Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mactac%2FLintec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nekoosa Coated Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raflatac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ritrama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wausau Coated Products</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

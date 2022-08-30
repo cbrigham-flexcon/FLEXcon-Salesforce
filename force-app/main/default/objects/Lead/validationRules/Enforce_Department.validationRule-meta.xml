@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Department</fullName>
+    <active>true</active>
+    <description>Department is a required field for Qualifying Lead</description>
+    <errorConditionFormula>AND
+(TEXT( Status )=&quot;Closed Qualified&quot;,
+ ISPICKVAL( Department__c , &quot;&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>Department__c</errorDisplayField>
+    <errorMessage>Department is a mandatory field before conversion.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Region__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS(Profile.Name,&quot;NA&quot;), &quot;NA&quot;,
+IF(CONTAINS(Profile.Name,&quot;EU&quot;), &quot;EU&quot;,
+&quot;&quot;))</formula>
+    <label>User Region</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

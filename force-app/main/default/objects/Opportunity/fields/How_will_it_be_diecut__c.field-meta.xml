@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_will_it_be_diecut__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How will it be diecut?</inlineHelpText>
+    <label>How will it be diecut</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mechanical</fullName>
+                <default>false</default>
+                <label>Mechanical</label>
+            </value>
+            <value>
+                <fullName>Laser</fullName>
+                <default>false</default>
+                <label>Laser</label>
+            </value>
+            <value>
+                <fullName>Backslit</fullName>
+                <default>false</default>
+                <label>Backslit</label>
+            </value>
+            <value>
+                <fullName>No die cutting</fullName>
+                <default>false</default>
+                <label>No die cutting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

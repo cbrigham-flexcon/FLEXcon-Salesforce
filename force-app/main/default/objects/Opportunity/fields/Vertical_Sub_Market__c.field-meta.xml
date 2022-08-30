@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vertical_Sub_Market__c</fullName>
+    <externalId>false</externalId>
+    <label>Vertical Sub Market</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Vertical_Market__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ad Specialty Promo</fullName>
+                <default>false</default>
+                <label>Ad Specialty Promo</label>
+            </value>
+            <value>
+                <fullName>Aerospace</fullName>
+                <default>false</default>
+                <label>Aerospace</label>
+            </value>
+            <value>
+                <fullName>Architectural</fullName>
+                <default>false</default>
+                <label>Architectural</label>
+            </value>
+            <value>
+                <fullName>Asset Visibility/Tracking</fullName>
+                <default>false</default>
+                <label>Asset Visibility/Tracking</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Beverage</fullName>
+                <default>false</default>
+                <label>Beverage</label>
+            </value>
+            <value>
+                <fullName>Diagnostics</fullName>
+                <default>false</default>
+                <label>Diagnostics</label>
+            </value>
+            <value>
+                <fullName>Display</fullName>
+                <default>false</default>
+                <label>Display</label>
+            </value>
+            <value>
+                <fullName>Electronic Hardware</fullName>
+                <default>false</default>
+                <label>Electronic Hardware</label>
+            </value>
+            <value>
+                <fullName>Food</fullName>
+                <default>false</default>
+                <label>Food</label>
+            </value>
+            <value>
+                <fullName>Heavy Equipment/Machinery</fullName>
+                <default>false</default>
+                <label>Heavy Equipment/Machinery</label>
+            </value>
+            <value>
+                <fullName>Household/Appliance</fullName>
+                <default>false</default>
+                <label>Household/Appliance</label>
+            </value>
+            <value>
+                <fullName>Household &amp; Chemical</fullName>
+                <default>false</default>
+                <label>Household &amp; Chemical</label>
+            </value>
+            <value>
+                <fullName>Insulation</fullName>
+                <default>false</default>
+                <label>Insulation</label>
+            </value>
+            <value>
+                <fullName>Medical Device Labeling</fullName>
+                <default>false</default>
+                <label>Medical Device Labeling</label>
+            </value>
+            <value>
+                <fullName>Medical Tapes</fullName>
+                <default>false</default>
+                <label>Medical Tapes</label>
+            </value>
+            <value>
+                <fullName>Outdoor Power Equipment</fullName>
+                <default>false</default>
+                <label>Outdoor Power Equipment</label>
+            </value>
+            <value>
+                <fullName>Out of Home Advertising</fullName>
+                <default>false</default>
+                <label>Out of Home Advertising</label>
+            </value>
+            <value>
+                <fullName>Personal Care &amp; Cosmetics</fullName>
+                <default>false</default>
+                <label>Personal Care &amp; Cosmetics</label>
+            </value>
+            <value>
+                <fullName>Personal Wellness</fullName>
+                <default>false</default>
+                <label>Personal Wellness</label>
+            </value>
+            <value>
+                <fullName>Petrochemical Drum</fullName>
+                <default>false</default>
+                <label>Petrochemical Drum</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical_Labeling</fullName>
+                <default>false</default>
+                <label>Pharmaceutical Labeling</label>
+            </value>
+            <value>
+                <fullName>Portable Devices</fullName>
+                <default>false</default>
+                <label>Portable Devices</label>
+            </value>
+            <value>
+                <fullName>Recreation/Sporting</fullName>
+                <default>false</default>
+                <label>Recreation/Sporting</label>
+            </value>
+            <value>
+                <fullName>Reflective Signage</fullName>
+                <default>false</default>
+                <label>Reflective Signage</label>
+            </value>
+            <value>
+                <fullName>Safety Equipment</fullName>
+                <default>false</default>
+                <label>Safety Equipment</label>
+            </value>
+            <value>
+                <fullName>Shelf Marking</fullName>
+                <default>false</default>
+                <label>Shelf Marking</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <label>Solar</label>
+            </value>
+            <value>
+                <fullName>Wearables</fullName>
+                <default>false</default>
+                <label>Wearables</label>
+            </value>
+            <value>
+                <fullName>Wire Wrapping</fullName>
+                <default>false</default>
+                <label>Wire Wrapping</label>
+            </value>
+            <value>
+                <fullName>Appliances</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Appliances</label>
+            </value>
+            <value>
+                <fullName>DIagnostics / Wearables</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DIagnostics / Wearables</label>
+            </value>
+            <value>
+                <fullName>Decoration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Decoration</label>
+            </value>
+            <value>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Machinery</label>
+            </value>
+            <value>
+                <fullName>Marine</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marine</label>
+            </value>
+            <value>
+                <fullName>Outdoor &amp; Fitness Equipment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outdoor &amp; Fitness Equipment</label>
+            </value>
+            <value>
+                <fullName>Patient Care</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Patient Care</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pharmaceutical</label>
+            </value>
+            <value>
+                <fullName>Power Tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Power Tools</label>
+            </value>
+            <value>
+                <fullName>Resealable Closures</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Resealable Closures</label>
+            </value>
+            <value>
+                <fullName>Stickers &amp; Decals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stickers &amp; Decals</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Warehouse</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Retail &amp; Advertising</controllingFieldValue>
+            <valueName>Ad Specialty Promo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail &amp; Advertising</controllingFieldValue>
+            <valueName>Out of Home Advertising</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail &amp; Advertising</controllingFieldValue>
+            <valueName>Shelf Marking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Energy</controllingFieldValue>
+            <valueName>Architectural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Energy</controllingFieldValue>
+            <valueName>Insulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Energy</controllingFieldValue>
+            <valueName>Solar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electronics</controllingFieldValue>
+            <valueName>Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electronics</controllingFieldValue>
+            <valueName>Electronic Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electronics</controllingFieldValue>
+            <valueName>Portable Devices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Diagnostics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Medical Device Labeling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Medical Tapes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Personal Wellness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Pharmaceutical_Labeling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Wearables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Heavy Equipment/Machinery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Petrochemical Drum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Reflective Signage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Packaging</controllingFieldValue>
+            <valueName>Beverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Packaging</controllingFieldValue>
+            <valueName>Food</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Packaging</controllingFieldValue>
+            <valueName>Household &amp; Chemical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Packaging</controllingFieldValue>
+            <valueName>Personal Care &amp; Cosmetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Aerospace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Durables</controllingFieldValue>
+            <valueName>Asset Visibility/Tracking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Durables</controllingFieldValue>
+            <valueName>Household/Appliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Durables</controllingFieldValue>
+            <valueName>Outdoor Power Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Durables</controllingFieldValue>
+            <valueName>Recreation/Sporting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Durables</controllingFieldValue>
+            <valueName>Safety Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Durables</controllingFieldValue>
+            <valueName>Wire Wrapping</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

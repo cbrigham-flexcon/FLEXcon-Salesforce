@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Instructions__c</fullName>
+    <description>Requested by the team to track special instructions</description>
+    <externalId>false</externalId>
+    <label>Special Instructions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add sample coming from lab</fullName>
+                <default>false</default>
+                <label>Add sample coming from lab</label>
+            </value>
+            <value>
+                <fullName>Add sample coming from business team</fullName>
+                <default>false</default>
+                <label>Add sample coming from business team</label>
+            </value>
+            <value>
+                <fullName>Add customized letter being sent via interoffice/email</fullName>
+                <default>false</default>
+                <label>Add customized letter being sent via interoffice/email</label>
+            </value>
+            <value>
+                <fullName>Add business card</fullName>
+                <default>false</default>
+                <label>Add business card</label>
+            </value>
+            <value>
+                <fullName>Other instructions</fullName>
+                <default>false</default>
+                <label>Other instructions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

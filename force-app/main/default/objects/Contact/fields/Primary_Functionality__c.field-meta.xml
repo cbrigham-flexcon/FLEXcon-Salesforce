@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Functionality__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Functionality</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Involved with</fullName>
+                <default>false</default>
+                <label>Involved with</label>
+            </value>
+            <value>
+                <fullName>Owner/CEO</fullName>
+                <default>false</default>
+                <label>Owner/CEO</label>
+            </value>
+            <value>
+                <fullName>President</fullName>
+                <default>false</default>
+                <label>President</label>
+            </value>
+            <value>
+                <fullName>Vice President</fullName>
+                <default>false</default>
+                <label>Vice President</label>
+            </value>
+            <value>
+                <fullName>Manager/Director</fullName>
+                <default>false</default>
+                <label>Manager/Director</label>
+            </value>
+            <value>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+                <label>Supervisor</label>
+            </value>
+            <value>
+                <fullName>Controller/Comptroller</fullName>
+                <default>false</default>
+                <label>Controller/Comptroller</label>
+            </value>
+            <value>
+                <fullName>Coordinator</fullName>
+                <default>false</default>
+                <label>Coordinator</label>
+            </value>
+            <value>
+                <fullName>Engineer</fullName>
+                <default>false</default>
+                <label>Engineer</label>
+            </value>
+            <value>
+                <fullName>Treasurer</fullName>
+                <default>false</default>
+                <label>Treasurer</label>
+            </value>
+            <value>
+                <fullName>Chairperson</fullName>
+                <default>false</default>
+                <label>Chairperson</label>
+            </value>
+            <value>
+                <fullName>Agent/Representative</fullName>
+                <default>false</default>
+                <label>Agent/Representative</label>
+            </value>
+            <value>
+                <fullName>Chief</fullName>
+                <default>false</default>
+                <label>Chief</label>
+            </value>
+            <value>
+                <fullName>Secretary</fullName>
+                <default>false</default>
+                <label>Secretary</label>
+            </value>
+            <value>
+                <fullName>Estimator</fullName>
+                <default>false</default>
+                <label>Estimator</label>
+            </value>
+            <value>
+                <fullName>Chief Operating Officer</fullName>
+                <default>false</default>
+                <label>Chief Operating Officer</label>
+            </value>
+            <value>
+                <fullName>Co-Owner</fullName>
+                <default>false</default>
+                <label>Co-Owner</label>
+            </value>
+            <value>
+                <fullName>Chief Financial Officer</fullName>
+                <default>false</default>
+                <label>Chief Financial Officer</label>
+            </value>
+            <value>
+                <fullName>Key Contact</fullName>
+                <default>false</default>
+                <label>Key Contact</label>
+            </value>
+            <value>
+                <fullName>Visionary</fullName>
+                <default>false</default>
+                <label>Visionary</label>
+            </value>
+            <value>
+                <fullName>Implementer</fullName>
+                <default>false</default>
+                <label>Implementer</label>
+            </value>
+            <value>
+                <fullName>Purchaser</fullName>
+                <default>false</default>
+                <label>Purchaser</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

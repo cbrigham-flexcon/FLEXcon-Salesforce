@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Country_Picklist</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( 
+AND( 
+OR( 
+Contains( MailingCountry , &quot;Australia&quot;), 
+Contains(MailingCountry, &quot;Brazil&quot;), 
+Contains(MailingCountry, &quot;Canada&quot;), 
+Contains(MailingCountry, &quot;China&quot;), 
+Contains(MailingCountry, &quot;Ireland&quot;), 
+Contains(MailingCountry, &quot;India&quot;), 
+Contains(MailingCountry, &quot;Italy&quot;), 
+Contains(MailingCountry, &quot;Mexico&quot;), 
+Contains(MailingCountry, &quot;United States&quot;)), 
+ISBLANK(  MailingState )), 
+
+
+
+AND( 
+OR( 
+Contains(  OtherCountry , &quot;Australia&quot;), 
+Contains(OtherCountry, &quot;Brazil&quot;), 
+Contains(OtherCountry, &quot;Canada&quot;), 
+Contains(OtherCountry, &quot;China&quot;), 
+Contains(OtherCountry, &quot;Ireland&quot;), 
+Contains(OtherCountry, &quot;India&quot;), 
+Contains(OtherCountry, &quot;Italy&quot;), 
+Contains(OtherCountry, &quot;Mexico&quot;), 
+Contains(OtherCountry, &quot;United States&quot;)), 
+ISBLANK(  OtherState )) 
+)</errorConditionFormula>
+    <errorMessage>Please select the correct mailing or other state/province.</errorMessage>
+</ValidationRule>

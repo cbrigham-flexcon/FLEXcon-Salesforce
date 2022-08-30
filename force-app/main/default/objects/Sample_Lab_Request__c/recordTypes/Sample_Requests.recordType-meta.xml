@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sample_Requests</fullName>
+    <active>true</active>
+    <label>Sample Requests</label>
+    <picklistValues>
+        <picklist>Custom_Letter__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ship_Via__c</picklist>
+        <values>
+            <fullName>FLEXcon BV %2F Air-shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLEXcon BV %2F Container</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLEXcon Canada %2F Truck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLEXcon Glenrothes %2F Air-shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLEXcon Glenrothes %2F Container</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx - 2 Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx - Express Saver %283 Day%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx - First Overnight %28by 8%3A00 AM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx - Ground</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx - Ground %28Canada Only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx - International Economy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx - International Priority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx - Overnight Priority %28AM - by noon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx - Standard Overnight %28by 3%3A00 PM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inter-Office Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample - Inter-mail Office 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - 2 Day Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - 3 Day Air - Select</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - Expedited %28Foreign%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - Express %28Foreign%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - Ground Residential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - Next Day Air - %28before noon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - Next Day Air - Early AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - Next Day Air - Saver %28after noon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS - Standard %28Foreign - Canada Only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS Ground -Com</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Postal Service - First Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will Pick Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Special_Instructions__c</picklist>
+        <values>
+            <fullName>Add business card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add customized letter being sent via interoffice%2Femail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add sample coming from business team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add sample coming from lab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other instructions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

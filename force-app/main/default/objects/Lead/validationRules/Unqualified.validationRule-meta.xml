@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unqualified</fullName>
+    <active>false</active>
+    <errorConditionFormula>TEXT(Status) = &quot;Unqualified&quot; &amp;&amp; TEXT ( Unqualified_Reason__c ) = &quot;&quot;</errorConditionFormula>
+    <errorMessage>Unqualified Reason is Required</errorMessage>
+</ValidationRule>

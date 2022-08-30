@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unusual_finishing_packaging_requirements__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Are there any unusual finishing/packaging requirements?</inlineHelpText>
+    <label>Unusual finishing/packaging requirements</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

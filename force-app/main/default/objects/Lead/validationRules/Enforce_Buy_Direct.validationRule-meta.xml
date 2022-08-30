@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Buy_Direct</fullName>
+    <active>true</active>
+    <description>Buy Direct is a required field for Qualifying Lead</description>
+    <errorConditionFormula>AND
+(TEXT( Status )=&quot;Closed Qualified&quot;,
+ISPICKVAL(Buy_Direct__c,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Buy_Direct__c</errorDisplayField>
+    <errorMessage>Buy Direct is a mandatory field before conversion.</errorMessage>
+</ValidationRule>

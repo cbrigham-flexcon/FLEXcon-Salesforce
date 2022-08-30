@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Requires_Approval</fullName>
+    <active>true</active>
+    <description>Opportunity must be Approved before exiting the Qualification stage</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(StageName,&quot;Proposal&quot;),
+ISPICKVAL(StageName,&quot;Negotiation&quot;),
+ISPICKVAL(StageName,&quot;Evaluation&quot;),
+ISPICKVAL(StageName,&quot;Closed Won&quot;)),
+NOT(ISPICKVAL(Approval_Status__c ,&quot;Approved&quot;)),
+OR(
+Owner.UserRole.DeveloperName = &quot;EU_Sales_Rep&quot;,
+Owner.UserRole.DeveloperName = &quot;EU_Sales_Manager_CS_Team_Lead&quot;
+)
+)</errorConditionFormula>
+    <errorMessage>Opportunity must be submitted for Approval and Approved before moving past the Qualification stage</errorMessage>
+</ValidationRule>

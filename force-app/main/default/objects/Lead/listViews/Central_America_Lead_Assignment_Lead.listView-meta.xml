@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Central_America_Lead_Assignment_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Central America Lead Assignment</label>
+    <queue>Central_America_Lead_Assignment</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Won_Lost_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Won/Lost Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Couldn&apos;t meet MOQ</fullName>
+                <default>false</default>
+                <label>Couldn&apos;t meet MOQ</label>
+            </value>
+            <value>
+                <fullName>Customer hasn&apos;t responded after several attempts</fullName>
+                <default>false</default>
+                <label>Customer hasn&apos;t responded after several attempts</label>
+            </value>
+            <value>
+                <fullName>FLEXcon lacks Capability</fullName>
+                <default>false</default>
+                <label>FLEXcon lacks Capability</label>
+            </value>
+            <value>
+                <fullName>Found more economical product elsewhere</fullName>
+                <default>false</default>
+                <label>Found more economical product elsewhere</label>
+            </value>
+            <value>
+                <fullName>Lead Time - Product Delivery</fullName>
+                <default>false</default>
+                <label>Lead Time - Product Delivery</label>
+            </value>
+            <value>
+                <fullName>Market Application/Solutions - FLEXcon</fullName>
+                <default>false</default>
+                <label>Market Application/Solutions - FLEXcon</label>
+            </value>
+            <value>
+                <fullName>No or insufficient pain found</fullName>
+                <default>false</default>
+                <label>No or insufficient pain found</label>
+            </value>
+            <value>
+                <fullName>Price - Greater Value</fullName>
+                <default>false</default>
+                <label>Price - Greater Value</label>
+            </value>
+            <value>
+                <fullName>Pricing too High</fullName>
+                <default>false</default>
+                <label>Pricing too High</label>
+            </value>
+            <value>
+                <fullName>Product didn&apos;t meet customer specifications</fullName>
+                <default>false</default>
+                <label>Product didn&apos;t meet customer specifications</label>
+            </value>
+            <value>
+                <fullName>Project Canceled by Convertor or End User</fullName>
+                <default>false</default>
+                <label>Project Canceled by Convertor or End User</label>
+            </value>
+            <value>
+                <fullName>Project Canceled - Poor Project Response or Support</fullName>
+                <default>false</default>
+                <label>Project Canceled - Poor Project Response or Support</label>
+            </value>
+            <value>
+                <fullName>Sample or trial failed</fullName>
+                <default>false</default>
+                <label>Sample or trial failed</label>
+            </value>
+            <value>
+                <fullName>Solved - Delivery</fullName>
+                <default>false</default>
+                <label>Solved - Delivery</label>
+            </value>
+            <value>
+                <fullName>Solved - Performance</fullName>
+                <default>false</default>
+                <label>Solved - Performance</label>
+            </value>
+            <value>
+                <fullName>Solved - Quality</fullName>
+                <default>false</default>
+                <label>Solved - Quality</label>
+            </value>
+            <value>
+                <fullName>Strategic Relationship</fullName>
+                <default>false</default>
+                <label>Strategic Relationship</label>
+            </value>
+            <value>
+                <fullName>Won - RFQ/RFP</fullName>
+                <default>false</default>
+                <label>Won - RFQ/RFP</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Couldn&apos;t meet MOQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Customer hasn&apos;t responded after several attempts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>FLEXcon lacks Capability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Found more economical product elsewhere</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lead Time - Product Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No or insufficient pain found</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Pricing too High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Product didn&apos;t meet customer specifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Project Canceled by Convertor or End User</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Project Canceled - Poor Project Response or Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Sample or trial failed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Market Application/Solutions - FLEXcon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Price - Greater Value</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Solved - Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Solved - Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Solved - Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Strategic Relationship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Won - RFQ/RFP</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

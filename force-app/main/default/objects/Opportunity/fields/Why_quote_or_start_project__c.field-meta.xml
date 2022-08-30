@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Why_quote_or_start_project__c</fullName>
+    <externalId>false</externalId>
+    <label>Why quote or start project</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>project out to bid</fullName>
+                <default>false</default>
+                <label>project out to bid</label>
+            </value>
+            <value>
+                <fullName>competitive issue</fullName>
+                <default>false</default>
+                <label>competitive issue</label>
+            </value>
+            <value>
+                <fullName>performance issue</fullName>
+                <default>false</default>
+                <label>performance issue</label>
+            </value>
+            <value>
+                <fullName>delivery issue</fullName>
+                <default>false</default>
+                <label>delivery issue</label>
+            </value>
+            <value>
+                <fullName>other</fullName>
+                <default>false</default>
+                <label>other</label>
+            </value>
+            <value>
+                <fullName>Brochure FLEXcon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Brochure FLEXcon</label>
+            </value>
+            <value>
+                <fullName>Mailshot FLEXcon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mailshot FLEXcon</label>
+            </value>
+            <value>
+                <fullName>New project / product</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New project / product</label>
+            </value>
+            <value>
+                <fullName>Price comparison</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Price comparison</label>
+            </value>
+            <value>
+                <fullName>Replacement of competitor material</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Replacement of competitor material</label>
+            </value>
+            <value>
+                <fullName>Second source</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Second source</label>
+            </value>
+            <value>
+                <fullName>Tweak existing product</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tweak existing product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

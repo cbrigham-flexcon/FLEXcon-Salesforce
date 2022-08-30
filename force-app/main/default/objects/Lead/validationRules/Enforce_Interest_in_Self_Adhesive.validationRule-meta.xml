@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Interest_in_Self_Adhesive</fullName>
+    <active>true</active>
+    <description>Interest_in_Self_Adhesive__c is a required  field for Qualifying Lead</description>
+    <errorConditionFormula>AND
+(TEXT( Status )=&quot;Closed Qualified&quot;,
+ISPICKVAL(Interest_in_Self_Adhesive__c,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Interest_in_Self_Adhesive__c</errorDisplayField>
+    <errorMessage>Interest in self adhesive  is a mandatory field</errorMessage>
+</ValidationRule>

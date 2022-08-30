@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Number_Market_and_Primary_Type</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND
+(
+IsConverted,
+OR
+(
+ISBLANK(Customer_Number__c),
+INCLUDES(Marketing_Types__c,&quot;&quot;),
+ISPICKVAL(Primary_Type__c,&quot;&quot;)
+))</errorConditionFormula>
+    <errorMessage>Please Enter value on &quot;Customer Number&quot;, &quot;Market&quot; ,&quot;Primary Type&quot;, Phone and Address fields.</errorMessage>
+</ValidationRule>

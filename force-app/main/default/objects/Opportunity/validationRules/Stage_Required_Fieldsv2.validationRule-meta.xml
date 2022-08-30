@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Required_Fieldsv2</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+OR(
+AND(
+TEXT(StageName) = &quot;Proposal&quot;,
+OR(
+ISBLANK(TEXT(Opportunity_Level__c)),
+ISBLANK(What_is_the_general_application__c),
+ISBLANK(Product_Recommendation__c)
+)
+),
+AND(
+TEXT(StageName) = &quot;Negotiation&quot;,
+OR(
+ISBLANK(TEXT(Opportunity_Level__c)),
+ISBLANK(What_is_the_general_application__c),
+ISBLANK(Product_Recommendation__c),
+ISBLANK(TEXT( Amount_of_Material__c )),
+ISBLANK(TEXT( UOM__c )),
+ISBLANK(TEXT( PA_per_delivery__c ))
+)
+),
+AND(
+TEXT(StageName) = &quot;Evaluation&quot;,
+OR(
+ISBLANK( TEXT(Opportunity_Level__c )),
+ISBLANK( What_is_the_general_application__c ),
+ISBLANK( Product_Recommendation__c ),
+ISBLANK( ExpectedRevenue ),
+ISBLANK(TEXT( Amount_of_Material__c )),
+ISBLANK(TEXT( UOM__c )),
+ISBLANK(TEXT( PA_per_delivery__c ))
+)
+),
+AND(
+TEXT(StageName) = &quot;Closed Lost&quot;,
+OR(
+ISBLANK( TEXT(Opportunity_Level__c )),
+ISBLANK( What_is_the_general_application__c ),
+ISBLANK( Product_Recommendation__c ),
+ISBLANK( ExpectedRevenue ),
+ISBLANK( TEXT(Vertical_Market__c )),
+ISBLANK( TEXT(Product_Segmentation__c )),
+ISBLANK(TEXT( Amount_of_Material__c )),
+ISBLANK(TEXT( UOM__c )),
+ISBLANK(TEXT( PA_per_delivery__c ))
+)
+),
+AND(
+TEXT(StageName) = &quot;Closed Won&quot;,
+OR(
+ISBLANK( TEXT(Opportunity_Level__c )),
+ISBLANK( What_is_the_general_application__c ),
+ISBLANK( Product_Recommendation__c ),
+ISBLANK( ExpectedRevenue ),
+ISBLANK( TEXT(Vertical_Market__c )),
+ISBLANK( TEXT(Product_Segmentation__c )),
+ISBLANK(TEXT( Amount_of_Material__c )),
+ISBLANK(TEXT( UOM__c )),
+ISBLANK(TEXT( PA_per_delivery__c ))
+)
+)
+),
+DATEVALUE(CreatedDate) &gt;= DATEVALUE(&quot;2020-12-07&quot;)
+)</errorConditionFormula>
+    <errorMessage>Key fields are required before exiting stage.</errorMessage>
+</ValidationRule>

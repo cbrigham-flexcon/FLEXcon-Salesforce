@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PA_per_delivery__c</fullName>
+    <externalId>false</externalId>
+    <label>PA/per delivery</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Per Annum</fullName>
+                <default>false</default>
+                <label>Per Annum</label>
+            </value>
+            <value>
+                <fullName>Per Delivery</fullName>
+                <default>false</default>
+                <label>Per Delivery</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

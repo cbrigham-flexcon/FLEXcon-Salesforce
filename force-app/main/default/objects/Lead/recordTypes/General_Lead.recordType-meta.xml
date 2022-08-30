@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Lead</fullName>
+    <active>true</active>
+    <businessProcess>FLEXcon process</businessProcess>
+    <label>General Lead</label>
+    <picklistValues>
+        <picklist>Amount_of_Material__c</picklist>
+        <values>
+            <fullName>1000 - 4999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10000 - 24999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25000 - above</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5000 - 9999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOQ - 999</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Buy_Direct__c</picklist>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Closed_Unqualified_Reason__c</picklist>
+        <values>
+            <fullName>Can%E2%80%99t buy from FLEXcon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loss of Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No capabilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Department__c</picklist>
+        <values>
+            <fullName>Executive_Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R%26D %28Technical Department%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Chain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Die_Cut_Labels__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Construction %26 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Durables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interest_in_Self_Adhesive__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Cold Calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homepage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telephone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Legitimate_Company__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market__c</picklist>
+        <values>
+            <fullName>PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Marketing_Types__c</picklist>
+        <values>
+            <fullName>AD Specialty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATM Machine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>After Market Prod Decoration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aircraft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arena%2FStadium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Exterior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Interior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Underhood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bumper Stickers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBS Outdoor Wrap Vendor 2012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBS Outdoor Wrap Vendor 2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBS WRAP VENDORS 2008</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cling Vinyl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Battery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drum Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exercise Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fleet%2FVehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G7 Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf Carts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health %26 Beauty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heavy Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holiday%2CSeasonal%2CNovelty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household %26 Chemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Caution %26 Warning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Controls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lottery Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Membrane Switch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM - Membrane Switch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Road Vehicles - 2%2C3%2C4 Whee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor%2FSignage Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outfront Media %2717 Apvd Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PDAA Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POS Debit%2FCredit Card Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photovoltaic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power of 9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail%2FPOP%2FTradeshow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGP %28SUSTAIN%2E GREEN PRINTING%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School %26 Association Decals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slot Machines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snowmobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sporting Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sticker %26 Decal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarket Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trailers%2FMotor Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit - Bus%2FTaxi%2FRail%2FAir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tube Manufacture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viacom Wrap Vendors 2004</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wraps %2F Indoor %26 Outdoor signage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PA_per_delivery__c</picklist>
+        <values>
+            <fullName>Per Annum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Delivery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_Language__c</picklist>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Type__c</picklist>
+        <values>
+            <fullName>Ad Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Specifier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POP Producer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Vertical_Market__c</picklist>
+        <values>
+            <fullName>Construction %26 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Durables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intercompany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %26 Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Printable_Material__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_market__c</picklist>
+        <values>
+            <fullName>Aerospace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architectural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIagnostics %2F Wearables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decoration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Home Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor %26 Fitness Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petrochemical Drum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable Devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resealable Closures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelf Marking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stickers %26 Decals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UOM__c</picklist>
+        <values>
+            <fullName>FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unqualified_Reason__c</picklist>
+        <values>
+            <fullName>Community %28Seeking info%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fake Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider %28Selling a Service%2FSupplier%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vertical_Market__c</picklist>
+        <values>
+            <fullName>Construction %26 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Durables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %26 Advertisement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

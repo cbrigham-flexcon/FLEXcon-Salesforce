@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Highlights_Bar</fullName>
+    <fields>Subject</fields>
+    <fields>AccountId</fields>
+    <fields>Work_Order__c</fields>
+    <fields>CaseNumber</fields>
+    <fields>Status</fields>
+    <fields>Vax_complaint_issued__c</fields>
+    <fields>OwnerId</fields>
+    <label>Case Highlights Bar</label>
+</CompactLayout>

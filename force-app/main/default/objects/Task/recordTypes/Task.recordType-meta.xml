@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task</fullName>
+    <active>true</active>
+    <label>Task</label>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Certification enquiry %2F question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit limit %2F Payment terms enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lab Test required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New raw material sourcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging%2FExpedition enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Increase Exception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price quote follow up is needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price%2Flead time from supplier required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing required for product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process%2FManufacturing%2FFinishing enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product recommendation required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote to be sent to customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample needs to be sent to customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample request follow up is needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Invoice to customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send PCS to Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send customer answer to technical question and%2For provide technical statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send missing delivery papers to customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to customer a Brochure or Sell Sheet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

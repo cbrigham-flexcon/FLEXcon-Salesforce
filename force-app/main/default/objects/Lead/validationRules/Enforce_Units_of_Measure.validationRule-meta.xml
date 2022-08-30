@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Units_of_Measure</fullName>
+    <active>true</active>
+    <description>Units of measure is a required field for Qualifying Lead when status changed to closed qualified.</description>
+    <errorConditionFormula>AND
+(TEXT( Status )=&quot;Closed Qualified&quot;,
+ISPICKVAL( UOM__c ,&quot;&quot;)
+ )</errorConditionFormula>
+    <errorDisplayField>UOM__c</errorDisplayField>
+    <errorMessage>Please enter Units of measure for the Amount of material mentioned</errorMessage>
+</ValidationRule>

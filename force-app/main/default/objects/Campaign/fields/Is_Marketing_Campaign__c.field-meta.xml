@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Marketing_Campaign__c</fullName>
+    <description>For Backend Purpose. Will be checked if Campaign name ends with &quot; MI&quot;</description>
+    <externalId>false</externalId>
+    <formula>RIGHT( TRIM(Name) , 3)  = &quot; MI&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Marketing Campaign?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

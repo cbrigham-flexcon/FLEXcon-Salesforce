@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sample_Requests_Products</fullName>
+    <active>true</active>
+    <label>Sample Requests Products</label>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>CALIFORNIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KANSAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MASSACHUSETTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINNESOTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEBRASKA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PENNSYLVANIA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

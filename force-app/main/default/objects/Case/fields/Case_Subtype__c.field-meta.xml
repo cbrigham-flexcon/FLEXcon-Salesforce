@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Subtype__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Subtype</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Case_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Adhesion</fullName>
+                <default>false</default>
+                <label>Adhesion</label>
+            </value>
+            <value>
+                <fullName>Campaigns</fullName>
+                <default>false</default>
+                <label>Campaigns</label>
+            </value>
+            <value>
+                <fullName>Carrier</fullName>
+                <default>false</default>
+                <label>Carrier</label>
+            </value>
+            <value>
+                <fullName>Cases</fullName>
+                <default>false</default>
+                <label>Cases</label>
+            </value>
+            <value>
+                <fullName>Chatter</fullName>
+                <default>false</default>
+                <label>Chatter</label>
+            </value>
+            <value>
+                <fullName>Co-assemble</fullName>
+                <default>false</default>
+                <label>Co-assemble</label>
+            </value>
+            <value>
+                <fullName>Contact</fullName>
+                <default>false</default>
+                <label>Contact</label>
+            </value>
+            <value>
+                <fullName>Converting</fullName>
+                <default>false</default>
+                <label>Converting</label>
+            </value>
+            <value>
+                <fullName>Dashboards</fullName>
+                <default>false</default>
+                <label>Dashboards</label>
+            </value>
+            <value>
+                <fullName>Email to Case</fullName>
+                <default>true</default>
+                <label>Email to Case</label>
+            </value>
+            <value>
+                <fullName>ERP Data Sync</fullName>
+                <default>false</default>
+                <label>ERP Data Sync</label>
+            </value>
+            <value>
+                <fullName>Expedite Denied</fullName>
+                <default>false</default>
+                <label>Expedite Denied</label>
+            </value>
+            <value>
+                <fullName>Forecasts</fullName>
+                <default>false</default>
+                <label>Forecasts</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice/Pricing</label>
+            </value>
+            <value>
+                <fullName>Late Order</fullName>
+                <default>false</default>
+                <label>Late Order</label>
+            </value>
+            <value>
+                <fullName>Lead</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+            <value>
+                <fullName>Log-in</fullName>
+                <default>false</default>
+                <label>Log-in</label>
+            </value>
+            <value>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+                <label>Opportunity</label>
+            </value>
+            <value>
+                <fullName>Order/Acknowledgment</fullName>
+                <default>false</default>
+                <label>Order Entry</label>
+            </value>
+            <value>
+                <fullName>Outlook/Inbox</fullName>
+                <default>false</default>
+                <label>Outlook/Inbox</label>
+            </value>
+            <value>
+                <fullName>Packaging</fullName>
+                <default>false</default>
+                <label>Packaging</label>
+            </value>
+            <value>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+                <label>Pardot</label>
+            </value>
+            <value>
+                <fullName>Printing</fullName>
+                <default>false</default>
+                <label>Printing</label>
+            </value>
+            <value>
+                <fullName>Reports</fullName>
+                <default>false</default>
+                <label>Reports</label>
+            </value>
+            <value>
+                <fullName>Shipping Error</fullName>
+                <default>false</default>
+                <label>Shipping Error</label>
+            </value>
+            <value>
+                <fullName>Task</fullName>
+                <default>false</default>
+                <label>Task</label>
+            </value>
+            <value>
+                <fullName>Waiting for Material</fullName>
+                <default>false</default>
+                <label>Waiting for Material</label>
+            </value>
+            <value>
+                <fullName>Workmanship</fullName>
+                <default>false</default>
+                <label>Workmanship</label>
+            </value>
+            <value>
+                <fullName>Adhesive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Adhesive</label>
+            </value>
+            <value>
+                <fullName>Defective Product</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Defective Product</label>
+            </value>
+            <value>
+                <fullName>Film</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Film</label>
+            </value>
+            <value>
+                <fullName>Finishing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Finishing</label>
+            </value>
+            <value>
+                <fullName>Laminating</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Laminating (Plant 6)</label>
+            </value>
+            <value>
+                <fullName>Liner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Liner</label>
+            </value>
+            <value>
+                <fullName>PS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PS</label>
+            </value>
+            <value>
+                <fullName>Release</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Release</label>
+            </value>
+            <value>
+                <fullName>Slitting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Slitting</label>
+            </value>
+            <value>
+                <fullName>TC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TC</label>
+            </value>
+            <value>
+                <fullName>Technical Help</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Technical Help</label>
+            </value>
+            <value>
+                <fullName>Topcoat</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Topcoat</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Service Related Issue/Inquiry</controllingFieldValue>
+            <valueName>Carrier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Related Issue/Inquiry</controllingFieldValue>
+            <controllingFieldValue>Product Problem/Technical Guidance</controllingFieldValue>
+            <valueName>Email to Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Related Issue/Inquiry</controllingFieldValue>
+            <valueName>Expedite Denied</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Related Issue/Inquiry</controllingFieldValue>
+            <valueName>Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Related Issue/Inquiry</controllingFieldValue>
+            <valueName>Late Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Related Issue/Inquiry</controllingFieldValue>
+            <valueName>Order/Acknowledgment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Related Issue/Inquiry</controllingFieldValue>
+            <valueName>Packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Related Issue/Inquiry</controllingFieldValue>
+            <valueName>Shipping Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Problem/Technical Guidance</controllingFieldValue>
+            <valueName>Adhesion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Problem/Technical Guidance</controllingFieldValue>
+            <valueName>Converting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Problem/Technical Guidance</controllingFieldValue>
+            <valueName>Printing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Problem/Technical Guidance</controllingFieldValue>
+            <valueName>Workmanship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Campaigns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Cases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Chatter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Co-assemble</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Dashboards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>ERP Data Sync</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Forecasts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Log-in</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Opportunity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Outlook/Inbox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Pardot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Reports</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Break-Fix</controllingFieldValue>
+            <controllingFieldValue>Change Request</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Training Request</controllingFieldValue>
+            <valueName>Task</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

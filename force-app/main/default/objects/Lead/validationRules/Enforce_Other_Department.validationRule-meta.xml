@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Other_Department</fullName>
+    <active>true</active>
+    <description>Other department is a required  field for Qualifying Leads when the &apos;Other&apos; department is chosen.</description>
+    <errorConditionFormula>AND
+(TEXT(  Department__c  )=&quot;Other&quot;,
+ISBLANK( Other_Department__c )
+)</errorConditionFormula>
+    <errorDisplayField>Other_Department__c</errorDisplayField>
+    <errorMessage>Please enter &apos;Other&apos; Department as mentioned above</errorMessage>
+</ValidationRule>

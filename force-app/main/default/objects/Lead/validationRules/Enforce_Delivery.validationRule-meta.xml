@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Delivery</fullName>
+    <active>true</active>
+    <description>PA/ per delivery is a required field for Qualifying Lead</description>
+    <errorConditionFormula>AND
+(TEXT( Status )=&quot;Closed Qualified&quot;,
+ISPICKVAL(  PA_per_delivery__c  ,&quot;&quot;)
+ )</errorConditionFormula>
+    <errorDisplayField>PA_per_delivery__c</errorDisplayField>
+    <errorMessage>Please specify if the amount of material is  Per Annum or Per delivery</errorMessage>
+</ValidationRule>

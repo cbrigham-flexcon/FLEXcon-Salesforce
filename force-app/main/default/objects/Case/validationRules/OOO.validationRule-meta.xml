@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OOO</fullName>
+    <active>true</active>
+    <description>Rule checks for Out of Office Notifications before allowing case to be created.</description>
+    <errorConditionFormula>OR( 
+CONTAINS(Subject, &quot;OOO&quot;), 
+CONTAINS(Subject, &quot;Out of Office&quot;), 
+CONTAINS(Subject, &quot;Auto-Reply&quot;), 
+CONTAINS(Subject, &quot;AutoReply&quot;), 
+CONTAINS(Subject, &quot;am unavailable&quot;), 
+CONTAINS(Subject, &quot;of Office&quot;),
+CONTAINS(Subject, &quot;of office&quot;),
+CONTAINS(Subject, &quot;of the office&quot;),
+CONTAINS(Subject, &quot;of the Office&quot;), 
+CONTAINS(Subject, &quot;of-Office&quot;), 
+CONTAINS(Subject, &quot;ofOffice&quot;), 
+CONTAINS(Subject, &quot;Vacation&quot;),
+CONTAINS(Subject, &quot;Undeliverable: Force.com Sandbox&quot;),
+CONTAINS( SuppliedName, &quot;Mail Delivery&quot;),
+CONTAINS( SuppliedEmail, &quot;postmaster&quot;)
+)</errorConditionFormula>
+    <errorMessage>The Service Request cannot contain the following items in the Subject Line:
+OOO, Out of Office, Auto-Reply, AutoReply, am unavailable, of office, of-office, ofoffice, of the office, Vacation</errorMessage>
+</ValidationRule>

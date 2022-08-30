@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Won_Opp_Required_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+TEXT(StageName) = &quot;Closed Won&quot;,
+OR(
+ISBLANK(TEXT(Opportunity_Level__c)),
+ISBLANK(What_is_the_general_application__c),
+ISBLANK(Product_Recommendation__c),
+ISBLANK(TEXT(Opportunity_Level__c)),
+ISBLANK(TEXT( Amount_of_Material__c )),
+ISBLANK(TEXT( UOM__c )),
+ISBLANK(TEXT( PA_per_delivery__c )),
+ISBLANK( ExpectedRevenue ),
+ISBLANK( TEXT(Vertical_Market__c )),
+ISBLANK( TEXT(Product_Segmentation__c ))
+))</errorConditionFormula>
+    <errorMessage>Please make sure all required fields are filled out in the path.</errorMessage>
+</ValidationRule>

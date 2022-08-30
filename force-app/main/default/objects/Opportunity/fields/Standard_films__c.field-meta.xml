@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_films__c</fullName>
+    <externalId>false</externalId>
+    <label>Standard films</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PET (polyester)</fullName>
+                <default>false</default>
+                <label>PET (polyester)</label>
+            </value>
+            <value>
+                <fullName>PP (polypropylene)</fullName>
+                <default>false</default>
+                <label>PP (polypropylene)</label>
+            </value>
+            <value>
+                <fullName>PE (polyethylene)</fullName>
+                <default>false</default>
+                <label>PE (polyethylene)</label>
+            </value>
+            <value>
+                <fullName>PC (polycarbonate)</fullName>
+                <default>false</default>
+                <label>PC (polycarbonate)</label>
+            </value>
+            <value>
+                <fullName>PVC (vinyl)</fullName>
+                <default>false</default>
+                <label>PVC (vinyl)</label>
+            </value>
+            <value>
+                <fullName>PI (polyimid)</fullName>
+                <default>false</default>
+                <label>PI (polyimid)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

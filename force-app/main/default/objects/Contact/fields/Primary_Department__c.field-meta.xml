@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Department__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All Departments</fullName>
+                <default>false</default>
+                <label>All Departments</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>Finance/Accounting/Credit</fullName>
+                <default>false</default>
+                <label>Finance/Accounting/Credit</label>
+            </value>
+            <value>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+                <label>Purchasing</label>
+            </value>
+            <value>
+                <fullName>Production/Manufacturing</fullName>
+                <default>false</default>
+                <label>Production/Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Executive/Corp Management</fullName>
+                <default>false</default>
+                <label>Executive/Corporate Management</label>
+            </value>
+            <value>
+                <fullName>New Ventures/R&amp;D/Engineer</fullName>
+                <default>false</default>
+                <label>New Ventures/R&amp;D/Engineer</label>
+            </value>
+            <value>
+                <fullName>Pre-Press/Art/Plate/Ink</fullName>
+                <default>false</default>
+                <label>Pre-Press/Art/Plate/Ink</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Technical Service</fullName>
+                <default>false</default>
+                <label>Technical Service</label>
+            </value>
+            <value>
+                <fullName>Shipping/Receiving</fullName>
+                <default>false</default>
+                <label>Shipping/Receiving</label>
+            </value>
+            <value>
+                <fullName>Import/Export</fullName>
+                <default>false</default>
+                <label>Import/Export</label>
+            </value>
+            <value>
+                <fullName>Safety</fullName>
+                <default>false</default>
+                <label>Safety</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>Data Processing</fullName>
+                <default>false</default>
+                <label>Data Processing</label>
+            </value>
+            <value>
+                <fullName>Internal Operator/Office</fullName>
+                <default>false</default>
+                <label>Internal Oper/Office</label>
+            </value>
+            <value>
+                <fullName>Press Room/Printing</fullName>
+                <default>false</default>
+                <label>Press Room/Printing</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>Chemist</fullName>
+                <default>false</default>
+                <label>Chemist</label>
+            </value>
+            <value>
+                <fullName>Designer/Art Dept/Graphic</fullName>
+                <default>false</default>
+                <label>Desig/Art Dept/Graphic</label>
+            </value>
+            <value>
+                <fullName>Sales/Marketing</fullName>
+                <default>false</default>
+                <label>Sales/Marketing</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

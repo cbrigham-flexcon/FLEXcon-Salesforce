@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Recommendation Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Undecided</fullName>
+                <default>false</default>
+                <label>Undecided</label>
+            </value>
+            <value>
+                <fullName>Level 1: Standard Product (Inventoried Product)</fullName>
+                <default>false</default>
+                <label>Level 1: Standard Product (Inventoried Product)</label>
+            </value>
+            <value>
+                <fullName>Level 2: Standard Product (BOM Exists)</fullName>
+                <default>false</default>
+                <label>Level 2: Standard Product (BOM Exists)</label>
+            </value>
+            <value>
+                <fullName>Level 3: Simple BOM Modification</fullName>
+                <default>false</default>
+                <label>Level 3: Simple BOM Modification</label>
+            </value>
+            <value>
+                <fullName>Level 4: Complex BOM Modification</fullName>
+                <default>false</default>
+                <label>Level 4: Complex BOM Modification</label>
+            </value>
+            <value>
+                <fullName>Level 5: New Product Development</fullName>
+                <default>false</default>
+                <label>Level 5: New Product Development</label>
+            </value>
+            <value>
+                <fullName>Level 6: Contract Manufacturing</fullName>
+                <default>false</default>
+                <label>Level 6: Contract Manufacturing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

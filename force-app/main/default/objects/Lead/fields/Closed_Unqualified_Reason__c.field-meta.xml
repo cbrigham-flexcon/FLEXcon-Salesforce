@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Unqualified_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Unqualified Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Loss of Interest</fullName>
+                <default>false</default>
+                <label>Loss of Interest</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Can’t buy from FLEXcon</fullName>
+                <default>false</default>
+                <label>Can’t buy from FLEXcon</label>
+            </value>
+            <value>
+                <fullName>No capabilities</fullName>
+                <default>false</default>
+                <label>No capabilities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_amnt_expected_release_order_size__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What annual amount is expected? And release order size.</inlineHelpText>
+    <label>Annual amnt expected release order size</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt;1.000 m² pa</fullName>
+                <default>false</default>
+                <label>&lt;1.000 m² pa</label>
+            </value>
+            <value>
+                <fullName>&lt;5.000 m²</fullName>
+                <default>false</default>
+                <label>&lt;5.000 m²</label>
+            </value>
+            <value>
+                <fullName>&lt;10.000 m² pa</fullName>
+                <default>false</default>
+                <label>&lt;10.000 m² pa</label>
+            </value>
+            <value>
+                <fullName>&lt;25.000 m² pa</fullName>
+                <default>false</default>
+                <label>&lt;25.000 m² pa</label>
+            </value>
+            <value>
+                <fullName>&gt;25.000 m²pa</fullName>
+                <default>false</default>
+                <label>&gt;25.000 m²pa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

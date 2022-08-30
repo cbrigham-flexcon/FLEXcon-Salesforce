@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Amount_of_Material</fullName>
+    <active>true</active>
+    <description>Amount of Material  is a required field for Qualifying Lead when status changed to closed qualified.</description>
+    <errorConditionFormula>AND
+(TEXT( Status )=&quot;Closed Qualified&quot;,
+ISPICKVAL(Amount_of_Material__c,&quot;&quot;)
+ )</errorConditionFormula>
+    <errorDisplayField>Amount_of_Material__c</errorDisplayField>
+    <errorMessage>Amount of Material  is a mandatory field</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+/**
+ * Created by naveen on 05/09/18.
+ */
+.THIS .slds-modal__container{
+    width: 70%;
+    max-width: 1000rem;
+}
+.THIS .slds-scrollable_y {
+    height: 300px;
+}

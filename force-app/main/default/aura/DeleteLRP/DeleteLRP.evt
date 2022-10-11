@@ -1,0 +1,7 @@
+<!--
+ - Created by naveen on 31/08/18.
+ -->
+
+<aura:event type="APPLICATION" description="DeleteLRP">
+    <aura:attribute name="li" type="Sample_Lab_Request_Products__c" />
+</aura:event>

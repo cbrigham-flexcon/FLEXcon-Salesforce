@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Approval_Notification_Email</fullName>
+        <ccEmails>ts-europe@Flexcon.com</ccEmails>
+        <description>Approval Notification Email</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Product_Opportunity_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Approval_Notification_Email_test</fullName>
+        <description>Approval Notification Email-test</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>luis.sanson@flexcon.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>luis.sanson@trifecta.com.flexcontridevcarr</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Product_Opportunity_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Opportunity</fullName>
+        <description>New Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>Customer Service Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>EU - Application Development</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>EU - CTT Specialist</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>EU - Process Quality</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>EU - Project Leader</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>EU - Project Management Team Leader</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>EU - Sales Development</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>EU - Technical Service Specialist</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>EU – Quality</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>EU – Sales Rep</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>NA - Customer Service Group Lead</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>NA - Customer Service Rep</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>NA - Field Tech Service Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>NA - Sales Rep</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>NA - Technical Service Rep</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Technical Service Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Opp</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejection_Notification</fullName>
+        <description>Rejection Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Product_Opportunity_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejection_Notification_test</fullName>
+        <description>Rejection Notification-test</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>luis.sanson@flexcon.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>luis.sanson@trifecta.com.flexcontridevcarr</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Product_Opportunity_Rejected</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Closed_Date_Today</fullName>
+        <field>CloseDate</field>
+        <formula>TODAY()</formula>
+        <name>Closed Date = Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_stamp_field</fullName>
+        <field>Actual_Close_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Date stamp field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Approved2</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Recalled</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Recalled</literalValue>
+        <name>Status Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Rejected</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Rejected2</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Pending</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Update Status to Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>New Opp</fullName>
+        <actions>
+            <name>New_Opportunity</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp%2E Actual Close Date Stamp</fullName>
+        <actions>
+            <name>Date_stamp_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won,Closed Lost</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Updated-Close Date</fullName>
+        <actions>
+            <name>Closed_Date_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

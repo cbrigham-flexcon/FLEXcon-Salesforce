@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Closed</fullName>
+        <description>Case Closed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>ADE</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>AR REP</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Credit Coordinator</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Customer Service Rep</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Executive Sponsor</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Group Leader</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Lead Qualifier</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Market Development Specialist</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Rep</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Technical Service Rep</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Closed_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Case</fullName>
+        <description>New Case</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>NA - Customer Service Rep</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>NA - Technical Service Rep</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Case_Team_Membership</fullName>
+        <description>New Case Team Membership</description>
+        <protected>false</protected>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case_Team_Member</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Owner_field_update</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Flexcon_Support</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Owner field update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Case Closed</fullName>
+        <actions>
+            <name>Case_Closed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Case</fullName>
+        <actions>
+            <name>New_Case</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

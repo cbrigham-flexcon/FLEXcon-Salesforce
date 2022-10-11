@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Application Development</fullName>
+        <default>false</default>
+        <label>Application Development</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliance</fullName>
+        <default>false</default>
+        <label>Compliance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit</fullName>
+        <default>false</default>
+        <label>Credit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Experience (CS &amp; TS)</fullName>
+        <default>false</default>
+        <label>Customer Experience (CS &amp; TS)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>FLEXcon Support</fullName>
+        <default>false</default>
+        <label>FLEXcon Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Operations</fullName>
+        <default>false</default>
+        <label>Operations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchasing</fullName>
+        <default>false</default>
+        <label>Purchasing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quality</fullName>
+        <default>false</default>
+        <label>Quality</label>
+    </standardValue>
+    <standardValue>
+        <fullName>R&amp;D</fullName>
+        <default>false</default>
+        <label>R&amp;D</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales</fullName>
+        <default>false</default>
+        <label>Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Rep. Visit</fullName>
+        <default>false</default>
+        <label>Sales Rep. Visit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+</StandardValueSet>

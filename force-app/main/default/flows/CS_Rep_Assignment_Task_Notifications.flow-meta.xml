@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Assign_West_and_Central_State_Supervisor_Task</name>
+        <label>Assign West and Central State Supervisor Task</label>
+        <locationX>466</locationX>
+        <locationY>350</locationY>
+        <actionName>NewTask</actionName>
+        <actionType>quickAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>OwnerId</name>
+            <value>
+                <stringValue>005f20000096exSAAQ</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>contextId</name>
+            <value>
+                <elementReference>$Record.Name</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhatId</name>
+            <value>
+                <elementReference>$Record.Name</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <stringValue>Assign CS Rep. on new Account</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <assignments>
+        <name>West_and_Central_State_Selected</name>
+        <label>West and Central State Selected</label>
+        <locationX>175</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.BillingState</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Alberta, Manitoba, Saskatchewan, North Dakota, South Dakota, Nebraska, Kansas, Oklahoma, Texas, Minnesota, Iowa, Missouri, Arkansas, Louisiana, Wisconsin, Illinois, Indiana</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.BillingState</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>British Columbia, Northwest Territory, Washington, Oregon, California, Idaho, Nevada, Montana, Wyoming, Utah, Colorado, Arizona, New Mexico, Alaska, Hawaii, </stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_West_and_Central_State_Supervisor_Task</targetReference>
+        </connector>
+    </assignments>
+    <formulas>
+        <name>Task_Due_Date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate} () + 7</expression>
+    </formulas>
+    <formulas>
+        <name>Task_in_7_days</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate}()+7</expression>
+    </formulas>
+    <formulas>
+        <name>TaskDueDate</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate() +7}</expression>
+    </formulas>
+    <interviewLabel>CS Rep Assignment Task Notifications {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CS Rep Assignment Task Notifications</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>West_and_Central_State_Selected</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+</Flow>

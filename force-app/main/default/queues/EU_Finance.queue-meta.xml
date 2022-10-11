@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>EU Finance</name>
+    <queueMembers>
+        <users>
+            <user>dvalentim@flexcon.com</user>
+            <user>fwhitelaw@flexcon.com</user>
+            <user>lstott@flexcon.com</user>
+            <user>sbryan@flexcon.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

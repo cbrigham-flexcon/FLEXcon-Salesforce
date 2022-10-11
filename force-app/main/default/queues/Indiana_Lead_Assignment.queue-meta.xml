@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Indiana Lead Assignment</name>
+    <queueMembers>
+        <users>
+            <user>bdiesing@flexcon.com</user>
+            <user>cbrigham@flexcon.com</user>
+            <user>izhang@flexcon.com</user>
+            <user>jherideen@flexcon.com</user>
+            <user>mkeaney@flexcon.com</user>
+            <user>rlester@flexcon.com</user>
+            <user>sallard@flexcon.com</user>
+            <user>tvalada@flexcon.com</user>
+            <user>ttomaszewski@flexcon.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,12 @@
+.THIS .greenBorder{
+    border-color:green;
+    border-width: medium;
+}
+.THIS .mSpacer{min-height:60px;}
+@media screen and (max-width:650px){
+    .THIS .responsiveGrid{flex-direction:column;}
+    .THIS .responsiveGrid .slds-col.slds-size_6-of-12{width:100%;} 
+}
+.THIS .slds-form-element__label {
+    font-size: inherit;
+}

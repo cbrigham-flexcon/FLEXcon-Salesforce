@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <interviewLabel>Update Account Access   - V1 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Account Access   - V1</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Account_Level_Access</name>
+        <label>Update Account Level Access</label>
+        <locationX>526</locationX>
+        <locationY>466</locationY>
+        <inputAssignments>
+            <field>AccountAccessLevel</field>
+            <value>
+                <stringValue>Edit</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>401</locationX>
+        <locationY>173</locationY>
+        <connector>
+            <targetReference>Update_Account_Level_Access</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountAccessLevel</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Edit</stringValue>
+            </value>
+        </filters>
+        <object>AccountTeamMember</object>
+        <schedule>
+            <frequency>Once</frequency>
+            <startDate>2022-01-19</startDate>
+            <startTime>08:45:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,158 @@
+<aura:component controller="SLRAddressAuraController"
+                implements="flexipage:availableForRecordHome,force:hasRecordId"
+                access="global">
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="street" type="String" default="" />
+    <aura:attribute name="city" type="String" default="" />
+	<aura:attribute name="state" type="String" default="" />
+    <aura:attribute name="country" type="String" default="" />
+    <aura:attribute name="Zip" type="String" default="" />
+
+    
+    <aura:attribute name="showEditMode" type="Boolean" default="false"/>
+    
+    <div class="slds-section slds-is-open">
+        
+        <h3 class="slds-section__title">
+            <button aria-controls="expando-unique-id" aria-expanded="true" class="slds-button slds-section__title-action">
+                <span class="slds-truncate" title="Address Information">Address Information</span>
+            </button>
+        </h3>
+        <aura:if isTrue="{!!v.showEditMode}">
+            <div class="slds-form" role="list">
+                <div class="slds-grid slds-gutters_small">
+                    <div class="slds-col slds-has-flexi-truncate" role="listitem">
+                        <div class="slds-form-element slds-form-element_edit slds-hint-parent">
+                            <span class="slds-form-element__label">Street</span>
+                            <span class="slds-form-element__static slds-border_bottom">
+                                {!v.street}
+                            </span>
+                            <button onclick="{!c.edit}" class="slds-button slds-button_icon" tabindex="0" title="Edit Street">
+                                <lightning:icon iconName="utility:edit" size="xx-small" alternativeText="edit"/>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <div class="slds-col slds-has-flexi-truncate" role="listitem">
+                        <div class="slds-form-element slds-form-element_edit slds-hint-parent">
+                            <span class="slds-form-element__label">City</span>
+                            <div class="slds-form-element__control">
+                                <span class="slds-form-element__static slds-border_bottom">
+                                    {!v.city}
+                                </span>
+                                <button onclick="{!c.edit}" class="slds-button slds-button_icon" tabindex="0" title="Edit City">
+                                    <lightning:icon iconName="utility:edit" size="xx-small" alternativeText="edit"/>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="slds-grid slds-gutters_small">
+                    <div class="slds-col slds-has-flexi-truncate" role="listitem">
+                        <div class="slds-form-element slds-form-element_edit slds-hint-parent">
+                            <span class="slds-form-element__label">State</span>
+                            <div class="slds-form-element__control">
+                                <span class="slds-form-element__static slds-border_bottom">
+                                    {!v.state}
+                                </span>
+                                <button onclick="{!c.edit}" class="slds-button slds-button_icon" tabindex="0" title="Edit State">
+                                    <lightning:icon iconName="utility:edit" size="xx-small" alternativeText="edit"/>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="slds-col slds-has-flexi-truncate" role="listitem">
+                        <div class="slds-form-element slds-form-element_edit slds-hint-parent">
+                            <span class="slds-form-element__label">Country</span>
+                            <div class="slds-form-element__control">
+                                <span class="slds-form-element__static slds-border_bottom">
+                                    {!v.country}
+                                </span>
+                                <button onclick="{!c.edit}" class="slds-button slds-button_icon" tabindex="0" title="Edit Country">
+                                    <lightning:icon iconName="utility:edit" size="xx-small" alternativeText="edit"/>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </aura:if>
+        <aura:if isTrue="{!v.showEditMode}">
+            <br/>
+            <div class="slds-form" role="list">
+                <div class="slds-grid slds-gutters_small">
+                    <div class="slds-col slds-has-flexi-truncate" role="listitem">
+                        <div class="slds-form-element slds-form-element_edit slds-hint-parent">
+                            <!--ui Namespace Are Deprecated-->
+                       <!--     <ui:inputText class="slds-input inputFieldWidth"
+                                          labelClass="slds-form-element__label slds-form-element__label_edit slds-no-flex"
+                                          aura:id="streetInputId"
+                                          label="Street"
+                                          value="{!v.street}" /> -->
+                            <lightning:input class="slds-input inputFieldWidth"
+                                          labelClass="slds-form-element__label slds-form-element__label_edit slds-no-flex"
+                                          aura:id="streetInputId"
+                                          label="Street"
+                                          value="{!v.street}" />
+                        </div>
+                    </div>
+                    <div class="slds-col slds-has-flexi-truncate" role="listitem">
+                        <div class="slds-form-element slds-form-element_edit slds-hint-parent">
+                            <!--ui Namespace Are Deprecated-->
+                         <!--     <ui:inputText class="slds-input inputFieldWidth"
+                                          labelClass="slds-form-element__label slds-form-element__label_edit slds-no-flex"
+                                          aura:id="cityInputId"
+                                          label="City"
+                                          value="{!v.city}" /> -->
+                                  <lightning:input class="slds-input inputFieldWidth"
+                                          labelClass="slds-form-element__label slds-form-element__label_edit slds-no-flex"
+                                          aura:id="cityInputId"
+                                          label="City"
+                                          value="{!v.city}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-form" role="list">
+                <div class="slds-grid slds-gutters_small">
+                    <div class="slds-col slds-has-flexi-truncate" role="listitem">
+                        <div class="slds-form-element slds-form-element_edit slds-hint-parent">
+                            <!--ui Namespace Are Deprecated-->
+                           <!--   <ui:inputText class="slds-input inputFieldWidth"
+                                          labelClass="slds-form-element__label slds-form-element__label_edit slds-no-flex"
+                                          aura:id="stateInputId"
+                                          label="State"
+                                          value="{!v.state}" /> -->
+                            	  <lightning:input class="slds-input inputFieldWidth"
+                                          labelClass="slds-form-element__label slds-form-element__label_edit slds-no-flex"
+                                          aura:id="stateInputId"
+                                          label="State"
+                                          value="{!v.state}" />
+                        </div>
+                    </div>
+                    <div class="slds-col slds-has-flexi-truncate" role="listitem">
+                        <div class="slds-form-element slds-form-element_edit slds-hint-parent">
+                            <!--ui Namespace Are Deprecated-->
+                          <!--    <ui:inputText class="slds-input inputFieldWidth"
+                                          labelClass="slds-form-element__label slds-form-element__label_edit slds-no-flex"
+                                          aura:id="countryInputId"
+                                          label="Country"
+                                          value="{!v.country}" /> -->
+                            	 <lightning:input class="slds-input inputFieldWidth"
+                                          labelClass="slds-form-element__label slds-form-element__label_edit slds-no-flex"
+                                          aura:id="countryInputId"
+                                          label="Country"
+                                          value="{!v.country}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="slds-align_absolute-center">
+             <lightning:button class="slds-button slds-button_neutral" label="Cancel" onclick="{!c.cancel}"/>
+             <lightning:button class="slds-button slds-button_brand" label="Save" onclick="{!c.save}"/>
+            </div>
+        </aura:if>
+    </div>
+</aura:component>

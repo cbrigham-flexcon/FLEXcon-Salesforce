@@ -152,6 +152,7 @@
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Sample/Lab Request Products</label>
     <nameField>
         <displayFormat>SLRP-{00000000}</displayFormat>

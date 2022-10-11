@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Agency</fullName>
+        <default>false</default>
+        <label>Ad Agency</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Ad Specifier</fullName>
+        <default>false</default>
+        <label>Ad Specifier</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Consultant</fullName>
+        <default>false</default>
+        <label>Consultant</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Co Supplier</fullName>
+        <default>false</default>
+        <label>Co Supplier</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>End User</fullName>
+        <default>false</default>
+        <label>End User</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Former Direct</fullName>
+        <default>false</default>
+        <label>Former Direct</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Installer</fullName>
+        <default>false</default>
+        <label>Installer</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>OEM</fullName>
+        <default>false</default>
+        <label>OEM</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Reseller</fullName>
+        <default>false</default>
+        <label>Reseller</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Retailer</fullName>
+        <default>false</default>
+        <label>Retailer</label>
+        <reverseRole>Vendor</reverseRole>
+    </standardValue>
+</StandardValueSet>

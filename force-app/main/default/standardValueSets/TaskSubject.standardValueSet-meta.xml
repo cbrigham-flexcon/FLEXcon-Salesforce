@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Certification enquiry / question</fullName>
+        <default>false</default>
+        <label>Certification enquiry / question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit limit / Payment terms enquiry</fullName>
+        <default>false</default>
+        <label>Credit limit / Payment terms enquiry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lab Test required</fullName>
+        <default>false</default>
+        <label>Lab Test required</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Logistics enquiry</fullName>
+        <default>false</default>
+        <label>Logistics enquiry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New raw material sourcing</fullName>
+        <default>false</default>
+        <label>New raw material sourcing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Packaging/Expedition enquiry</fullName>
+        <default>false</default>
+        <label>Packaging/Expedition enquiry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Price/lead time from supplier required</fullName>
+        <default>false</default>
+        <label>Price/lead time from supplier required</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Price Increase Exception</fullName>
+        <default>false</default>
+        <label>Price Increase Exception</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Price quote follow up is needed</fullName>
+        <default>false</default>
+        <label>Price quote follow up is needed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pricing required for product</fullName>
+        <default>false</default>
+        <label>Pricing required for product</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Process/Manufacturing/Finishing enquiry</fullName>
+        <default>false</default>
+        <label>Process/Manufacturing/Finishing enquiry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product recommendation required</fullName>
+        <default>false</default>
+        <label>Product recommendation required</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quality enquiry</fullName>
+        <default>false</default>
+        <label>Quality enquiry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote to be sent to customer</fullName>
+        <default>false</default>
+        <label>Quote to be sent to customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sample needs to be sent to customer</fullName>
+        <default>false</default>
+        <label>Sample needs to be sent to customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sample request follow up is needed</fullName>
+        <default>false</default>
+        <label>Sample request follow up is needed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send customer answer to technical question and/or provide technical statement</fullName>
+        <default>false</default>
+        <label>Send customer answer to technical question and/or provide technical statement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Invoice to customer</fullName>
+        <default>false</default>
+        <label>Send Invoice to customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send missing delivery papers to customer</fullName>
+        <default>false</default>
+        <label>Send missing delivery papers to customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send PCS to Customer</fullName>
+        <default>false</default>
+        <label>Send PCS to Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent to customer a Brochure or Sell Sheet</fullName>
+        <default>false</default>
+        <label>Sent to customer a Brochure or Sell Sheet</label>
+    </standardValue>
+</StandardValueSet>

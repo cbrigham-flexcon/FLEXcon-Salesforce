@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Due_Date_Alert</fullName>
+        <description>Due Date Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Due_Date_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Task_Assigned_to_Queue</fullName>
+        <ccEmails>luis.sanson@trifecta.com</ccEmails>
+        <ccEmails>luis.sanson@flexcon.com</ccEmails>
+        <ccEmails>carr.simpson@trifecta.com</ccEmails>
+        <ccEmails>luis.sanson@flexcon.com.tridevcarr</ccEmails>
+        <description>New Task Assigned to Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/EU_Tech_Services</template>
+    </alerts>
+    <rules>
+        <fullName>Due Date Alert</fullName>
+        <active>false</active>
+        <formula>AND
+(
+NOT(ISNULL(ActivityDate)), 
+
+OR
+(
+CONTAINS(WhatId,&quot;500&quot;),
+CONTAINS(WhatId,&quot;006&quot;)
+)
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Due_Date_Alert</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Task.ActivityDate</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

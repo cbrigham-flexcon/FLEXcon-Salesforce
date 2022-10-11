@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Customer Service Manager</fullName>
+        <default>false</default>
+        <label>Customer Service Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU - Application Development</fullName>
+        <default>false</default>
+        <label>EU - Application Development</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU-Backup-Project Leader</fullName>
+        <default>false</default>
+        <label>EU-Backup-Project Leader</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU - CTT Specialist</fullName>
+        <default>false</default>
+        <label>EU - Commercial Technical Training Consultant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU - Finance</fullName>
+        <default>false</default>
+        <label>EU - Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU - Process Quality</fullName>
+        <default>false</default>
+        <label>EU - Process Quality</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU - Project Leader</fullName>
+        <default>false</default>
+        <label>EU - Project Leader</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU - Project Management Team Leader</fullName>
+        <default>false</default>
+        <label>EU - Project Management Team Leader</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU – Quality</fullName>
+        <default>false</default>
+        <label>EU – Quality</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU - Sales Development</fullName>
+        <default>false</default>
+        <label>EU - Sales Development</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU – Sales Rep</fullName>
+        <default>false</default>
+        <label>EU – Sales Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EU - Technical Service Specialist</fullName>
+        <default>false</default>
+        <label>EU - Technical Service Specialist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NA - Business Development Manager</fullName>
+        <default>false</default>
+        <label>NA - Business Development Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NA - Credit Coordinator</fullName>
+        <default>false</default>
+        <label>NA - Credit Coordinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NA - Customer Service Group Lead</fullName>
+        <default>false</default>
+        <label>NA - Customer Service Group Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NA - Customer Service Rep</fullName>
+        <default>false</default>
+        <label>NA - Customer Service Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NA - Field Tech Service Manager</fullName>
+        <default>false</default>
+        <label>NA - Field Tech Service Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NA - Product Manager</fullName>
+        <default>false</default>
+        <label>NA - Product Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NA - Sales Rep</fullName>
+        <default>false</default>
+        <label>NA - Sales Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NA - Strategic Business Unit Manager</fullName>
+        <default>false</default>
+        <label>NA - Strategic Business Unit Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NA - Technical Service Rep</fullName>
+        <default>false</default>
+        <label>NA - Technical Service Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>National Account Manager</fullName>
+        <default>false</default>
+        <label>National Account Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Manager</fullName>
+        <default>false</default>
+        <label>Sales Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Support</fullName>
+        <default>false</default>
+        <label>Sales Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Service Manager</fullName>
+        <default>false</default>
+        <label>Technical Service Manager</label>
+    </standardValue>
+</StandardValueSet>

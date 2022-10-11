@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Lab Request Queue</name>
+    <queueMembers>
+        <users>
+            <user>ctoomey@flexcon.com</user>
+            <user>gglanville@flexcon.com</user>
+            <user>hcrespo@flexcon.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Sample_Lab_Request__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>FLEXcon Escalation</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <businessHours>Default</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <disableEscalationWhenModified>true</disableEscalationWhenModified>
+            <escalationAction>
+                <minutesToEscalation>14400</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyTo>kmann@flexcon.com</notifyTo>
+                <notifyToTemplate>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</notifyToTemplate>
+            </escalationAction>
+            <escalationAction>
+                <minutesToEscalation>432000</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyTo>kmann@flexcon.com</notifyTo>
+                <notifyToTemplate>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

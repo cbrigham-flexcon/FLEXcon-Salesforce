@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <disableProtocolSecurity>true</disableProtocolSecurity>
+    <isActive>false</isActive>
+    <url>https://flexcon--e2ex.na172.visual.force.com</url>
+</RemoteSiteSetting>

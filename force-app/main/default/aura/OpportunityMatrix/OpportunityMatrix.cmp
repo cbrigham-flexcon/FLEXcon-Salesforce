@@ -1,0 +1,202 @@
+<aura:component controller="OpportunityMatrixController" implements="flexipage:availableForAllPageTypes,force:appHostable,force:hasRecordId,force:lightningQuickAction,lightning:actionOverride" access="global" >
+    <aura:attribute name="matrix" type="Object"/>
+    <aura:attribute name="loaded" type="Boolean" default="false"/>
+    <aura:attribute name="assistiveTextSuccess" type="Boolean" default="false"/>
+    <aura:attribute name="promptLevel" type="String" default=""/>
+    <aura:attribute name="assistiveText" type="String" default=""/>
+    <aura:attribute name="levels" type="String[]" default="Undecided, Level 1,Level 2,Level 3,Level 4,Level 5,Level 6"/>
+    <aura:attribute name="progressIndicator" type="Integer" default="0"/>
+
+    <aura:handler name="init" value="this" action="{!c.doInit}"/>
+    <aura:handler name="calculateProgress" event="c:progressCalculatingEvent" action="{!c.calculateProgress}"/>
+
+    <div class="exampleHolder">
+        <aura:if isTrue="{! v.loaded }">            
+    
+            <div  class="slds-card">
+                
+                <div class="slds-card__body slds-card__body_inner">
+                    <div class="slds-form" role="list">
+                        <!--<div class="slds-form__row">
+                            <div class="slds-form__item" role="listitem">
+                                <div class="slds-var-m-around_small" style="width: 100%;">
+                                    <lightning:input type="text" name="input1" label="Opportunity Name" value="{!v.matrix.oppName}"/>
+                                </div>
+                            </div>
+                            <div class="slds-form__item" role="listitem">
+                                <div class="slds-var-m-around_small" style="width: 100%;">
+                                    <lightning:input type="date" name="input1" label="Close Date" value="{!v.matrix.oppCloseDate}"/>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="slds-var-m-around_small">
+                            <!-- THIS HAS BEEN COMMENTED AS THE FUNCTIONALITY IS NOT CONFIRMED
+							<div class="slds-text-title_caps slds-text-color_destructive slds-text-align_center">
+                                {!v.promptLevel}
+                            </div>-->
+                            <lightning:progressBar value="{!v.progressIndicator}" size="large" />
+                        </div>
+                        
+                        <lightning:layout verticalAlign="start" multipleRows="true" class="slds-m-bottom_xx-large responsiveGrid">
+                            <aura:iteration items="{!v.matrix.matrixQuestions}" var="question" indexVar="index">
+                                <aura:if isTrue="{!!question.isLevel6Question}">
+                                    <lightning:layoutItem flexibility="auto" size="6">
+                                        <div class="slds-form__item" role="listitem">
+                                            <div class="{!question.isApplicableForCurrentLevel ? 'slds-box slds-box_small slds-var-m-around_small greenBorder' : 'slds-box slds-box_small slds-var-m-around_small'}" style="width: 100%;">
+                                                <div class="slds-text-heading_small">
+                                                    Question No. {!index+1}
+                                                </div>
+                                                
+                                                <aura:if isTrue="{!question.questionType == 'group'}">
+                                                    <ul><li>{!question.groupName}</li></ul>
+                                                    <lightning:layout horizontalAlign="space" verticalAlign="center" multipleRows="true">
+                                                        <aura:iteration items="{!question.childQuestions}" var="childQuestion">
+                                                            <lightning:layoutItem alignmentBump="bottom" flexibility="auto" size="12">
+                                                                <div class="slds-form-element slds-var-m-around_small">
+                                                                    <c:OpportunityMatrixQuestion question="{!childQuestion}" typeOfQuestion="group"/>
+                                                                </div>
+                                                            </lightning:layoutItem>
+                                                        </aura:iteration>
+                                                    </lightning:layout>
+                                                </aura:if> 
+                                                <aura:if isTrue="{!question.questionType == 'parent-child'}">
+                                                    <div class="slds-form-element slds-var-m-around_small">
+                                                        <c:OpportunityMatrixQuestion question="{!question.parentQuestion}" typeOfQuestion="parent-child"/>
+                                                    </div>
+                                                    <lightning:layout horizontalAlign="space" verticalAlign="center" multipleRows="true">
+                                                        <aura:iteration items="{!question.childQuestions}" var="childQuestion">
+                                                            <lightning:layoutItem alignmentBump="bottom" flexibility="auto" size="12">
+                                                                <div class="slds-form-element slds-var-m-around_small">
+                                                                    <c:OpportunityMatrixQuestion question="{!childQuestion}" typeOfQuestion="parent-child"/>
+                                                                </div>
+                                                            </lightning:layoutItem>
+                                                        </aura:iteration>
+                                                    </lightning:layout>
+                                                </aura:if> 
+                                                <aura:if isTrue="{!question.questionType == 'individual'}">
+                                                    <div class="slds-form-element slds-var-m-around_small">
+                                                        <c:OpportunityMatrixQuestion question="{!question.question}" typeOfQuestion="individual"/>
+                                                    </div>
+                                                </aura:if> 
+                                            </div>
+                                        </div>
+                                    </lightning:layoutItem>
+                                </aura:if>
+                            </aura:iteration>
+                        </lightning:layout>
+                        
+                        <div class="slds-section slds-is-open">
+                            <h3 class="slds-section__title">
+                                <!--<button aria-controls="expando-unique-id" aria-expanded="true" class="slds-button slds-section__title-action">
+                                    <lightning:icon size="x-small" iconName="utility:switch" alternativeText="Level6" title="switch" />
+                                    
+                                </button>-->
+                                <div class="slds-section__title-action">
+                                    <span class="slds-truncate slds-m-left_x-small" title="Contract Manufacturing">Contract Manufacturing</span>
+                                </div>
+                            </h3>
+                            <div aria-hidden="false" class="slds-section__content" id="expando-unique-id">
+                                <lightning:layout verticalAlign="start" multipleRows="true" class="slds-m-bottom_xx-large responsiveGrid">
+                                    <aura:iteration items="{!v.matrix.matrixQuestions}" var="question" indexVar="index">
+                                        <aura:if isTrue="{!question.isLevel6Question}">
+                                            <lightning:layoutItem flexibility="auto" size="6">
+                                                <div class="slds-form__item" role="listitem">
+                                                    <div class="{!question.isApplicableForCurrentLevel ? 'slds-box slds-box_small slds-var-m-around_small greenBorder' : 'slds-box slds-box_small slds-var-m-around_small'}" style="width: 100%;">
+                                                        <div class="slds-text-heading_small">
+                                                            Question No. {!index+1}
+                                                        </div>
+                                                        
+                                                        <aura:if isTrue="{!question.questionType == 'group'}">
+                                                            <ul><li>{!question.groupName}</li></ul>
+                                                            <lightning:layout horizontalAlign="space" verticalAlign="center" multipleRows="true">
+                                                                <aura:iteration items="{!question.childQuestions}" var="childQuestion">
+                                                                    <lightning:layoutItem alignmentBump="bottom" flexibility="auto" size="12">
+                                                                        <div class="slds-form-element slds-var-m-around_small">
+                                                                            <c:OpportunityMatrixQuestion question="{!childQuestion}" typeOfQuestion="group"/>
+                                                                        </div>
+                                                                    </lightning:layoutItem>
+                                                                </aura:iteration>
+                                                            </lightning:layout>
+                                                        </aura:if> 
+                                                        <aura:if isTrue="{!question.questionType == 'parent-child'}">
+                                                            <div class="slds-form-element slds-var-m-around_small">
+                                                                <c:OpportunityMatrixQuestion question="{!question.parentQuestion}" typeOfQuestion="parent-child"/>
+                                                            </div>
+                                                            <lightning:layout horizontalAlign="space" verticalAlign="center" multipleRows="true">
+                                                                <aura:iteration items="{!question.childQuestions}" var="childQuestion">
+                                                                    <lightning:layoutItem alignmentBump="bottom" flexibility="auto" size="12">
+                                                                        <div class="slds-form-element slds-var-m-around_small">
+                                                                            <c:OpportunityMatrixQuestion question="{!childQuestion}" typeOfQuestion="parent-child"/>
+                                                                        </div>
+                                                                    </lightning:layoutItem>
+                                                                </aura:iteration>
+                                                            </lightning:layout>
+                                                        </aura:if> 
+                                                        <aura:if isTrue="{!question.questionType == 'individual'}">
+                                                            <div class="slds-form-element slds-var-m-around_small">
+                                                                <c:OpportunityMatrixQuestion question="{!question.question}" typeOfQuestion="individual"/>
+                                                            </div>
+                                                        </aura:if> 
+                                                    </div>
+                                                </div>
+                                            </lightning:layoutItem>
+                                        </aura:if>
+                                    </aura:iteration>
+                                </lightning:layout>
+                            </div>
+                        </div>
+                    
+                    	<lightning:layout verticalAlign="start" multipleRows="false">
+                            <lightning:layoutItem alignmentBump="bottom" flexibility="auto"  size="6">
+                                <div class="slds-form__item" role="listitem">
+                                    <div class="slds-var-m-around_small" style="width: 100%;">
+                                        <div class="slds-text-heading_small">
+                                            <span>When ready please select a product recommendation level</span>
+                                        </div>
+                                        <lightning:combobox dropdownAlignment="auto" options="{! v.matrix.availableLevels }" value="{!v.matrix.currentLevel}" onchange="{! c.changeLevel }"/>
+                                    </div>
+                                </div>
+                            </lightning:layoutItem>
+                            <aura:if isTrue="{!or(v.matrix.currentLevel == 'Level 4: Complex BOM Modification', v.matrix.currentLevel == 'Level 3: Simple BOM Modification')}">
+                            <lightning:layoutItem alignmentBump="bottom" flexibility="auto"  size="6">
+                                <div class="slds-form__item" role="listitem">
+                                    <div class="slds-var-m-around_medium" style="width: 100%;">
+                                        <div class="slds-text-heading_small">
+                                            <span>North America flx # Assessment Form</span>
+                                        </div>
+                                        <div class="slds-m-top_medium slds-text-heading_small">
+                                        <lightning:formattedURL value="https://bit.ly/3e6sLH0"/>
+                                            </div>
+                                    </div>
+                                </div>
+                            </lightning:layoutItem>
+                                </aura:if>
+                        </lightning:layout>
+                        <div class="slds-var-m-around_medium">
+                            <aura:if isTrue="{!v.assistiveTextSuccess}">
+                                <div class="slds-text-title slds-text-color_success slds-text-align_center" style="font-size: 12pt;">
+                                    {!v.assistiveText}
+                                </div>
+                                <aura:set attribute="else">
+                                    <div class="slds-text-title slds-text-color_destructive slds-text-align_center" style="font-size: 12pt;">
+                                        {!v.assistiveText}
+                                    </div>
+                                </aura:set>
+                                
+                            </aura:if> 
+                        </div>
+                        <div class="mSpacer"></div>
+                    </div>
+                </div>
+                <div class="slds-docked-form-footer">
+                    <!--<button type="button" class="slds-button slds-button_neutral">Cancel</button>-->
+                    <button type="button" class="slds-button slds-button_brand" onclick="{!c.saveOpportunity}">Save</button>
+                </div>
+            </div>
+            
+            <aura:set attribute="else">
+                <lightning:spinner alternativeText="Loading" variant="brand"/>
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>

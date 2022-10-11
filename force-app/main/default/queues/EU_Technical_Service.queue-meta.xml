@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>carr.simpson@trifecta.com</email>
+    <name>EU Technical Service</name>
+    <queueMembers>
+        <users>
+            <user>carr.simpson@flexcon.com</user>
+            <user>luis.sanson@trifecta.com.flexcontridevcarr</user>
+            <user>luis.sanson@flexcon.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

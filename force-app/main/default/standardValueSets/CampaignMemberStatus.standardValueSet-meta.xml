@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Connected</fullName>
+        <default>false</default>
+        <label>Connected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Filled out Form</fullName>
+        <default>false</default>
+        <label>Filled out Form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>In Que</fullName>
+        <default>false</default>
+        <label>In Que</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opened Email</fullName>
+        <default>false</default>
+        <label>Opened Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Removed From Campaign</fullName>
+        <default>false</default>
+        <label>Removed From Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responded</fullName>
+        <default>false</default>
+        <label>Responded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting to Start Campaign</fullName>
+        <default>false</default>
+        <label>Waiting to Start Campaign</label>
+    </standardValue>
+</StandardValueSet>

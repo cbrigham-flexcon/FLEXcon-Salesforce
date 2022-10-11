@@ -1,0 +1,52 @@
+<!--
+ - Created by naveen on 31/08/18.
+ -->
+
+<aura:component description="LabRequestproducts" controller="LabRequestProductsAuraController" implements="force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,force:hasRecordId">
+    <!-- attributes -->
+    <aura:attribute name="data" type="List" default="[]"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="false"/>
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    <aura:handler event="c:DeleteLRP" action="{!c.delAction}"/>
+	<aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner alternativeText="Loading" size="large" />
+    </aura:if>
+    <!-- the container element determine the height of the datatable -->
+    <lightning:card title="Lab Drawdown Request Products">
+        <aura:set attribute="footer">
+            <lightning:button label="Add" onclick="{!c.addAction}"/>
+            <lightning:button variant="brand" label="Save" onclick="{!c.saveAction}"/>
+        </aura:set>
+        <div style="background-color:white;">
+            <table>
+                <tr style="background-color:#f3f2f2; color:#706e6b; padding:10px;">
+                    <th>
+                        <p style="padding:10px;text-align:center;">Product Description</p>
+                    </th>
+                    <th>
+                        <p style="padding:10px;text-align:center;">Coat Weight</p>
+                    </th>
+                    <th>
+                        <p style="padding:10px;text-align:center;">Quantity</p>
+                    </th>
+                    <th>
+                        <p style="padding:10px;text-align:center;">Size</p>
+                    </th>
+                    <th>
+                        <p style="padding:10px;text-align:center;">Special Instructions</p>
+                    </th>
+                    <th>
+                        <p style="padding:10px;text-align:center;">Delete</p>
+                    </th>
+                </tr>
+                <aura:iteration items="{!v.data}" var="li">
+                    <c:LabRequestproductSingle li="{!li}"/>
+                </aura:iteration>
+            </table>
+        </div>
+    </lightning:card>
+
+</aura:component>

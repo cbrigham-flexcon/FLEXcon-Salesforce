@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample/Lab Request Products</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sample/Lab Request Products</value>
+    </caseValues>
+    <layouts>
+        <layout>Lab Request Products Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sample Request Products Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Lab_Request_Products</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Sample_Requests_Products</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

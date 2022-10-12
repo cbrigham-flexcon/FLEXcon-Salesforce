@@ -1,0 +1,37 @@
+<!--
+ - Created by naveen on 05/09/18.
+ -->
+
+<aura:component description="SampleRequestProductSingle" controller="SampleRequestProductsAuraController">
+    <aura:attribute name="li" type="Sample_Lab_Request_Products__c" />
+    <aura:registerEvent name="DelLRP" type="c:DeleteLRP"/>
+    <tr>
+        <td class="slds-text-align_center">
+            <!--ui Namespace Are Deprecated-->
+          <!--  <ui:outputText value="{!v.li.Location__c}"/> -->
+           <lightning:formattedText value="{!v.li.Location__c}"/>
+        </td>
+        <td class="slds-text-align_center">
+            <!--ui Namespace Are Deprecated-->
+           <!--  <ui:outputText value="{!v.li.Product_Text__c}"/> -->
+             <lightning:formattedText value="{!v.li.Product_Text__c}"/>
+        </td>
+        <td class="slds-text-align_center">
+            <!--ui Namespace Are Deprecated-->
+          <!--   <ui:outputText value="{!v.li.Size__c}"/> -->
+             <lightning:formattedText value="{!v.li.Size__c}"/>
+        </td>
+        <td class="slds-text-align_center">
+            <lightning:input type="number" value="{!v.li.Quantity__c}"/>
+        </td>
+        <td class="slds-text-align_center">
+            <lightning:input type="text" value="{!v.li.UOM__c}"/>
+        </td>
+        <td class="slds-text-align_center">
+            <lightning:input type="number" value="{!v.li.Unit_Price__c}"/>
+        </td>
+        <td class="slds-text-align_center">
+            <lightning:buttonIcon iconName="utility:delete"  alternativeText="Delete" onclick="{!c.deleteAction}"/>
+        </td>
+    </tr>
+</aura:component>

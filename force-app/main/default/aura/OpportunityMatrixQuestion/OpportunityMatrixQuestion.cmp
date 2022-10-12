@@ -1,0 +1,70 @@
+<aura:component controller="OpportunityMatrixController" implements="flexipage:availableForAllPageTypes,force:appHostable,force:hasRecordId,force:lightningQuickAction,lightning:actionOverride" access="global" >
+    <aura:attribute name="question" type="Object"/>
+    <aura:attribute name="typeOfQuestion" type="String"/>
+    
+    <aura:registerEvent name="calculateProgress" type="c:progressCalculatingEvent"/>
+    
+    <aura:if isTrue="{!v.question.fieldType=='BOOLEAN'}">
+        <!--ui Namespace Are Deprecated-->
+        <!--<ui:inputCheckbox label="{!v.question.questionLabel}" value="{!v.question.selectedAnswer}"/>-->
+        
+        <lightning:input type="checkbox" label="{!v.question.questionLabel}" checked="{!v.question.selectedAnswerBoolean}" onchange="{!c.calculateProgress}"/>
+        
+        <aura:set attribute="else">
+            <aura:if isTrue="{!v.question.fieldType=='PICKLIST'}">
+                <!--ui Namespace Are Deprecated-->
+                <!--<ui:inputSelect label="{!v.question.questionLabel}" class="dynamic" options="{!v.question.options}" value="{!v.question.selectedAnswer}"/>-->
+                
+                <lightning:combobox dropdownAlignment="auto" label="{!v.question.questionLabel}" options="{! v.question.options }" value="{!v.question.selectedAnswer}" onchange="{! c.calculateProgress }"/>
+                
+                <aura:set attribute="else">
+                    <aura:if isTrue="{!v.question.fieldType=='DATE'}">
+                        <!--ui Namespace Are Deprecated-->
+                        <!--<ui:inputDate label="{!v.question.questionLabel}" value="{!v.question.selectedAnswer}" displayDatePicker="true" />-->
+                        
+                        <lightning:input type="date" label="{!v.question.questionLabel}" value="{!v.question.selectedAnswer}" onchange="{! c.calculateProgress }"/>
+                        
+                        <aura:set attribute="else">
+                            <aura:if isTrue="{!v.question.fieldType=='DATETIME'}">
+                                <!--ui Namespace Are Deprecated-->
+                                <!--<ui:inputDateTime label="{!v.question.questionLabel}" value="{!v.question.selectedAnswer}" displayDatePicker="true" />-->
+                                
+                                <lightning:input type="datetime" label="{!v.question.questionLabel}" value="{!v.question.selectedAnswer}" onchange="{! c.calculateProgress }"/>
+                                
+                                <aura:set attribute="else">
+                                    <aura:if isTrue="{!v.question.fieldType=='MULTIPICKLIST'}">
+                                        <!--ui Namespace Are Deprecated-->
+                                     <!--   <ui:inputSelect label="{!v.question.questionLabel}" class="dynamic" options="{!v.question.options}" value="{!v.question.selectedAnswer}" multiple="true" change="{! c.calculateProgress }"/> -->
+                                        <lightning:combobox label="{!v.question.questionLabel}" class="dynamic" options="{!v.question.options}" value="{!v.question.selectedAnswer}" multiple="true" change="{! c.calculateProgress }"/>
+                                        
+                                        <aura:set attribute="else">
+                                            <aura:if isTrue="{!v.question.fieldType=='TEXTAREA'}">
+                                                <!--ui Namespace Are Deprecated-->
+                                                <!--<ui:inputTextArea label="{!v.question.questionLabel}"  value="{!v.question.selectedAnswer}" rows="1"/>-->
+                                                
+                                                <lightning:textarea label="{!v.question.questionLabel}" value="{!v.question.selectedAnswer}" onblur="{! c.calculateProgress }"/>
+                                                
+                                                <aura:set attribute="else">
+                                                    <!--ui Namespace Are Deprecated-->
+                                                    <!--<ui:inputText label="{!v.question.questionLabel}" value="{!v.question.selectedAnswer}"/>-->
+                                                    
+                                                    <lightning:input label="{!v.question.questionLabel}" value="{!v.question.selectedAnswer}" onblur="{! c.calculateProgress }"/>
+                                                </aura:set>
+                                            </aura:if>
+                                        </aura:set>
+                                    </aura:if>
+                                </aura:set>
+                            </aura:if>
+                        </aura:set>
+                    </aura:if>
+                </aura:set>
+            </aura:if>
+        </aura:set>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.question.helpText != ''}">
+        <div style="font-size:11px">
+            <b>{!v.question.helpText}</b>
+        </div>
+    </aura:if>
+</aura:component>

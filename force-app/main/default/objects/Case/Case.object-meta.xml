@@ -201,6 +201,7 @@
     </actionOverrides>
     <compactLayoutAssignment>Case_Highlights_Bar</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Read</externalSharingModel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Contact</layout>
+        <sections>
+            <label></label>
+            <section>Pardot Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot/Engage Pages</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Marketing Info.</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opt Out Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot/Engage Pages</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact-Marketing</layout>
+        <sections>
+            <label></label>
+            <section>Pardot Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot/Engage Pages</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>pi__Add_to_Nurture_List</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Contact_Country_Picklist</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>E2Ex__Export_To_Excel</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>mkto_si__Add_to_Marketo_Campaign</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>mkto_si__Add_to_Watch_List</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>mkto_si__Send_Marketo_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Alert</fullName>
+        <description>Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>crice@flexcon.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>wbabbitt@flexcon.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Sample_Drawdown_Request_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Lab_Request_Email_Alertv2</fullName>
+        <description>Lab Request Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ctoomey@flexcon.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>gglanville@flexcon.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hcrespo@flexcon.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Lab_Request_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Lab_request_Email_Alert</fullName>
+        <description>Lab Request Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Lab_Request_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Owner_Change</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Lab_Request_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Owner Change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sample_Owner_Change</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Sample_Requests_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Sample Owner Change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>New Lab Request Notification New</fullName>
+        <actions>
+            <name>Lab_Request_Email_Alertv2</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Sample_Lab_Request__c.Notification_Sent__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Lab_Request__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Lab Drawdown Request</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Sample%2FDrawdown Request Notification</fullName>
+        <actions>
+            <name>Email_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Sample_Lab_Request__c.Notification_Sent__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Lab_Request__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Sample Requests</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

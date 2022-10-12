@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>test@flexcon.test</email>
+    <name>Tier 1 Support</name>
+    <queueMembers>
+        <users>
+            <user>appluent@flexcon.com</user>
+            <user>bozer@flexcon.com</user>
+            <user>cleung@flexcon.com</user>
+            <user>dsteuber@flexcon.com</user>
+            <user>jdiaz@flexcon.com</user>
+            <user>ktower@flexcon.com</user>
+            <user>kmann@flexcon.com</user>
+            <user>lcano@flexcon.com</user>
+            <user>mmcclurg@flexcon.com</user>
+            <user>pmcgrath@flexcon.com</user>
+            <user>pbeumer@flexcon.com</user>
+            <user>pbuenning@flexcon.com</user>
+            <user>rodonnell@flexcon.com</user>
+            <user>rsmith@flexcon.com</user>
+            <user>sfrazier@flexcon.com</user>
+            <user>srichards@flexcon.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

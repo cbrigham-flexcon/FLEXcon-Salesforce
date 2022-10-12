@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Sales Cloud</label>
+            <name>Sales_Cloud</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Pardot</label>
+            <name>Pardot</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Service Cloud</label>
+            <name>Service_Cloud</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Spring Release</label>
+            <name>Spring_Release</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Summer Release</label>
+            <name>Summer_Release</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Winter Release</label>
+            <name>Winter_Release</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Release Notes</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

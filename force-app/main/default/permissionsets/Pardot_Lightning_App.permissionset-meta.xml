@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gives users access to the Pardot Lightning App</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Pardot Lightning App</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>PardotUser</name>
+    </userPermissions>
+</PermissionSet>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>cbrigham@flexcon.com</contactEmail>
+    <label>PardotDatabox</label>
+    <oauthConfig>
+        <callbackUrl>https://connect.databox.com/callback</callbackUrl>
+        <consumerKey>3MVG9qaMEyNEoADKMV3MqgYpSf85m1vPNu9fD2mhqtY8v6h6B732utnWWhl6whgJt7MgoLixEBDIzHMf34CMX</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>Pardot</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

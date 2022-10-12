@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Catch-All Lead Assignment</name>
+    <queueMembers>
+        <users>
+            <user>cbrigham@flexcon.com</user>
+            <user>dvonderwalde@flexcon.com</user>
+            <user>khaughey@flexcon.com</user>
+            <user>lhobmaier@flexcon.com</user>
+            <user>mkeaney@flexcon.com</user>
+            <user>pbustamante@flexcon.com</user>
+            <user>pwinterberg@flexcon.com</user>
+            <user>rgoessens@flexcon.com</user>
+            <user>rlester@flexcon.com</user>
+            <user>tvalada@flexcon.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

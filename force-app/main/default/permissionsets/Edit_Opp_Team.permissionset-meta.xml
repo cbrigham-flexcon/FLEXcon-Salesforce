@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gives a user the ability to edit the Opportunity Team</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Edit Opp. Team</label>
+    <license>Salesforce</license>
+</PermissionSet>

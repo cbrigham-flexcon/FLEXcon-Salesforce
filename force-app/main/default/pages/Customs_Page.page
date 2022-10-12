@@ -1,0 +1,182 @@
+<!--
+ - Created by nav on 09/11/18.
+ -->
+
+<apex:page id="SampleRequestPDF" standardController="Sample_Lab_Request__c" renderAs="pdf">
+    <table style="width: 100%; font-size: 12px;">
+        <tr>
+            <td style="padding-bottom: 30px; " colspan="2" valign="top">
+                <apex:image url="{!$Resource.Flexcon_Logo}" height="50"/>
+            </td>
+            <td style="padding-bottom: 30px; " colspan="2" valign="top">
+                <div style="float:right; font-size:10px;">
+                FLEXCON<br/>
+                1 FLEXcon Industrial Park<br/>
+                Spencer,<br/>
+                Tel: (508) 885-8200<br/>
+                Fax: (508) 885-8400<br/>
+                www.FLEXcon.com
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 10px; width: 15%;">
+                Tracking #:
+            </td>
+            <td style="padding-bottom: 10px;" colspan="3">
+                {! Sample_Lab_Request__c.Tracking_Info__c }
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 10px; width: 15%;" valign="top">
+                Attention:
+            </td>
+            <td style="padding-bottom: 10px; width: 35%;">
+                {! Sample_Lab_Request__c.Attention_Name__c } <br/>
+                {! Sample_Lab_Request__c.Attention_Phone__c }
+            </td>
+            <td style="padding-bottom: 10px; width: 15%;">
+                Phones:
+            </td>
+            <td style="padding-bottom: 10px; width: 35%;">
+                    {! Sample_Lab_Request__c.Attention_Phone__c }
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 10px; width: 15%;">
+                Customer:
+            </td>
+            <td style="padding-bottom: 10px; width: 35%;">
+                FLEXCON
+            </td>
+            <td style="padding-bottom: 10px; width: 15%;">
+            </td>
+            <td style="padding-bottom: 10px; width: 35%;">
+                {! Sample_Lab_Request__c.Account__r.Name }
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom: 10px; width: 15%;" valign="top">
+                Address:
+            </td>
+            <td  style="padding-bottom: 10px; width: 35%;">
+                <apex:outputText value="{! Sample_Lab_Request__c.Address__c }" escape="false"/>
+            </td>
+            <td style="padding-bottom: 10px; width: 15%;">
+            </td>
+            <td style="padding-bottom: 10px; width: 35%;">
+                <apex:outputText value="{! Sample_Lab_Request__c.Customer_Shipping_Address__c }" escape="false"/>
+            </td>
+        </tr>
+    </table>
+    <table  style="width: 100%; font-size: 12px;">
+        <tr>
+            <td style="text-align:center; border: 1px solid black;">
+                <strong>SAMPLE REQUEST #:</strong> {! Sample_Lab_Request__c.Name } <br/>
+                <strong>CANADA &#36; MEXICO SHIPMENTS - RFC NUMBER #:</strong>  {! Sample_Lab_Request__c.Customer_UPS_FedEx__c }
+            </td>
+        </tr>
+    </table>
+    <table  style="width: 100%; font-size: 12px; margin-top: 30px; border-collapse: collapse;">
+        <tr>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width; width:20%;">
+                Date Shipped<br/>
+                Invoice Date
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                Shipped Via
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                C.I.F
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:10%;">
+                PPD
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                Total Weight<br/>
+                In Lbs
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:10%;">
+                Number Of<br/>
+                Packages
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width; width:20%;">
+                <apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{! Sample_Lab_Request__c.Date_Shipped__c }" /> </apex:outputText>
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                {! Sample_Lab_Request__c.Ship_Via__c}
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                    {! Sample_Lab_Request__c.C_I_F__c }
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:10%;">
+                    {! Sample_Lab_Request__c.PPD__c}
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                {! Sample_Lab_Request__c.Total_Weight_In_Lbs__c}
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:10%;">
+                {! Sample_Lab_Request__c.Total_Quantity__c}
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%; font-size: 12px; margin-top: 30px; border-collapse: collapse;">
+        <tr>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width; width:20%;">
+                Qty
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                UOM
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                Description
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:10%;">
+                Price Each<br/>
+                (U.S. $)
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                Price Total<br/>
+                (U.S. $)
+            </td>
+        </tr>
+        <apex:repeat var="prod" value="{! Sample_Lab_Request__c.Sample_Lab_Request_Products__r }">
+            <tr>
+                <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width; width:20%;">
+                    {! prod.Quantity__c }
+                </td>
+                <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                        {! prod.UOM__c }
+                </td>
+                <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                     {! prod.Sample_Product__r.Name }
+                </td>
+                <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:10%;">
+                        ${! prod.Unit_Price__c }
+                </td>
+                <td style="text-align:center; border: 1px solid black; word-wrap: break-word; width:20%;">
+                        ${! prod.Total_Price__c }
+                </td>
+            </tr>
+        </apex:repeat>
+        <tr>
+            <td colspan="4" style="text-align:center; border: 1px solid black; word-wrap: break-word;">
+                Total Shipment Value For Customs
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word;">
+                ${! Sample_Lab_Request__c.Total_Price_Rollup__c }
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:center; border: 1px solid black; word-wrap: break-word;text-align:center;">
+                SAMPLE MATERIALS - <u>NOT FOR RESALE</u><br/>
+                NO COMMERCIAL VALUE - MANUFACTURED IN U.S.A
+            </td>
+            <td style="text-align:center; border: 1px solid black; word-wrap: break-word; ">
+
+            </td>
+        </tr>
+    </table>
+</apex:page>

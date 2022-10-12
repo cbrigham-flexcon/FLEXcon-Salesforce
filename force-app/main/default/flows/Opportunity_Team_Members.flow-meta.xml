@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Error_Message</name>
+        <label>Error Message</label>
+        <locationX>889</locationX>
+        <locationY>330</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>david.kyurkchyan@appluent.net</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Error in Opportunity Team Members Flow</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Assign_to_Collection</name>
+        <label>Assign to Collection</label>
+        <locationX>340</locationX>
+        <locationY>535</locationY>
+        <assignmentItems>
+            <assignToReference>OpportunityTeamMembersCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>OpportunityTeamMember</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Account_Team_Members</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Create_Opportunity_Team_Member</name>
+        <label>Create Opportunity Team Member</label>
+        <locationX>576</locationX>
+        <locationY>527</locationY>
+        <assignmentItems>
+            <assignToReference>OpportunityTeamMember.OpportunityId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>OpportunityTeamMember.UserId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_Account_Team_Members.UserId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>OpportunityTeamMember.TeamMemberRole</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_Account_Team_Members.TeamMemberRole</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>OpportunityTeamMember.OpportunityAccessLevel</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Edit</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_to_Collection</targetReference>
+        </connector>
+    </assignments>
+    <description>When a new Opportunity is created: 
+1. Customer Service Rep from account team automatically gets added to the Opp. Team
+2. Technical Service Rep from account team automatically gets added to the Opp. team</description>
+    <interviewLabel>Opportunity Team Members {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Team Members</label>
+    <loops>
+        <name>Loop_Account_Team_Members</name>
+        <label>Loop Account Team Members</label>
+        <locationX>338</locationX>
+        <locationY>335</locationY>
+        <collectionReference>Get_Account_Team_Members</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Create_Opportunity_Team_Member</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Create_Opportunity_Team_Members</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Opportunity_Team_Members</name>
+        <label>Create Opportunity Team Members</label>
+        <locationX>660</locationX>
+        <locationY>329</locationY>
+        <faultConnector>
+            <targetReference>Error_Message</targetReference>
+        </faultConnector>
+        <inputReference>OpportunityTeamMembersCollection</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Account_Team_Members</name>
+        <label>Get Account Team Members</label>
+        <locationX>175</locationX>
+        <locationY>334</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Account_Team_Members</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11)</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>NA - Customer Service Rep</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>NA - Technical Service Rep</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EU - Project Management Team Leader</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EU - Project Leader</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EU - CTT Specialist</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EU - Technical Service Specialist</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EU - Application Development</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>National Account Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sales Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>NA - Business Development Manager</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AccountTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>51</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Account_Team_Members</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>OpportunityTeamMember</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>OpportunityTeamMember</objectType>
+    </variables>
+    <variables>
+        <name>OpportunityTeamMembersCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>OpportunityTeamMember</objectType>
+    </variables>
+</Flow>

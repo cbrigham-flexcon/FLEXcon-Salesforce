@@ -1,0 +1,129 @@
+<!--
+ - Created by naveen on 05/09/18.
+ -->
+
+<aura:component description="SampleRequestProducts" controller="SampleRequestProductsAuraController"  implements="force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="products" type="List" default="[]"/>
+    <aura:attribute name="selectedProducts" type="List"/>
+    <aura:attribute name="productColumns" type="List" default="[]"/>
+    <aura:attribute name="searchString" type="String" />
+    <aura:attribute name="Category" type="String"/>
+    <aura:attribute name="lineItems" type="SampleRequestMainWrapper"/>
+    <ltng:require styles="{!$Resource.ModelOpenCSS}"/>
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    <aura:handler event="c:DeleteLRP" action="{!c.init}"/>
+    <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        }
+    </aura:html>
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+    </div>
+    <div class="slds-modal__content slds-p-around--x-small slds-align_absolute-center slds-size_1-of-1 slds-is-relative" aura:id="modalbody" id="modalbody">
+        <div class="slds-wrap slds-grid">
+            <div class="slds-size_1-of-1">
+                <div class="slds-wrap slds-grid">
+                    <div class="slds-size--1-of-3 slds-p-around_medium">
+                        <lightning:select name="Category" label="Category" value="{!v.Category}" required="true" onchange="{!c.Search}">
+                            <option value="">choose one...</option>
+                            <option value="Sample">Sample</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Other">Other</option>
+                        </lightning:select>
+                    </div>
+                    <div class="slds-size--2-of-3 slds-p-around_medium">
+                        <lightning:input type="text" placeholder="Search Sample Request Products Here" value="{!v.searchString}" onchange="{!c.Search}"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-size_1-of-1">
+                <lightning:datatable
+                                     columns="{! v.productColumns }"
+                                     data="{! v.products }"
+                                     keyField="Id"
+                                     selectedRows="{!v.selectedProducts}"
+                                     onrowselection="{!c.UpdateSelectedRows}"
+                                     />
+            </div>
+            <div class="slds-size_1-of-1">
+                <div class="slds-grid slds-grid_align-center">
+                    <div class="slds-col slds-p-around_medium">
+                        <lightning:button label="Add" variant="brand" title="Add" onclick="{! c.addAction }"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-size_1-of-1">
+                <div style="background-color:white;">
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                        <thead>
+                            <tr class="slds-text-title_caps">
+                                <th scope="col">
+                                    <p style="padding:10px;text-align:center;">Location</p>
+                                </th>
+                                <th scope="col">
+                                    <p style="padding:10px;text-align:center;">Product</p>
+                                </th>
+                                <th scope="col">
+                                    <p style="padding:10px;text-align:center;">Size</p>
+                                </th>
+                                <th scope="col">
+                                    <p style="padding:10px;text-align:center;">Quantity</p>
+                                </th>
+                                <th scope="col">
+                                    <p style="padding:10px;text-align:center;">Units Of Measurement</p>
+                                </th>
+                                <th scope="col">
+                                    <p style="padding:10px;text-align:center;">Price</p>
+                                </th>
+                                <th scope="col">
+                                    <p style="padding:10px;text-align:center;">Delete</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="slds-text-title_caps">
+                                <th colspan="7" scope="row">
+                                    <span class="slds-p-around_large slds-text-heading_label">Samples</span>
+                                </th>
+                            </tr>
+                            <aura:iteration items="{!v.lineItems.SampleList}" var="li">
+                                <c:SampleRequestProductSingle li="{!li}"/>
+                            </aura:iteration>
+                            <tr class="slds-text-title_caps">
+                                <th colspan="7" scope="row">
+                                    <span class="slds-p-around_large slds-text-heading_label">Leave Behind(s)</span>
+                                </th>
+                            </tr>
+                            <aura:iteration items="{!v.lineItems.MarketingList}" var="li">
+                                <c:SampleRequestProductSingle li="{!li}"/>
+                            </aura:iteration>
+                            <tr class="slds-text-title_caps">
+                                <th colspan="7" scope="row">
+                                    <span class="slds-p-around_large slds-text-heading_label">Other Material(s)</span>
+                                </th>
+                            </tr>
+                            <aura:iteration items="{!v.lineItems.OtherList}" var="li">
+                                <c:SampleRequestProductSingle li="{!li}"/>
+                            </aura:iteration>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+        <div class="forceChangeRecordTypeFooter">
+            <lightning:button label="Cancel" onclick="{!c.handleCancel}"/>
+            <lightning:button variant="brand" label="save" onclick="{!c.handleSave}"/>
+        </div>
+    </div>
+</aura:component>

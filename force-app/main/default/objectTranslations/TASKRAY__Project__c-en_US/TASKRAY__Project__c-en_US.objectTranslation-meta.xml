@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>TASKRAY__Projects_Field_Set</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>TASKRAY__TaskRay_Field_Trickler</name>
+    </fieldSets>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>TASKRAY__NewTaskRayTask</name>
+    </quickActions>
+    <sharingReasons>
+        <label></label>
+        <name>TASKRAY__Project_Member_added_in_TaskRay</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TASKRAY__Completing_Project_Restricted_to_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TASKRAY__Editing_Score_Restricted_to_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TASKRAY__External_Sharing_Restricted_to_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TASKRAY__Feedback_Form_Restricted_to_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TASKRAY__No_spaces_in_Nickname</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>TASKRAY__TaskRay_Project_Clone</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>TASKRAY__View_in_TaskRay</name>
+    </webLinks>
+</CustomObjectTranslation>

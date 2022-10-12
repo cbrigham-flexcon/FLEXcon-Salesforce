@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Tier 1 Support</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Tier_1_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Internal</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Case_Closed_Reason__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <template>unfiled$public/Internal_Case</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Case_Closed_Reason__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Internal</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

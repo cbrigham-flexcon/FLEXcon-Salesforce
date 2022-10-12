@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuración de Marketo Sales Insight</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configuración de Marketo Sales Insight</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Marketo Sales Insight Config Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ID</nameFieldLabel>
+    <webLinks>
+        <label></label>
+        <name>mkto_si__Test_Configuration</name>
+    </webLinks>
+</CustomObjectTranslation>

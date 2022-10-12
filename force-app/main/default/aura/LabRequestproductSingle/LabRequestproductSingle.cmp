@@ -1,0 +1,56 @@
+<!--
+ - Created by naveen on 31/08/18.
+ -->
+
+<aura:component description="LabRequestproductSingle" >
+    <!-- attributes -->
+    <aura:attribute name="li" type="Sample_Lab_Request_Products__c" />
+    <aura:attribute name="showQuantity" type="Boolean" default="false" />
+    <aura:attribute name="showSize" type="Boolean" default="false" />
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+
+    <aura:registerEvent name="DelLRP" type="c:DeleteLRP"/>
+
+    <tr>
+        <td>
+            <lightning:textarea aura:id="product" label="product" value="{!v.li.Product_Text__c}"/>
+        </td>
+        <td>
+            <lightning:input aura:id="coatweight" label="coatweight" type="text" value="{!v.li.Coat_Weight__c}"/>
+        </td>
+        <td>
+            <lightning:select aura:id="qtydd" name="quantity" label="quantity" onchange="{!c.QuantityChange}">
+                <option value="">choose one...</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="Other">Other</option>
+            </lightning:select>
+            <aura:if isTrue="{!v.showQuantity}">
+                <lightning:input aura:id="quantity" type="number" label="quantity" value="{!v.li.Quantity__c}"/>
+            </aura:if>
+        </td>
+        <td>
+            <lightning:select aura:id="sizedd" label="size" name="size" onchange="{!c.SizeChange}">
+                <option value="">choose one...</option>
+                <option value='8" x 10"'>8" x 10"</option>
+                <option value='8.5" x 11"'>8.5" x 11"</option>
+                <option value="Other">Other</option>
+            </lightning:select>
+            <aura:if isTrue="{!v.showSize}">
+                <lightning:input aura:id="size" label="size" type="text" value="{!v.li.Size__c}"/>
+            </aura:if>
+        </td>
+        <!--ui Namespace Are Deprecated-->
+        <!--td>
+            <ui:inputTextArea aura:id="comments" label="comments" value="{!v.li.Special_Instructions__c}"/>
+        </td-->
+        <td>
+            <lightning:textarea aura:id="comments" value="{!v.li.Special_Instructions__c}"/>
+        </td>
+        <td>
+            <lightning:buttonIcon iconName="utility:delete"   alternativeText="Delete" onclick="{!c.deleteAction}"/>
+        </td>
+    </tr>
+</aura:component>
